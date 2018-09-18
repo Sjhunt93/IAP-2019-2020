@@ -13,8 +13,6 @@
 
 void IAP::run ()
 {
-    aserveOscillator(0, 1000.0, 1.0, 0);
-    aserveSleep(1000);
-
+    std::cout << "hello world\n";
 }
 
