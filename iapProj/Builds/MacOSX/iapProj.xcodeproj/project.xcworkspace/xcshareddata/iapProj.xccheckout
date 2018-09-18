@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9E633898-4E19-4209-9F68-B878A8AA3870</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iapProj</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>774A5C55-0E9B-44DD-B8B3-BFF9D612B557</key>
+		<string>https://github.com/Sjhunt93/IAP-2018-2019.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iapProj/Builds/MacOSX/iapProj.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>774A5C55-0E9B-44DD-B8B3-BFF9D612B557</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Sjhunt93/IAP-2018-2019.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>774A5C55-0E9B-44DD-B8B3-BFF9D612B557</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>774A5C55-0E9B-44DD-B8B3-BFF9D612B557</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IAP-2018-2019</string>
+		</dict>
+	</array>
+</dict>
+</plist>
