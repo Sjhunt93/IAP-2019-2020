@@ -3,28 +3,28 @@
 <main>
   <tutorial name="Familiarisation ">
     <item name="Exercise 1: Hello World" type="0">
-      <h src="0_0_h.txt"/>
-      <cpp src="0_0_cpp.txt"/>
+      <h src=""/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Exercise 2: Test Tone" type="0">
       <h src=""/>
-      <cpp src="0_1_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Exercise 3: Sequential Programming" type="0">
       <h src=""/>
-      <cpp src="0_2_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Exercise 4: Programming Chords" type="0">
       <h src=""/>
-      <cpp src="0_3_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Challenge Exercise: Mario Theme" type="0">
       <h src=""/>
-      <cpp src="0_4_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Homework Exercise:" type="0">
@@ -36,27 +36,27 @@
   <tutorial name="Variables and Program Input/Output">
     <item name="Exercise 1: Basic input" type="0">
       <h src=""/>
-      <cpp src="1_0_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Exercise 2: Frequency Input Into Aserve" type="0">
       <h src=""/>
-      <cpp src="1_1_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Exercise 3: Adding Amplitude Control" type="0">
       <h src=""/>
-      <cpp src="1_2_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Exercise 4: Loops" type="0">
       <h src=""/>
-      <cpp src="1_3_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Challange Exercise: Simple Average" type="0">
       <h src=""/>
-      <cpp src="1_4_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Homework Exercise:" type="0">
@@ -67,28 +67,28 @@
   </tutorial>
   <tutorial name="Processing MIDI input">
     <item name="Exercise 1: Basic Input" type="1">
-      <h src="2_0_h.txt"/>
-      <cpp src="2_0_cpp.txt"/>
+      <h src=""/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Exercise 2: Printing Values For Octave and Pitch" type="1">
       <h src=""/>
-      <cpp src="2_1_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Exercise 3: Our First Mono Synthesizer" type="1">
       <h src=""/>
-      <cpp src="2_2_cpp.txt"/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Exercise 4: Filter Control" type="1">
-      <h src="2_3_h.txt"/>
-      <cpp src="2_3_cpp.txt"/>
+      <h src=""/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Challenge Exercise: Better Filter Control" type="1">
-      <h src="2_4_h.txt"/>
-      <cpp src="2_4_cpp.txt"/>
+      <h src=""/>
+      <cpp src=""/>
       <code src=""/>
     </item>
     <item name="Homework Exercise:" type="0">
@@ -265,8 +265,8 @@
       <code src=""/>
     </item>
     <item name="Aserve Unit Test" type="1">
-      <h src="8_1_h.txt"/>
-      <cpp src="8_1_cpp.txt"/>
+      <h src=""/>
+      <cpp src=""/>
       <code src=""/>
     </item>
   </tutorial>
