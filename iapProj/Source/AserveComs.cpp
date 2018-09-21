@@ -80,11 +80,26 @@ void AserveComs::oscMessageReceived (const OSCMessage& message)
             }
         }
     }
-//    MidiMessage a(<#int byte1#>, <#int byte2#>, <#int byte3#>)
-//    if (message.getAddressPattern().matches(const juce::OSCAddress &address)) {
-//        
-//    }
-
+    else if (message.getAddressPattern() == AserveOSC::pixelGridClicked) {
+        if (message.size() == 2) {
+            if (message[0].getInt32() && message[1].getInt32()) {
+                callbackPixelGrid(message[0].getInt32(), message[1].getInt32());
+            }
+        }
+    }
+    
+    if (message.getAddressPattern() == AserveOSC::MIDI) {
+        if (message.size() == 3) {
+            if (message[0].isInt32() && message[1].isInt32() && message[2].isInt32()) {
+                MIDI m;
+                m.status = message[0].getInt32();
+                m.data1 = message[1].getInt32();
+                m.data2 = message[2].getInt32();
+                callbackMIDIRecived(m);
+            }
+        }
+    }
+    
 }
 
 void AserveComs::aserveSleep (int value)
@@ -93,18 +108,8 @@ void AserveComs::aserveSleep (int value)
 }
 void AserveComs::aserveOscillator (int channel, float frequency, float amplitude, int wavetype)
 {
-    sendOsc(channel, frequency, amplitude, wavetype);
+    sender.send(AserveOSC::oscilator, channel, frequency, amplitude, wavetype) ;
 }
-
-void AserveComs::sendOsc (const int channel, const float frequency, const float amplitude, const int wavetype)
-{
-    bool state = sender.send(AserveOSC::oscilator, channel, frequency, amplitude, wavetype) ;
-    std::cout << "State : " << state << "\n";
-//    if (!) {
-//        std::cout << "Error! \n";
-//    }
-}
-
 void AserveComs::aserveLoadSample (int channel, std::string filePath)
 {
     sender.send(AserveOSC::loadsample, channel, String(filePath));
@@ -141,23 +146,17 @@ void AserveComs::aserveBRF (float cutoff, float q, float gain)
     sender.send(AserveOSC::brf, cutoff, q, gain);
 }
 
-
 int AserveComs::aserveGetTime ()
 {
     return Time::getCurrentTime().getMillisecondCounter() - timeAtStart;
+}
+
+void AserveComs::aserveSendMIDI (int status, int data1, int data2)
+{
+    sender.send(AserveOSC::MIDI, status, data1, data2);
 }
 
 void AserveComs::aserveSetPixelGrid (int row, int value)
 {
     sender.send(AserveOSC::setPixelGrid, row, value);
 }
-
-/*
-void AserveComs::sendMIDI (MidiMessage m)
-{
-    OSCMessage mes(AserveOSC::MIDI, m.getraw);
-    sender.send(AserveOSC::MIDI, m);
-}
-
-
-*/

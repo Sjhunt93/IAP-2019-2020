@@ -9,6 +9,9 @@
 #ifndef IAP_DEV_1_Aserve_h
 #define IAP_DEV_1_Aserve_h
 
+/*
+ This file contains all of the aserve OSC commands
+ */
 namespace AserveOSC
 {
     
@@ -22,10 +25,11 @@ namespace AserveOSC
     static const String pressure = aserve + "channelpressure";
     static const String MIDI = aserve + "midi";
     
-    static const String oscilator = "/aserve/osc";
-    static const String sample = "/aserve/sample";
-    static const String pitchedSample = "/aserve/samplepitch";
-    static const String setPixelGrid = "/aserve/pixelgrid";
+    static const String oscilator = aserve + "osc";
+    static const String sample = aserve + "sample";
+    static const String pitchedSample = aserve + "samplepitch";
+    static const String setPixelGrid = aserve + "pixelgrid";
+    static const String pixelGridClicked = aserve + "clickedpixelgrid";
     static const String loadsample = aserve + "loadsample";
     static const String loadPitchedSample = aserve + "loadpitchedsample";
     static const String lpf = aserve + "lpf";
