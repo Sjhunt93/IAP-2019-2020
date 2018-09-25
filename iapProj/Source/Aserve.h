@@ -33,6 +33,7 @@ namespace AserveOSC
     static const String loadsample = aserve + "loadsample";
     static const String loadPitchedSample = aserve + "loadpitchedsample";
     static const String lpf = aserve + "lpf";
+    static const String hpf = aserve + "hpf";
     static const String bpf = aserve + "bpf";
     static const String brf = aserve + "brf";
     

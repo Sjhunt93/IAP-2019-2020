@@ -173,6 +173,19 @@ public:
      @endcode
      */
     void aserveLPF (float cutoff);
+    
+    /**
+     Sets up the values for the inbuilt High pass filter
+     
+     @param		cutoff      sets of the cuttoff frequency: 20.0Hz - 22050.Hz
+     
+     Example usage:
+     @code
+     //HPF filter with 30hz cutoff
+     aserveHPF (500);
+     @endcode
+     */
+    void aserveHPF (float cutoff);
 
     /**
      Sets up the values for the inbuilt band pass filter
@@ -188,19 +201,7 @@ public:
      */
     void aserveBPF (float freq, float q, float gain);
 
-    /**
-     Sets up the values for the inbuilt band reject filter
-     
-     @param		freq    sets the band reject filter's frequency: 20.0Hz - 22050.Hz
-     @param     q       sets the filters Q value. values must be greater than > 0.0
-     @param     gain    gain to reduce the band pass filters output
-     Example usage:
-     @code
-     //BRF filter with 1000hz boost
-     aserveBPF (500, 3.0, 3.0);
-     @endcode
-     */
-    void aserveBRF (float cutoff, float q, float gain);
+
     
 
     /**

@@ -143,9 +143,9 @@ void AserveComs::aserveBPF (float cutoff, float q, float gain)
 {
     sender.send(AserveOSC::bpf, cutoff, q, gain);
 }
-void AserveComs::aserveBRF (float cutoff, float q, float gain)
+void AserveComs::aserveHPF (float cutoff)
 {
-    sender.send(AserveOSC::brf, cutoff, q, gain);
+    sender.send(AserveOSC::hpf, cutoff);
 }
 
 int AserveComs::aserveGetTime ()
