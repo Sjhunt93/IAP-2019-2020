@@ -20,9 +20,6 @@ private OSCReceiver::Listener<OSCReceiver::RealtimeCallback>
 public:
     
     //------------------------------------------------------------------------------------------
-
-
-    
     /**
      Function to control aserve's oscillators.
      
