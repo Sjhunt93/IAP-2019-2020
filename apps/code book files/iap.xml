@@ -259,12 +259,7 @@
     </item>
   </tutorial>
   <tutorial name="Extra">
-    <item name="A" type="1">
-      <h src=""/>
-      <cpp src="8_0_cpp.txt"/>
-      <code src=""/>
-    </item>
-    <item name="Aserve Unit Test" type="1">
+    <item name="Custom Entry 1" type="3">
       <h src=""/>
       <cpp src=""/>
       <code src=""/>

@@ -13,10 +13,12 @@ AserveComs::AserveComs ()
 {
     if (! connect (9001)) {
         //alert
+        std::cout << "Error Port 9001 in use!\n";
     }
     
     if (! sender.connect ("127.0.0.1", 9002)) {
         //error
+        std::cout << "Error Port 9002 in use!\n";
     }
     
     // tell the component to listen for OSC messages matching this address:
@@ -159,4 +161,10 @@ void AserveComs::aserveSendMIDI (int status, int data1, int data2)
 void AserveComs::aserveSetPixelGrid (int row, int value)
 {
     sender.send(AserveOSC::setPixelGrid, row, value);
+}
+
+void AserveComs::aserveSay(std::string message)
+{
+    std::string final = "say " + message;
+    system(final.c_str());
 }

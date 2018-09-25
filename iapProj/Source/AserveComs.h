@@ -231,10 +231,22 @@ public:
      
      @endcode
      */
-     
     void aserveSetPixelGrid (int row, int value);
     
-    /*
+    /**
+     Synthesises text into speech (Mac only).
+     
+     @param		message	the text to be synthesised.
+     
+     Example usage:
+     @code
+     //synthesises the text
+     aserveSay("hello world");
+     @endcode
+     */
+    void aserveSay(std::string message);
+        
+    /**
      Callback Functions:
         To use these you need to include the function definition in your IAP.h file, (these are allready included for your convience but commented out)
         ...
@@ -249,13 +261,66 @@ public:
         ...
      */
     
+    /**
+     callback for receiving note messages
+     
+     @param		note        specifies the midi note number
+     @param		velocity	specifies the velocity value
+     @param		channel     specifies the channel value
+     
+     */
     virtual void callbackNoteReceived (int note, int velocity, int channel) {}
+    
+    /**
+     callback for receiving changes to the mod wheels position
+     
+     @param		value       specifies the mod wheel's value
+     
+     */
     virtual void callbackModWheelMoved (int value) {}
+    
+    /**
+     callback for receiving changes to the pitchbend wheels position
+     
+     @param		value       specifies the pitchbend wheel's value
+     
+     */
     virtual void callbackPitchbendWheelMoved (int value) {}
+    
+    /**
+     callback for receiving changes for a control change message
+     
+     @param     cc          controller number
+     @param		value       control value
+     
+     */
     virtual void callbackCCValueChanged (int cc, int value) {}
+    
+    /**
+     callback for receiving pressure values
+     
+     @param		pressure    value of the pressure change
+     
+     */
     virtual void callbackPressureValueChanged (int pressure) {}
+    
+    /**
+     callback for when a user clicks on the pixel grid in aserve
+     
+     @param     x           x coordinate
+     @param     y           y coordinate
+     */
     virtual void callbackPixelGrid (int x, int y) {}
     
+    
+    /**
+     class for storing 3-byte MIDI messages
+     
+     @param		status	specifies the status byte of the message
+     @param		data1	specifies the first data byte of the message
+     @param		data2	specifies the second data byte of the message
+     
+     */
     class MIDI
     {
     public:
@@ -264,13 +329,17 @@ public:
         int data2;
     };
 
-    
+    /**
+     callback for receiving generic MIDI messages. Note this is allways called in addition to specific MIDI messages above.
+     
+     @param		message         MIDI message
+     
+     */
     virtual void callbackMIDIRecived (MIDI message) {}
     
+    
+    
     //------------------------------------------------------------------------------------------
-    
-
-    
     AserveComs ();
     virtual ~AserveComs ();
     

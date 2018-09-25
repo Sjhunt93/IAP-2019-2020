@@ -24,14 +24,19 @@ public:
     //---------------------------------------------------------------------------------
     // FUNCTIONS
     void run ();
+
     
     //---------------------------------------------------------------------------------
     // CALLBACK FUNCTIONS
-//    void callbackNoteReceived  (int note, int velocity, int channel);
-//    void callbackModWheelMoved (int value);
-//    void callbackPitchbendWheelMoved (int value);
-//    void callbackCCValueChanged (int cc, int value);
-  
+    
+    //void callbackNoteReceived  (int note, int velocity, int channel);
+    //void callbackModWheelMoved (int value);
+    //void callbackPitchbendWheelMoved (int value);
+    //void callbackCCValueChanged (int cc, int value);
+    
+    //void callbackMIDIRecived (MIDI message);
+    //void callbackPixelGrid (int x, int y);
+
     
 private:
     
