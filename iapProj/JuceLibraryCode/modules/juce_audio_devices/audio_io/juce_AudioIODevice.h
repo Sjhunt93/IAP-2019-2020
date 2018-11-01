@@ -36,6 +36,8 @@ class AudioIODevice;
     the next block of data.
 
     @see AudioIODevice, AudioDeviceManager
+
+    @tags{Audio}
 */
 class JUCE_API  AudioIODeviceCallback
 {
@@ -75,9 +77,11 @@ public:
         @param numSamples           the number of samples in each channel of the input and
                                     output arrays. The number of samples will depend on the
                                     audio device's buffer size and will usually remain constant,
-                                    although this isn't guaranteed, so make sure your code can
-                                    cope with reasonable changes in the buffer size from one
-                                    callback to the next.
+                                    although this isn't guaranteed. For example, on Android,
+                                    on devices which support it, Android will chop up your audio
+                                    processing into several smaller callbacks to ensure higher audio
+                                    performance. So make sure your code can cope with reasonable
+                                    changes in the buffer size from one callback to the next.
     */
     virtual void audioDeviceIOCallback (const float** inputChannelData,
                                         int numInputChannels,
@@ -126,6 +130,8 @@ public:
     AudioDeviceManager class.
 
     @see AudioIODeviceType, AudioDeviceManager
+
+    @tags{Audio}
 */
 class JUCE_API  AudioIODevice
 {
@@ -292,6 +298,19 @@ public:
         If the device doesn't support this operation, it'll return false.
     */
     virtual bool setAudioPreprocessingEnabled (bool shouldBeEnabled);
+
+    //==============================================================================
+    /** Returns the number of under- or over runs reported by the OS since
+        playback/recording has started.
+
+        This number may be different than determining the Xrun count manually (by
+        measuring the time spent in the audio callback) as the OS may be doing
+        some buffering internally - especially on mobile devices.
+
+        Returns -1 if playback/recording has not started yet or if getting the underrun
+        count is not supported for this device (Android SDK 23 and lower).
+    */
+    virtual int getXRunCount() const noexcept;
 
     //==============================================================================
 protected:

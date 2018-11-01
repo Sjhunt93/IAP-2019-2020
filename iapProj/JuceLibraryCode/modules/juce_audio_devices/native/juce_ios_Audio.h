@@ -23,7 +23,7 @@
 namespace juce
 {
 
-struct iOSAudioIODeviceType;
+class iOSAudioIODeviceType;
 
 class iOSAudioIODevice : public AudioIODevice
 {
@@ -62,6 +62,8 @@ public:
     int getOutputLatencyInSamples() override;
     int getInputLatencyInSamples() override;
 
+    int getXRunCount() const noexcept override;
+
     //==============================================================================
     void setMidiMessageCollector (MidiMessageCollector*);
     AudioPlayHead* getAudioPlayHead() const;
@@ -75,15 +77,15 @@ public:
 
 private:
     //==============================================================================
-    iOSAudioIODevice (const String&);
+    iOSAudioIODevice (iOSAudioIODeviceType&, const String&, const String&);
 
     //==============================================================================
-    friend struct iOSAudioIODeviceType;
+    friend class iOSAudioIODeviceType;
     friend struct AudioSessionHolder;
 
     struct Pimpl;
     friend struct Pimpl;
-    ScopedPointer<Pimpl> pimpl;
+    std::unique_ptr<Pimpl> pimpl;
 
     JUCE_DECLARE_NON_COPYABLE (iOSAudioIODevice)
 };

@@ -106,7 +106,8 @@ void AserveComs::oscMessageReceived (const OSCMessage& message)
 
 void AserveComs::aserveSleep (int value)
 {
-    usleep(value * 1000);
+	Thread::sleep(value);
+    //usleep(value * 1000);
 }
 void AserveComs::aserveOscillator (int channel, float frequency, float amplitude, int wavetype)
 {

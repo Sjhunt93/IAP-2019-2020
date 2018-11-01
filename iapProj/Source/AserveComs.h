@@ -13,6 +13,11 @@
 #include <array>
 #include <string>
 
+#if JUCE_WINDOWS
+typedef unsigned char Byte;
+#endif // JUCE_WINDOWS
+
+
 class AserveComs :
 private OSCReceiver,
 private OSCReceiver::Listener<OSCReceiver::RealtimeCallback>

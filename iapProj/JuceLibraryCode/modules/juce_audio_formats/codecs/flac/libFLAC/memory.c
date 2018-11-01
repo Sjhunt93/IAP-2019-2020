@@ -216,4 +216,3 @@ void *safe_malloc_mul_2op_p(size_t size1, size_t size2)
 		return 0;
 	return malloc(size1*size2);
 }
-

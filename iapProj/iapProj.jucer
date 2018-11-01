@@ -3,7 +3,7 @@
 <JUCERPROJECT id="twxmHC" name="iapProj" displaySplashScreen="1" reportAppUsage="1"
               splashScreenColour="Dark" projectType="consoleapp" version="1.0.0"
               bundleIdentifier="uk.ac.UWE.iapProj" includeBinaryInAppConfig="1"
-              cppLanguageStandard="11" jucerVersion="4.3.0" companyCopyright="">
+              cppLanguageStandard="11" jucerVersion="5.3.2" companyCopyright="">
   <MAINGROUP id="TnxZFS" name="iapProj">
     <GROUP id="{79CBBB9D-00FF-A693-782B-151321B79C39}" name="Source">
       <FILE id="B3hES1" name="IAP.h" compile="0" resource="0" file="Source/IAP.h"/>
@@ -41,6 +41,28 @@
         <MODULEPATH id="juce_osc" path="../../../../../../JUCE/modules"/>
       </MODULEPATHS>
     </XCODE_MAC>
+    <VS2017 targetFolder="Builds/VisualStudio2017">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="../../juce"/>
+        <MODULEPATH id="juce_osc" path="../../juce"/>
+        <MODULEPATH id="juce_opengl" path="../../juce"/>
+        <MODULEPATH id="juce_gui_extra" path="../../juce"/>
+        <MODULEPATH id="juce_gui_basics" path="../../juce"/>
+        <MODULEPATH id="juce_graphics" path="../../juce"/>
+        <MODULEPATH id="juce_events" path="../../juce"/>
+        <MODULEPATH id="juce_data_structures" path="../../juce"/>
+        <MODULEPATH id="juce_cryptography" path="../../juce"/>
+        <MODULEPATH id="juce_core" path="../../juce"/>
+        <MODULEPATH id="juce_audio_processors" path="../../juce"/>
+        <MODULEPATH id="juce_audio_formats" path="../../juce"/>
+        <MODULEPATH id="juce_audio_devices" path="../../juce"/>
+        <MODULEPATH id="juce_audio_basics" path="../../juce"/>
+      </MODULEPATHS>
+    </VS2017>
   </EXPORTFORMATS>
   <MODULES>
     <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
@@ -59,4 +81,7 @@
     <MODULE id="juce_video" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
   </MODULES>
   <JUCEOPTIONS/>
+  <LIVE_SETTINGS>
+    <WINDOWS/>
+  </LIVE_SETTINGS>
 </JUCERPROJECT>

@@ -13,5 +13,5 @@
 
 void IAP::run ()
 {
-    
+	std::cout << "Hello sam! \n";
 }

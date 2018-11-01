@@ -2,3 +2,7 @@
 iapProj/Builds/MacOSX/build/
 
 iapProj/Builds/MacOSX/Builds/
+
+iapProj/Builds/VisualStudio2017/x64/
+
+iapProj/Builds/VisualStudio2017/\.vs/iapProj/v15/

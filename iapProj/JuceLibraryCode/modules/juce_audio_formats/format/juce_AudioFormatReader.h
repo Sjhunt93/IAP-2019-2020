@@ -38,6 +38,8 @@ class AudioFormat;
     an AudioFormat object.
 
     @see AudioFormat, AudioFormatWriter
+
+    @tags{Audio}
 */
 class JUCE_API  AudioFormatReader
 {
@@ -111,14 +113,14 @@ public:
                int numSamplesToRead,
                bool fillLeftoverChannelsWithCopies);
 
-    /** Fills a section of an AudioSampleBuffer from this reader.
+    /** Fills a section of an AudioBuffer from this reader.
 
         This will convert the reader's fixed- or floating-point data to
         the buffer's floating-point format, and will try to intelligently
         cope with mismatches between the number of channels in the reader
         and the buffer.
     */
-    void read (AudioSampleBuffer* buffer,
+    void read (AudioBuffer<float>* buffer,
                int startSampleInDestBuffer,
                int numSamples,
                int64 readerStartSample,
@@ -196,19 +198,19 @@ public:
 
     //==============================================================================
     /** The sample-rate of the stream. */
-    double sampleRate;
+    double sampleRate = 0;
 
     /** The number of bits per sample, e.g. 16, 24, 32. */
-    unsigned int bitsPerSample;
+    unsigned int bitsPerSample = 0;
 
     /** The total number of samples in the audio stream. */
-    int64 lengthInSamples;
+    int64 lengthInSamples = 0;
 
     /** The total number of channels in the audio stream. */
-    unsigned int numChannels;
+    unsigned int numChannels = 0;
 
     /** Indicates whether the data is floating-point or fixed. */
-    bool usesFloatingPointData;
+    bool usesFloatingPointData = false;
 
     /** A set of metadata values that the reader has pulled out of the stream.
 
@@ -254,8 +256,8 @@ protected:
     template <class DestSampleType, class SourceSampleType, class SourceEndianness>
     struct ReadHelper
     {
-        typedef AudioData::Pointer<DestSampleType, AudioData::NativeEndian, AudioData::NonInterleaved, AudioData::NonConst>    DestType;
-        typedef AudioData::Pointer<SourceSampleType, SourceEndianness, AudioData::Interleaved, AudioData::Const>               SourceType;
+        using DestType   = AudioData::Pointer<DestSampleType,   AudioData::NativeEndian, AudioData::NonInterleaved, AudioData::NonConst>;
+        using SourceType = AudioData::Pointer<SourceSampleType, SourceEndianness, AudioData::Interleaved, AudioData::Const>;
 
         template <typename TargetType>
         static void read (TargetType* const* destData, int destOffset, int numDestChannels,

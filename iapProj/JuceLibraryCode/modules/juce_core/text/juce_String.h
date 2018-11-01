@@ -32,8 +32,10 @@ namespace juce
     dream of.
 
     @see StringArray, StringPairArray
+
+    @tags{Core}
 */
-class JUCE_API  String
+class JUCE_API  String  final
 {
 public:
     //==============================================================================
@@ -43,10 +45,10 @@ public:
     String() noexcept;
 
     /** Creates a copy of another string. */
-    String (const String& other) noexcept;
+    String (const String&) noexcept;
 
     /** Move constructor */
-    String (String&& other) noexcept;
+    String (String&&) noexcept;
 
     /** Creates a string from a zero-terminated ascii text string.
 
@@ -93,37 +95,37 @@ public:
 
     //==============================================================================
     /** Creates a string from a UTF-8 character string */
-    String (const CharPointer_UTF8 text);
+    String (CharPointer_UTF8 text);
 
     /** Creates a string from a UTF-8 character string */
-    String (const CharPointer_UTF8 text, size_t maxChars);
+    String (CharPointer_UTF8 text, size_t maxChars);
 
     /** Creates a string from a UTF-8 character string */
-    String (const CharPointer_UTF8 start, const CharPointer_UTF8 end);
+    String (CharPointer_UTF8 start, CharPointer_UTF8 end);
 
     //==============================================================================
     /** Creates a string from a UTF-16 character string */
-    String (const CharPointer_UTF16 text);
+    String (CharPointer_UTF16 text);
 
     /** Creates a string from a UTF-16 character string */
-    String (const CharPointer_UTF16 text, size_t maxChars);
+    String (CharPointer_UTF16 text, size_t maxChars);
 
     /** Creates a string from a UTF-16 character string */
-    String (const CharPointer_UTF16 start, const CharPointer_UTF16 end);
+    String (CharPointer_UTF16 start, CharPointer_UTF16 end);
 
     //==============================================================================
     /** Creates a string from a UTF-32 character string */
-    String (const CharPointer_UTF32 text);
+    String (CharPointer_UTF32 text);
 
     /** Creates a string from a UTF-32 character string */
-    String (const CharPointer_UTF32 text, size_t maxChars);
+    String (CharPointer_UTF32 text, size_t maxChars);
 
     /** Creates a string from a UTF-32 character string */
-    String (const CharPointer_UTF32 start, const CharPointer_UTF32 end);
+    String (CharPointer_UTF32 start, CharPointer_UTF32 end);
 
     //==============================================================================
     /** Creates a string from an ASCII character string */
-    String (const CharPointer_ASCII text);
+    String (CharPointer_ASCII text);
 
     /** Creates a string from a UTF-8 encoded std::string. */
     String (const std::string&);
@@ -137,17 +139,6 @@ public:
 
     /** Destructor. */
     ~String() noexcept;
-
-    //==============================================================================
-   #if JUCE_ALLOW_STATIC_NULL_VARIABLES
-    /** This is a static empty string object that can be used if you need a reference to one.
-        The value of String::empty is exactly the same as String(), and in almost all cases
-        it's better to avoid String::empty and just use String() or {} instead, so that the compiler
-        only has to reason about locally-constructed objects, rather than taking into account
-        the fact that you're referencing a global shared static memory address.
-    */
-    static const String empty;
-   #endif
 
     /** This is the character encoding type used internally to store the string.
 
@@ -230,8 +221,8 @@ public:
         @param startOfTextToAppend  the start of the string to add. This must not be a nullptr
         @param endOfTextToAppend    the end of the string to add. This must not be a nullptr
     */
-    void appendCharPointer (const CharPointerType startOfTextToAppend,
-                            const CharPointerType endOfTextToAppend);
+    void appendCharPointer (CharPointerType startOfTextToAppend,
+                            CharPointerType endOfTextToAppend);
 
     /** Appends a string to the end of this one.
 
@@ -239,8 +230,8 @@ public:
         @param endOfTextToAppend    the end of the string to add. This must not be a nullptr
     */
     template <class CharPointer>
-    void appendCharPointer (const CharPointer startOfTextToAppend,
-                            const CharPointer endOfTextToAppend)
+    void appendCharPointer (CharPointer startOfTextToAppend,
+                            CharPointer endOfTextToAppend)
     {
         jassert (startOfTextToAppend.getAddress() != nullptr && endOfTextToAppend.getAddress() != nullptr);
 
@@ -260,7 +251,7 @@ public:
     }
 
     /** Appends a string to the end of this one. */
-    void appendCharPointer (const CharPointerType textToAppend);
+    void appendCharPointer (CharPointerType textToAppend);
 
     /** Appends a string to the end of this one.
 
@@ -268,7 +259,7 @@ public:
         @param maxCharsToTake   the maximum number of characters to take from the string passed in
     */
     template <class CharPointer>
-    void appendCharPointer (const CharPointer textToAppend, size_t maxCharsToTake)
+    void appendCharPointer (CharPointer textToAppend, size_t maxCharsToTake)
     {
         if (textToAppend.getAddress() != nullptr)
         {
@@ -290,7 +281,7 @@ public:
 
     /** Appends a string to the end of this one. */
     template <class CharPointer>
-    void appendCharPointer (const CharPointer textToAppend)
+    void appendCharPointer (CharPointer textToAppend)
     {
         appendCharPointer (textToAppend, std::numeric_limits<size_t>::max());
     }
@@ -1247,6 +1238,17 @@ public:
     */
     int getReferenceCount() const noexcept;
 
+    //==============================================================================
+    /*  This was a static empty string object, but is now deprecated as it's too easy to accidentally
+        use it indirectly during a static constructor, leading to hard-to-find order-of-initialisation
+        problems.
+        @deprecated If you need an empty String object, just use String() or {}.
+        The only time you might miss having String::empty available might be if you need to return an
+        empty string from a function by reference, but if you need to do that, it's easy enough to use
+        a function-local static String object and return that, avoiding any order-of-initialisation issues.
+    */
+    JUCE_DEPRECATED_STATIC (static const String empty;)
+
 private:
     //==============================================================================
     CharPointerType text;
@@ -1300,6 +1302,8 @@ JUCE_API String JUCE_CALLTYPE operator+ (String string1, const char* string2);
 /** Concatenates two strings. */
 JUCE_API String JUCE_CALLTYPE operator+ (String string1, const wchar_t* string2);
 /** Concatenates two strings. */
+JUCE_API String JUCE_CALLTYPE operator+ (String string1, const std::string& string2);
+/** Concatenates two strings. */
 JUCE_API String JUCE_CALLTYPE operator+ (String string1, char characterToAppend);
 /** Concatenates two strings. */
 JUCE_API String JUCE_CALLTYPE operator+ (String string1, wchar_t characterToAppend);
@@ -1326,6 +1330,8 @@ JUCE_API String& JUCE_CALLTYPE operator<< (String& string1, const wchar_t* strin
 JUCE_API String& JUCE_CALLTYPE operator<< (String& string1, const String& string2);
 /** Appends a string to the end of the first one. */
 JUCE_API String& JUCE_CALLTYPE operator<< (String& string1, StringRef string2);
+/** Appends a string to the end of the first one. */
+JUCE_API String& JUCE_CALLTYPE operator<< (String& string1, const std::string& string2);
 
 /** Appends a decimal number to the end of a string. */
 JUCE_API String& JUCE_CALLTYPE operator<< (String& string1, uint8 number);
@@ -1348,7 +1354,7 @@ JUCE_API String& JUCE_CALLTYPE operator<< (String& string1, double number);
 
 // Automatically creating a String from a bool opens up lots of nasty type conversion edge cases.
 // If you want a String representation of a bool you can cast the bool to an int first.
-JUCE_API String& JUCE_CALLTYPE operator<< (String&, bool) = delete;
+String& JUCE_CALLTYPE operator<< (String&, bool) = delete;
 
 //==============================================================================
 /** Case-sensitive comparison of two strings. */
@@ -1413,7 +1419,7 @@ JUCE_API OutputStream& JUCE_CALLTYPE operator<< (OutputStream& stream, StringRef
 
 } // namespace juce
 
-#if JUCE_COMPILER_SUPPORTS_INITIALIZER_LISTS // just used to avoid compiling this under compilers that lack libc++
+#if ! DOXYGEN
 namespace std
 {
     template <> struct hash<juce::String>
