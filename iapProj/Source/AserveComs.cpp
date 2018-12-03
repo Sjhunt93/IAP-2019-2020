@@ -70,21 +70,21 @@ void AserveComs::oscMessageReceived (const OSCMessage& message)
     }
     else if (message.getAddressPattern() == AserveOSC::control) {
         if (message.size() == 2) {
-            if (message[0].getInt32() && message[1].getInt32()) {
+            if (message[0].isInt32() && message[1].isInt32()) {
                 callbackCCValueChanged(message[0].getInt32(), message[1].getInt32());
             }
         }
     }
     else if (message.getAddressPattern() == AserveOSC::pitchBend) {
         if (message.size() == 1) {
-            if (message[0].getInt32()) {
+            if (message[0].isInt32()) {
                 callbackPitchbendWheelMoved(message[0].getInt32());
             }
         }
     }
     else if (message.getAddressPattern() == AserveOSC::pixelGridClicked) {
         if (message.size() == 2) {
-            if (message[0].getInt32() && message[1].getInt32()) {
+            if (message[0].isInt32() && message[1].isInt32()) {
                 callbackPixelGrid(message[0].getInt32(), message[1].getInt32());
             }
         }

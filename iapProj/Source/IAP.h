@@ -37,7 +37,6 @@ public:
     //void callbackMIDIRecived (MIDI message);
     //void callbackPixelGrid (int x, int y);
 
-    
 private:
     
 };
