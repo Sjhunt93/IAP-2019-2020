@@ -346,7 +346,7 @@ private:
     void sendMIDI (Byte s, Byte d1, Byte d2);
     
     OSCSender sender;
-    uint32 timeAtStart;
+
 };
 
 

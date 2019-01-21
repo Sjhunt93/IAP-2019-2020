@@ -1,5 +1,3 @@
-
-
 //
 //  IAP.h
 //  IAPProjectDevelopmentTest1
@@ -11,8 +9,10 @@
 #ifndef __IAPProjectDevelopmentTest1__IAP__
 #define __IAPProjectDevelopmentTest1__IAP__
 
-
 #include "AserveComs.h"
+
+//---------------------------------------------------------------------------------
+// USER CREATED CLASS
 
 
 class IAP : public AserveComs  {
@@ -24,8 +24,8 @@ public:
     //---------------------------------------------------------------------------------
     // FUNCTIONS
     void run ();
+  
 
-    
     //---------------------------------------------------------------------------------
     // CALLBACK FUNCTIONS
     
@@ -36,7 +36,7 @@ public:
     
     //void callbackMIDIRecived (MIDI message);
     //void callbackPixelGrid (int x, int y);
-
+    
 private:
     
 };
