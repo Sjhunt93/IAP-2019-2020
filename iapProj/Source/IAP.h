@@ -19,12 +19,13 @@ class IAP : public AserveComs  {
 public:
     
     //---------------------------------------------------------------------------------
-    // SHARED VARIABLES
+    // SHARED VARIABLES (IAP member variables)
+
 
     //---------------------------------------------------------------------------------
-    // FUNCTIONS
+    // FUNCTIONS (IAP class methods)
     void run ();
-  
+    float mtof (int note);
 
     //---------------------------------------------------------------------------------
     // CALLBACK FUNCTIONS

@@ -39,6 +39,8 @@ namespace AserveOSC
     
     static const String loadDefaultSounds = aserve + "loaddefaults";
     static const String reset = aserve + "reset";
+    static const String mode = aserve + "mode";
+
 }
 
 

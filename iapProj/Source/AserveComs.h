@@ -336,11 +336,22 @@ public:
     virtual void callbackMIDIRecived (MIDI message) {}
     
     
+    enum eOscillatorMode
+    {
+        eNormal = 0,
+        eFm8,
+    };
+    /**
+     When using the FM 8 mode, the top 8 oscillators (16-23) act as modulators for oscillators 0-7.
+     They modulators are set the same as any other oscillator except that the amplitude value is used as the FM depth control
+     and can be scalled to be greater than 1
+     THIS IS AN EXPERIMENTAL FEATURE
+     */
+    void aserveConfigureOscillatorMode (eOscillatorMode mode);
     
     //------------------------------------------------------------------------------------------
     AserveComs ();
     virtual ~AserveComs ();
-    
 private:
     void oscMessageReceived (const OSCMessage& message) override;
     void sendMIDI (Byte s, Byte d1, Byte d2);

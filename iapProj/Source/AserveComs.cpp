@@ -179,3 +179,11 @@ void AserveComs::aserveSay(std::string message)
     std::string final = "say " + message;
     system(final.c_str());
 }
+
+void AserveComs::aserveConfigureOscillatorMode (eOscillatorMode mode)
+{
+    int m = mode;
+    sender.send(AserveOSC::reset);
+    sender.send(AserveOSC::mode, m);
+
+}
