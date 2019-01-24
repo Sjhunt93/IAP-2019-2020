@@ -125,3 +125,171 @@ When you complete each practical exercise you must save copies of your solutions
 
 From your Documents/iap/ folder, find and launch Aserve. You should see the following interface: 
 
+![Aserve Screen Shot](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/aserve_screen_shot_a.png)
+
+
+## Exercise 2: Test Tone
+
+Return to Xcode and and delete the std::cout line and replace it with the following: 
+
+```cpp
+aserveOscillator(0, 1000.0, 1.0, 0);
+aserveSleep(1000);
+```
+
+As before, click the Run button, if there are any errors, fix them and try again. When the program runs successfully, you should hear a one second tone. 
+
+The function call that starts the tone is: 
+```cpp
+aserveOscillator(0, 1000.0, 1.0, 0);
+```
+
+aserveOscillator() switches on an oscillator with the settings that are specified as its four arguments. 
+
+-	Argument 1 has a value of 0
+-	Argument 2 has a value of 1000.0 
+-	Argument 3 has a value of 1.0
+-	Argument 4 has a value of 0 
+
+
+Experiment with different values for arguments 2 - 4 and complete the table below with argument descriptions. Keep an eye on aserve for any errors!
+
+
+Argument | Description of what this argument controls 
+--- | ---
+2 | 
+3 | 
+4 |
+
+The oscillator function call is followed by a call to aserveSleep(), which causes program execution to pause for the time specified as its argument in milliseconds (i.e. aserveSleep(1000); will pause the program for 1 second). This causes the tone to be sustained for one second before the program exits (and the tone is stopped). 
+
+
+Make sure you save your solution to this exercise to codeBook before moving on.
+
+## Exercise 3: Sequential Programming
+
+![Greensleves score](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/score_greensleves.png)
+
+The score for the first four bars of Greensleeves is shown above. Program the score using the aserveOscillator(), and aserveSleep() functions. Do not worry if you are unable to read music, the note names and durations are indicated below and a table showing the standard piano note names, frequencies, and durations are provided at the end of this practical. 
+
+Order | Note | Duration
+--- | --- | ---
+1 | A4 | Quaver 
+2 | C5 | Crotchet 
+3 | D5 | Quaver 
+4 | E5 | Dotted Quaver 
+5 | F5 | Semiquaver 
+6 | E5 | Quaver 
+7 | D5 | Crotchet 
+8 | B4 | Quaver 
+9 | G4 | Dotted Quaver 
+10 | A4 | Semiquaver 
+11 | B4 | Quaver 
+12 | C5 | Crotchet 
+13 | A4 | Quaver 
+14 | A4 | Dotted Quaver 
+15 | Ab4 | Semiquaver 
+16 | A4 | Quaver 
+17 | B4 | Crotchet 
+18 | Ab4 | Quaver 
+19 | E4 | Crotchet 
+20 | A4 | Semiquaver 
+
+For the purposes of this exercise you can use the duration values given in appendix item B.
+
+Make sure you save your solution to this exercise to codeBook before moving on.
+
+## Exercise 4: Playing Chords 
+
+So far we have only experimented with turning on one oscillator at a time. We can stack notes by adding them on more channels, note that the channel is specified by argument 1.
+
+```cpp
+aserveOscillator(0, 1000.0, 1.0, 0);
+aserveOscillator(1, 2000.0, 1.0, 0);
+aserveOscillator(2, 4000.0, 1.0, 0);
+aserveSleep(1000);
+```
+The following code will now play a 1kz, 2khz and 4kz tone at the same time. Using this technique program in the following chord sequence. 
+
+
+![Metamorphosis score](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/metascore.png)
+
+Chords | Note
+--- | ---
+Chord 1 | E4 G4 B4
+Chord 2 | D4 G4 B4
+Chord 3 | C4 G4 B4
+Chord 4 | C4 E4 Bb4
+
+## Debug exercise
+
+Each week you will also be given a debugging challenge, whereby you have to fix broken code. Give the reason as to why this code will produce an error.
+
+```cpp
+void IAP::run ()
+{
+    std::cout << "Hello World! \n"
+}
+```
+## Challenge exercise: What about adding rests!
+In the previous exercise each note flowed from one to the next without any rests, in this exercise we will need to program in gaps in our music. The simplest way of doing is to to simply make a call to aserveOscillator with 0 for all arguments. Following this with a aserve sleep will give us a rest with a duration equivalent to the value we supply.
+
+```cpp
+aserveOscillator(0, 1000.0, 1.0, 0);
+aserveSleep(1000);
+aserveOscillator(0, 0, 0, 0); //turn off oscillator
+aserveSleep(1000); //rest duration
+```
+
+## Mario Theme
+Lets program something a little more modern. Do not worry if you do not get time to complete this exercise.
+
+![Mario score](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/marioscore.png)
+
+A table of events is given in the appendix.
+
+## Exercise: Homework
+
+
+Your homework task for this week is to program in your own choice of music, using what we have learnt in this session, or: Complete the Mario theme exercise.
+
+Feel free to send your creation to sam, who shall pick one to play in next weeks lecture!
+
+## Finishing Up
+
+Make sure that you have saved your work to codeBook and taken a backup of your iap folder.
+
+## Important Material 
+
+Make sure that you have a good understanding of the following before we return next week: 
+
+1.	The use of the Xcode IDE for loading, editing, building and running projects.
+2.	The use of the std::cout command.
+3.	The use of indentation in C programs.
+4.	The Aserve application, and the aserveOscillator() function.
+5.	The use and meanings of terms call and argument in C programs. 
+
+## Appendix Item A: Standard Piano Note Names and Frequencies 
+
+![Metamorphosis score](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/freq_note_map.png)
+
+
+## Appendix Item B: Note Durations
+
+Note Type | Duration in ms
+--- | ---
+Crotched | 500
+Quaver | 250
+Dotted Quaver | 375
+Semiquaver | 125
+Triplet Crotchet | 333
+
+## Appendix item C: Mario Theme Table of events
+
+
+
+
+
+
+
+
