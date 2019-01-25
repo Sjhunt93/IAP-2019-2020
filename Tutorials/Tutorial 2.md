@@ -100,3 +100,66 @@ Firstly, clear the main run loop and then copy and rearrange the following code 
 4.	aserveSleep(1000);
 5.	std::cout << "Please enter a frequency value in hz \n";
 ```
+
+
+
+## Exercise 3: Adding Amplitude Control
+
+Extend the above exercise by adding amplitude control, remember that a variable can only hold a single piece of data at once, so you will need to add a second variable. Follow these steps:
+
+1.	Create another floating-point variable with an appropriate name.
+2.	Prompt the user to enter an amplitude value.
+3.	Read the entered value into the variable created above.
+4.	Display the entered amplitude value as well as the frequency value.
+5.	Set the oscillator amplitude to the value entered by the user. 
+
+
+## Exercise 4: Loops
+
+The exercise above will exit once the user has entered a single frequency and amplitude value, in reality the user will most likely want to enter another set of frequency and amplitude values without having to run the program again. For this we can use the following loop.
+
+```cpp
+void IAP::run ()
+{
+    while (true) 
+	{
+        //Code from previous exercise
+    }   
+}
+```
+
+This is a **loop** and it enables any code that is between the { and {} to be repeated. The **true** part of the while loop makes this section of code repeat forever. Adjust your solution to the previous exercise by adding in a while loop.
+
+## Variable initialization and introduction to debugging
+
+Save your solution to the previous exercise and add the following code to your main run loop.
+
+```cpp
+void IAP::run ()
+{
+    int x = 0;
+    int y = 0;
+    x = 5;
+    y = x;
+    x = 7;
+}
+```
+
+We will open up and use the debugger to see what is happening on each line.
+
+Firstly, click on the line number where int x = 0 has been written, to drop a break point. (see below). Break points appear in blue. (note that your line numbers may be different to those shown in the figure)
+
+
+![Debug 1](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/debug2_1.png)
+
+When you run your program you should now see that the program pauses where you have placed the break point.
+
+Ensure that the debug window (1) is being shown at the bottom of the Xcode project. We can now use the step over button (2) to manual step through the program as its running. Observe what happens on each step in the debug window (1) on each press of the step over button.
+
+![Debug 2](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/debug2_2.png)
+
+On step 2 you should see that the variable **y** appears in the debug window and is given the value 0. Remember that before this point (step 1) the variable **y** was not known to the program.
+
+Step 3 should show how **x** now holds the number 5. Step 4 should show how both **x and y** now have the same value. Finally, the last step should should show the the program ends with **y** having a value of 5 and **x** a value of 7.
+
+
