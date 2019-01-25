@@ -288,6 +288,26 @@ Triplet Crotchet | 333
 
 
 
+Order |	Note | Duration | Order | Note | Duration
+--- | --- | --- | --- | --- | --- 
+1 |	E5 | Quaver | 19 | Rest | Quaver 
+2 |	E5 | Quaver | 20 | B4 | Quaver
+3 |	Rest | Quaver | 21 | Rest | Quaver
+4 |	E5  | Quaver | 22 | Bb4 | Quaver
+5 |	Rest | Quaver | 23 | A4 | Crotchet
+6 |	C5 | Quaver | 24 | G4 | Triplet Crotchet
+7 |	E5 | Crotchet | 25 | E5 | Triplet Crotchet
+8 |	G5 | Crotchet | 26 | G5 | Triplet Crotchet
+9 |	Rest | Crotchet | 27 | A5 | Crotchet
+10 | G5 | Crotchet | 28 | F5 | Quaver
+11 | Rest | Crotchet | 29 | G5 | Quaver
+12 | C5 | Crotchet | 30 | Rest | Quaver
+13 | Rest | Quaver | 31 | E5 | Quaver
+14 | G4 | Quaver | 32 | Rest | Quaver
+15 | Rest | Crotchet | 33 | C5 | Quaver
+16 | E4 | Crotchet | 34 | D5 | Quaver
+17 | Rest | Quaver | 35 | B4 | Quaver
+18 | A4 | Quaver | 36 | Rest | Crotchet
 
 
 
