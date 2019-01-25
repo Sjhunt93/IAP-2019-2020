@@ -162,4 +162,84 @@ On step 2 you should see that the variable **y** appears in the debug window and
 
 Step 3 should show how **x** now holds the number 5. Step 4 should show how both **x and y** now have the same value. Finally, the last step should should show the the program ends with **y** having a value of 5 and **x** a value of 7.
 
+![Debug 3](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/debug2_3.png)
+
+
+Although this may seem a trivial example, debugging is a very important part of learning any programming language. We will continue to use the debugger in future practicals to fix broken code and understand what is happening on each line of a program.
+
+To end the debugging process, grab the blue break point marker and drag it away to the right to remove it.
+
+## Operators
+
+A crucial feature of any programming language is the ability to describe operations on data. For example we can use the + operator to add two numbers together.
+
+```cpp
+int sum = 10 + 5;
+```
+
+A list of common arithmetic operators is provided in the table below:
+
+Operator | Meaning
+--- | ---
+" = " | Assign
+" + " | Add
+" - " | Subtract
+" * " | Multiply
+" / " | Divide
+" % " | Modulus or remainder
+
+*It's worth noting >> and << are also operators that we've used with std::cin and std:cout, however these are not arithmetic operators like those listed above.*
+
+
+## Rules of precedence
+It is important to consider the rules of precedence when creating arithmetic expressions. The operators * / % have higher precedence than the + - operators. This means that in a single expression, all * / % operators are computed prior to the + - operators. Therefore, you may have to use brackets to ensure that a calculation is performed as intended. An example is provided below: 
+
+1 + 2 * 3 is computed as 1 + 6 = 7 whereas
+
+( 1 + 2 ) * 3 is computed as 3 * 3 = 9
+
+## Challenge Exercise: Simple Average
+Write a program that reads two numbers from the user and computes their average.
+To compute an average of two values, you can simply do the following (assuming that num1, num2 and result are our variables)
+
+```cpp
+result = num1 + num2 / 2.0;
+```
+
+The steps for getting started are as follows:
+
+1.	Create two float variables called num1 and num2
+2.	Use std::cout to instruct the user to enter the first number
+3.	Use std::cin to read a number from the user
+4.	Repeats steps 2-3 for the second number
+5.	Compute the result using the above sum
+6.	Use std::cout to print the result to the user
+
+## Debug exercise
+Give two reasons why the following code will the not work:
+
+```cpp
+std::cout >> "I am broken, please fix me…"
+```
+
+## Homework
+Firstly, ensure that you have completed exercise 4.
+
+Extend exercise 4 to use std::cin to read in the users choice of wave type but before switching on oscillators. Secondly switch on a second oscillator that has a frequency value that is twice the value of the original. Finally add a third oscillator that is half the value of the original. You should end up with a program that switches on three oscillators at the same time with a specified base frequency, amplitude and wavetype.
+
+
+## Important Material
+
+Knowledge of the following will be assumed in next week’s practical:
+
+1.	The properties of the data types int, float, and std::string.
+2.	The use and meaning of the while(true) loop. 
+3.	The use of std::cin and std::cout to store and display variable values.
+4.	The conventions for declaring and identifying/naming variables. 
+5.	The basics of applying arithmetic operators to variables.
+
+
+
+
+
 
