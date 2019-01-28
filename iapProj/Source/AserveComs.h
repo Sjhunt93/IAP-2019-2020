@@ -96,7 +96,7 @@ public:
      0.0 will stop playback.
      
      @param		channel			specifies the sample row to playback: 0 - 3
-     @param		amplitude	specifies the playback amplitude: 0.0 - 1.0
+     @param		amplitude	    specifies the playback amplitude: 0.0 - 1.0
      
      Example usage:
      @code
@@ -112,18 +112,18 @@ public:
      Loads a sample in to the pitches sample window.
      
      The sample window can load up to 4 .wav/.aiff files located on the file system. This function allows
-     samples to be loaded programmatically. This differs from aserveLoadSample() in that samples can have thier pitche changed during playback
+     samples to be loaded programmatically. This differs from aserveLoadSample() in that samples can have thier pitch changed during playback
      
      @param		channel		specifies the channel into which the file will be loaded: 0 - 3
      @param		filePath	specifies the path to the file to be loaded (in windows use '/' and not '\' in the file path)
      @param     originalPitch   original midi note number of the sample
-     @param     attack      attack time in ms
-     @param     decay       decay time in ms
+     @param     attack      attack time in seconds
+     @param     decay       decay time in secionds
      
      Example usage:
      @code
      //load the sample at the path "/Users/tjmitche/bd.wav" into the top row of the sample window.
-     aserveLoadSample(0, "/Users/tjmitche/bd.wav", 60, 5, 10);
+     aserveLoadSample(0, "/Users/tjmitche/bd.wav", 60, 0.03, 0.04);
      @endcode
      
      @see aservePlayPitchedSample
@@ -133,7 +133,7 @@ public:
     /**
      Play back pitched samples in the sample window.
      
-     File loaded into a specified channel are played back at the specified amplitude and at a given pitch.
+     Files loaded into a specified channel are played back at the specified amplitude and at a given pitch. Supplying an amplitude value of 0 will stop the sample
 
      
      @param		channel			specifies the sample row to playback: 0 - 3
@@ -341,17 +341,28 @@ public:
     virtual void callbackMIDIRecived (MIDI message) {}
     
     
+    enum eOscillatorMode
+    {
+        eNormal = 0,
+        eFm8,
+    };
+    /**
+     When using the FM 8 mode, the top 8 oscillators (16-23) act as modulators for oscillators 0-7.
+     They modulators are set the same as any other oscillator except that the amplitude value is used as the FM depth control
+     and can be scalled to be greater than 1
+     THIS IS AN EXPERIMENTAL FEATURE
+     */
+    void aserveConfigureOscillatorMode (eOscillatorMode mode);
     
     //------------------------------------------------------------------------------------------
     AserveComs ();
     virtual ~AserveComs ();
-    
 private:
     void oscMessageReceived (const OSCMessage& message) override;
     void sendMIDI (Byte s, Byte d1, Byte d2);
     
     OSCSender sender;
-    uint32 timeAtStart;
+
 };
 
 

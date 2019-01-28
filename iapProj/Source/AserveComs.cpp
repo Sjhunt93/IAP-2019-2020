@@ -9,29 +9,40 @@
 #include "AserveComs.h"
 #include "Aserve.h"
 
+static uint32 timeAtStart; //we only want one of these as our sudo timer.
+static int instanceCount;
+
 AserveComs::AserveComs ()
 {
-    if (! connect (9001)) {
-        //alert
-        std::cout << "Error Port 9001 in use!\n";
+    if (instanceCount >= 1) { //we already have an instance of this class.
+        if (! sender.connect ("127.0.0.1", 9002)) { //the second instance can only send message.
+            //error
+            std::cout << "Error Port 9002 in use!\n";
+        }
     }
+    else {
+        if (! connect (9001)) {
+            //alert
+            std::cout << "Error Port 9001 in use!\n";
+        }
     
-    if (! sender.connect ("127.0.0.1", 9002)) {
+        if (! sender.connect ("127.0.0.1", 9002)) {
         //error
-        std::cout << "Error Port 9002 in use!\n";
+            std::cout << "Error Port 9002 in use!\n";
+        }
+        addListener (this);
+        timeAtStart = Time::getCurrentTime().getMillisecondCounter();
+        sender.send(AserveOSC::reset);
     }
     
     // tell the component to listen for OSC messages matching this address:
-    addListener (this);
-
-    timeAtStart = Time::getCurrentTime().getMillisecondCounter();
-    
-    sender.send(AserveOSC::reset);
+    instanceCount++;
 }
 AserveComs::~AserveComs ()
 {
     sender.send(AserveOSC::reset);
     removeListener(this);
+    instanceCount--;
 }
 
 void AserveComs::oscMessageReceived (const OSCMessage& message) 
@@ -70,21 +81,21 @@ void AserveComs::oscMessageReceived (const OSCMessage& message)
     }
     else if (message.getAddressPattern() == AserveOSC::control) {
         if (message.size() == 2) {
-            if (message[0].getInt32() && message[1].getInt32()) {
+            if (message[0].isInt32() && message[1].isInt32()) {
                 callbackCCValueChanged(message[0].getInt32(), message[1].getInt32());
             }
         }
     }
     else if (message.getAddressPattern() == AserveOSC::pitchBend) {
         if (message.size() == 1) {
-            if (message[0].getInt32()) {
+            if (message[0].isInt32()) {
                 callbackPitchbendWheelMoved(message[0].getInt32());
             }
         }
     }
     else if (message.getAddressPattern() == AserveOSC::pixelGridClicked) {
         if (message.size() == 2) {
-            if (message[0].getInt32() && message[1].getInt32()) {
+            if (message[0].isInt32() && message[1].isInt32()) {
                 callbackPixelGrid(message[0].getInt32(), message[1].getInt32());
             }
         }
@@ -168,4 +179,12 @@ void AserveComs::aserveSay(std::string message)
 {
     std::string final = "say " + message;
     system(final.c_str());
+}
+
+void AserveComs::aserveConfigureOscillatorMode (eOscillatorMode mode)
+{
+    int m = mode;
+    sender.send(AserveOSC::reset);
+    sender.send(AserveOSC::mode, m);
+
 }

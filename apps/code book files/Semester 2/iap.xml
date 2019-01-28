@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<main>
+  <tutorial name="Class ">
+    <item name="Exercise 1: Person Class" type="1" custom="0">
+      <h src=""/>
+      <cpp src=""/>
+      <code src=""/>
+    </item>
+    <item name="Exercise 2: Second Person" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>    </item>
+    <item name="Exercise 3: Class Method" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 4: Synth Class" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Challenge Exercise: Extra Methods" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+  </tutorial>
+  <tutorial name="Arrays">
+    <item name="Exercise 1: First Array" type="0" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 2: Second Array" type="0" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 3: Slider Sequencer" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 4: 8 Steps" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Challange Exercise: Amplitude Control" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Homework Exercise: Constants" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+  </tutorial>
+  <tutorial name="Vector">
+    <item name="Exercise 1: Vector I" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 2: Vector II" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 3: Building a Music Sequencer" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Challenge Exercise: Sequencer Extensions" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Homework Exercise 1: Print Vector" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Homework Exercise 2: Find Index" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Homework Exercise 3: Sort, Reverse, Random" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+  </tutorial>
+  <tutorial name="Program Design">
+    <item name="Exercise 1: AR Envelope start " type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 1: AR Envelope End " type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 2: Arpegiator start" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 2: Arpegiator end " type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 3: Polyphonic Synth start" type="1" custom="0">
+      <h src=""/>
+      <cpp src=""/>
+      <code src=""/>
+    </item>
+    <item name="Exercise 3: Polyphonic Synth end " type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 4: Generative Music System start" type="1" custom="0">
+      <h src=""/>
+      <cpp src=""/>
+      <code src=""/>
+    </item>
+    <item name="Exercise 4: Generative Music System end" type="1" custom="0">
+      <h src=""/>
+      <cpp src=""/>
+      <code src=""/>
+    </item>
+  </tutorial>
+  <tutorial name="Hackathon">
+    <item name="Initial Idea" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Final Idea" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+  </tutorial>
+  <tutorial name="Files and String Manipulation">
+    <item name="Exercise 1: Reading a file" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 2: Synthesize file Contents" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 3: Writing to our file" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 4: Full Sequencer" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 5: String Split Function" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Challenge Exercise: Aserve File Playback System" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+  </tutorial>
+  <tutorial name="Bitwise Manipulation">
+    <item name="Exercise 1: Aserve Bit Representation" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 2: Using The Pixel Grid" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 3: Toggle States" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 4: Drum Sequencer" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Debug Exercise: Snake" type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+  </tutorial>
+  <tutorial name="C++ Magic">
+    <item name="Exercise 1: " type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 2: " type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 3: " type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 4: " type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 5: " type="1">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+  </tutorial>
+  <tutorial name="Extra">
+    <item name="A" type="3">
+      <h src=""/>
+      <cpp src=""/>
+      <code src=""/>
+    </item>
+  </tutorial>
+</main>
