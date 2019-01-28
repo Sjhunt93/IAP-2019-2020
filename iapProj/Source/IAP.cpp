@@ -14,9 +14,8 @@ float IAP::mtof (int note)
     return 440.0 * pow(2.0, (note - 69) / 12.0);
 }
 
-
 void IAP::run ()
 {
-	std::cout << "Hello sam! \n";
+
 }
 
