@@ -178,7 +178,9 @@ void AserveComs::aserveSetPixelGrid (int row, int value)
 void AserveComs::aserveSay(std::string message)
 {
     std::string final = "say " + message;
+#ifdef JUCE_MAC
     system(final.c_str());
+#endif
 }
 
 void AserveComs::aserveConfigureOscillatorMode (eOscillatorMode mode)
