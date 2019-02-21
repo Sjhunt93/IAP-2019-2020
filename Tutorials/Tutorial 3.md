@@ -41,3 +41,79 @@ void IAP::callbackNoteReceived (int note, int velocity, int channel)
 ```
 **Make sure you type this code exactly.**
 
+Add the following loop to IAP::run().
+
+```cpp
+while (true) 
+{
+aserveSleep(1000);
+}
+```
+
+Ensure that Aserve is open before running your program in Xcode. Information should be printed inside Xcode’s console window when you push keys on either the virtual keyboard inside Aserve, or on the physical Impulse keyboard.
+
+You may wonder why our program is still able to print values despite the fact our main loop is now sleeping continuously. This is because we now have two threads going on at once. A technical definition of threads is beyond the scope of IAP - but we cover them in more detail in later years.
+
+Part of our program is dealing with incoming MIDI, and the other part (our run loop) is free to do other things. In future we will use IAP::run() to process data and text input, and we will use callback functions such as callbackNoteReceived() for dealing with MIDI input.
+
+Let’s look in more detail at the function we have just used. The first part of this is referred to as the return datatype (1), however will we not worry about this until the next practical. (2) refers to ownership (or namespace), again will not worry about this until future practicals, but for now ensure that this is added. (3) Is the name of our callback function, these must be typed exactly as they appear, other callback functions have similar names (i.e. for mod wheel). Finally, (4) is the parameters of our callback function, these are the pieces of data passed to us for processing.
+
+```cpp
+(1) void (2) IAP:: (3) callbackNoteReceived (4) (int note, int velocity, int channel)
+```
+Inside our note received function we simply print the values we receive. Do not worry if you do not fully grasp this concept yet.
+
+## Exercise 2: Printing Values for Octave and Pitch
+
+Inside our note callback we want to print two more useful pieces of information. We can use the following formulae to work out pitch and octave from the note number.
+
+```cpp
+octave = note / 12
+pitch = note % 12
+```
+
+Covert the above into C++ code and print the values out inside our callback function. Add your code underneath the existing **std::cout** statements.
+
+## Exercise 3: Our first monophonic synthesizer
+
+Music, much like many other fields, involves some mathematical principles. One of these is the formula for converting MIDI note numbers into frequencies. We manually wrote note frequencies in practical 1 when programming our first sequence, however this is not effective when we do not know what MIDI notes we will receive. We can use the following formula to calculate note frequencies in real time.
+
+![mtof](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/Screen%20Shot%202019-02-21%20at%2012.27.15.png)
+
+whereby 'f' is our frequency, and 'n' is our note number. You will need to use the power function to calculate the exponent (the part written above the number '2'). 
+
+The pow() function takes two arguments x and y and returns the result of x to the power y. 
+That is, the equation: 
+
+![pow](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/Screen%20Shot%202019-02-21%20at%2012.27.20.png)
+
+
+can be written in C++ as: 
+
+```cpp
+p = pow (x, y);
+```
+
+Do not worry if you do not understand this fully yet. Complete this exercise by arranging the following code in the correct order. If you are up for the challenge, have a go at implementing this yourself.
+
+```cpp
+1.	int freq = 440 * power;
+2.	int power = pow(2, octave);
+3.	aserveOscilitor (0, freq, 1.0, 0);
+4.	int octave = (note – 69) / 12;
+```
+
+Run and test your program before moving on.
+
+## Error
+
+You should notice that there is an error when we run our program. That is no matter what note we play, we hear the note A, in different octaves.
+
+The reason that the program does not work correctly is due to integers. Since note frequencies have decimal parts, we will need to replace *int* datatypes with *float* datatypes.
+
+The last thing we need to do is to swap the 12 on statement 4, to be 12.0. The constant 12 is not the same as 12.0, to ensure we use floating point datatypes everywhere we have to specify 12.0. Try swapping these two values and witness the result.
+
+
+
+
+
