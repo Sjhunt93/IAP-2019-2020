@@ -139,7 +139,7 @@ Aserve has a low pass filter with a cutoff range between 20-20000hz, and our mod
 
 Use a std::out to print the value of the mod wheel. Write down the min and max values of the mod wheel. You can then use this formula to covert the new value to a more suitable range.
 
-![cutoff a](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/cuttoff_a.png)
+<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/cuttoff_a.png" height=60/>
 
 ```cpp
 cutoff = ((value / [insert maximum value here].0) * 19800) + 20;
@@ -169,7 +169,7 @@ Give a single reason to why the following code will not work.
 
 To improve the range of controls for the filter you may use the following formula:
 
-![cutoff b](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/cuttoff_b.png)
+<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/cuttoff_b.png" height=60/>
 
 ```cpp
 cutoff = ( pow((value / [insert maximum value here].0), 3.0) * 19800) + 20;
