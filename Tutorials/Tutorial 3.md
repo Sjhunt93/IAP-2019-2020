@@ -78,15 +78,16 @@ Covert the above into C++ code and print the values out inside our callback func
 
 Music, much like many other fields, involves some mathematical principles. One of these is the formula for converting MIDI note numbers into frequencies. We manually wrote note frequencies in practical 1 when programming our first sequence, however this is not effective when we do not know what MIDI notes we will receive. We can use the following formula to calculate note frequencies in real time.
 
-![mtof](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/Screen%20Shot%202019-02-21%20at%2012.27.15.png)
+<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/Screen%20Shot%202019-02-21%20at%2012.27.15.png" height=60/>
+
 
 whereby 'f' is our frequency, and 'n' is our note number. You will need to use the power function to calculate the exponent (the part written above the number '2'). 
 
 The pow() function takes two arguments x and y and returns the result of x to the power y. 
 That is, the equation: 
 
-![pow](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/Screen%20Shot%202019-02-21%20at%2012.27.20.png)
 
+<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/Screen%20Shot%202019-02-21%20at%2012.27.20.png" height=60/>
 
 can be written in C++ as: 
 
