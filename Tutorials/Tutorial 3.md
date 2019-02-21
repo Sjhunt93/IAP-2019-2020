@@ -114,6 +114,83 @@ The reason that the program does not work correctly is due to integers. Since no
 The last thing we need to do is to swap the 12 on statement 4, to be 12.0. The constant 12 is not the same as 12.0, to ensure we use floating point datatypes everywhere we have to specify 12.0. Try swapping these two values and witness the result.
 
 
+## Exercise 4: Filter Control
+
+Lets now have a go at using a second callback function, this time for the modulation wheel.
+
+Firstly in our IAP.h file we need to un-comment the callback function for modwheel events.
+
+```cpp
+    //void callbackModWheelMoved (int value);
+
+    void callbackModWheelMoved (int value);
+```
+
+Return to the  IAP.cpp and add the following code next to your note callback code.
+
+```cpp
+void IAP::callbackModWheelMoved (int value)
+{
+}
+```
+
+Aserve has a low pass filter with a cutoff range between 20-20000hz, and our mod wheel has a range of ……
+
+Use a std::out to print the value of the mod wheel. Write down the min and max values of the mod wheel. You can then use this formula to covert the new value to a more suitable range.
+
+![cutoff a](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/cuttoff_a.png)
+
+```cpp
+cutoff = ((value / [insert maximum value here].0) * 19800) + 20;
+```
+
+**Remember if you do not declare your maximum as a floating point number we will again use integer division, which will likely result in errors.**
+
+You should now be able to call:
+
+```cpp
+aserveLPF(cutoff);
+```
+
+All being well, you now have a working monophonic synth with a simple filter control assigned to the keyboards modwheel. If you can’t hear the effect taking place, try changing the wave type of our synth to use either a square or saw (wave type 1 or 2).
+
+## Debug Exercise
+
+Give a single reason to why the following code will not work.
+
+```cpp
+        int number;
+        std::cin >> number;
+        std::cout << "this number doubled is << number * 2;
+```
+
+## Challenge Exercise: Better Filter Control
+
+To improve the range of controls for the filter you may use the following formula:
+
+![cutoff b](https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/cuttoff_b.png)
+
+```cpp
+cutoff = ( pow((value / [insert maximum value here].0), 3.0) * 19800) + 20;
+```
+
+This will apply a logarithmic scale to the filter control to gives us a more natural sounding filter control. You may also wish to adjust the constants 19800 and 20 to observe what effect this might have over the program.
+
+## Homework
+Add in the pitchbend callback, and use this to control one of the other aserve filters, remember to first print the pitchbend value to help you work out the min and max values for entering into the cutoff formula.  As an additional challenge work out how to get the synthesizer to react to velocity values.
+
+## Conclusion
+Ensure that you understand how to use callback functions before next weeks practical, as they will be used in every practical in future. 
+
+## Important Material
+
+Knowledge of the following will be assumed in next week’s practical:
+
+1. How to use callback functions
+2. How to convert note numbers to frequency values
+3. The use of the pow function
+
+
 
 
 
