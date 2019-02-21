@@ -9,7 +9,7 @@ In this practical we will learn how to control program flow using 'if' statement
 
 ## Flow Control
 
-So far we have explored event driven programming, but we have use the same code each time an event happens. Often, you'll want to design programs that react to events in different ways depending on conditions. For example, in real life we turn lights on when outside is dark, and turn them off when outside is light. We can represent this in code using if statements.
+So far we have explored event driven programming, but we have used the same code each time an event happens. Often, you'll want to design programs that react to events in different ways depending on *conditions*. For example, in real life we turn lights on when outside is dark, and turn them off when outside is light. We can represent this in code using if statements.
 
 The general form of the basic if statement is as follows: 
 
