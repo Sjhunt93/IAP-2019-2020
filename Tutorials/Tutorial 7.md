@@ -15,11 +15,11 @@ In previous sessions you have developed ‘never-ending’ programs using a whil
 void IAP::run ()
 {
   while (true) 
-	{
-    aserveSleep(1000);
+  {
+  	aserveSleep(1000);
   }
 }
-```cpp
+```
 
 You have seen this when using many of the callback based MIDI processing exercises.
 
@@ -40,3 +40,45 @@ Open up the practical 7 exercise 1 files and copy them to your Xcode project. Mo
 ## Introduction to Strings 
 
 In the previous exercise we used an **integer** variable to control the condition of a while loop. However, we often want to communicate with our users by using more literal forms of communication. For example, instead of saying enter 1 for the loop to continue, or enter 0 to quit. We can instead ask the user to type ‘Yes’ or ‘No’
+
+We refer to variables that hold text as strings, or more specifically we use the variable type std::string.
+
+```cpp
+std::string name = "";
+```
+We can use std::cin to put text into our string from a user in the same way as we do with other variable types.
+
+```cpp
+std::cout << "Enter name";
+std::cin >> name;
+```
+
+We can compare the value of a string by using the == operator:
+
+```cpp
+if (day == "Monday") 
+{
+	std::cout << "Worse day of the week :( \n";
+}
+```
+
+## Exercise 2: Using Strings
+
+Modify your solution to exercise 1, so that the condition of the while loop is controlled by a string variable. Whereby if the user enters the text **‘yes’** then the loop can continue, otherwise it will exit.
+
+## Logical Operators
+
+## Logical And &&
+
+Sometimes programs need to test multiple conditions before executing certain code. For example, we may want to check that the value a user specifies for an oscillator’s amplitude is greater than or equal to 0.0 and less than or equal to 1.0 before starting an oscillator. Using the methods learned last week this would lead to the code: 
+
+```cpp
+if (amp >= 0.0)
+{
+	if (amp <= 1.0)
+        {
+            aserveOscillator(0, 440.0, amp, 0);
+        }
+}
+
+
