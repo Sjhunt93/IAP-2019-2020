@@ -127,7 +127,7 @@ if (time > 600 && time < 1800 || override == 0)
 {
 	std::cout << "turning lights off\n";
 }
-```cpp
+```
 
 It would seem natural that the && symbol would be computed between both sets of time variable comparisons; however, this cannot be guaranteed, and this will often result in a compiler warning. When chaining together multiple logical operations it is best practice to place them in brackets.
 
@@ -197,7 +197,7 @@ Using what you have learnt about logical operators work out which of the followi
         std::cout << "Start Synth \n";
     }
 ```
-   
+
 
 
 
