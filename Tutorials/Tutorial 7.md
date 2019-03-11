@@ -198,10 +198,173 @@ Using what you have learnt about logical operators work out which of the followi
     }
 ```
 
+## Exercise 4: Scale Quantization
 
 
+Open exercise 7.4 and copy the code into your project, replacing the existing contents of IAP.cpp and IAP.h.
+
+For this exercise we are going to a make a function called majorScale that quantizes all incoming notes into the C major scale. One method of doing scale quantization is to check the pitch class of a note, and if it is not in the current scale, to increment the note by 1. For example, the pitch C# would get increment by 1 to be D.
+
+1. Firstly, add a new function declaration to your IAP.h file, called majorScale that takes **one int argument** called note, and has **int** as its return type.
+2. Add the definition to the IAP.cpp file.
+
+### To build the majorScale function.
+
+1. Inside the function compute the pitch of a note by doing the following sum:
+	*pitch = note % 12*
+2. If the value of pitch is, 1, 3, 6, 8 or 10, increment the value of note by 1.
+3. Return note from the function.
+
+You should now be able to pass the incoming note from the note callback to this new function, before calculating the frequency.
+
+```cpp
+note = majorScale(note);
+```
+
+*There are multiple ways to check the value of pitch in step 2 above, think carefully about what we have learnt so far and apply the most appropriate method.*
 
 
+## Switch Case.
+
+A switch/case structure can often be used in place of a multi-way selection if...else if structure to create more readable and efficient flow control. If an if...else if structure tests an integer variable against a number of constant values, a switch/case structure is the preferred method.
+ 
+For example, a nested if structure may be used to display the days of the working week by testing the integer variable **day**, which represents the days Monday to Friday with a number in the range 0-4. 
+
+```cpp
+    if( day == 0 )
+    {
+        std::cout << "Monday\n";
+    }
+    else if( day == 1 )
+    {
+        std::cout << "Tuesday\n";
+    }
+    else if( day == 2 )
+    {
+        std::cout << "Wednesday\n";
+    }
+    else if( day == 3 )
+    {
+        std::cout << "Thursday\n";
+    }
+    else if( day == 4 )
+    {
+        std::cout << "Friday\n";
+    }
+    else
+    {
+        std::cout << "Invalid!\n";
+    }
+```
+
+As the variable day (in the example on the previous page) is compared with constants, this nested if structure may be replaced by the more elegant switch/case structure: 
+
+```cpp
+    switch (day)
+    {
+        case 0:
+            std::cout << "Monday\n";
+            break;
+        case 1:
+            std::cout << "Tuesday\n";
+            break;
+        case 2:
+            std::cout << "Wednesday\n";
+            break;
+        case 3:
+            std::cout << "Thursday\n";
+            break;
+        case 4:
+            std::cout << "Friday\n";
+            break;
+            std::cout << "Invalid!\n";
+        default:
+            break;
+    }
+```
+
+The variable enclosed in the brackets, day in this example, is tested against each case from top to bottom. If a matching case is found, the subsequent statements are executed until the break statement is reached, whereupon the switch/case structure terminates. If the variable does not match a specified case, the default case is executed. 
+
+Omission of the break keyword results in all statements preceding the next break statement being executed. This enables multiple cases to *fall through*, such that one set of statements can be executed for multiple cases. We will discuss this again shortly but first.
+
+## Exercise 5: A Second Scale
+
+Using the steps as before add another function to your project called pentatonicMajorScale. This time we will use switch case rather than an if statement to decide if we need to move a pitch up or down. For this exercise use a single case for each relevant pitch. A table of pitches to check for and how much to modify the input note by, is given on the next page.
+
+| Pitch | Change Note |
+| --- | --- |
+| 1 | Increment by 1 |
+| 3 | Increment by 1 |
+| 5 | Decrement by 1 |
+| 6 | Increment by 1 |
+| 8 | Increment by 1 |
+| 10 | Decrement by 1 |
+| 11 | Increment by 1 |
+
+
+Note that a variable can be increment by 1 by using the shorthand ++ operator. For example
+
+```cpp
+note++;
+```
+This is equivalent to doing:
+
+```cpp
+note = note + 1;
+```
+The -- operator can be used to decrement by 1.
+
+## Multiple switch case 
+
+When using an if statement you can use the || operator to check for multiple conditions inside a single if statement.
+
+```cpp
+if (day == 5 || day == 6) 
+{
+	std::cout << "It’s the weekend!";
+}
+```
+
+We can do the same with a switch case. Note that we can have multiple case statements, but we must eventually have a break tag. In this example if day is either equal to 5 or 6, then ‘It’s the weekend’ will get printed. 
+
+```cpp
+	case 5:
+	case 6:
+   		std::cout << "It's the weekend!";
+	break;
+```
+
+A common error is to use a switch case but forget to use a break tag!
+
+```cpp
+switch (day)
+{
+        case 0:
+            std::cout << "Monday\n";
+        case 1:
+            std::cout << "Tuesday\n";
+            break;
+        case 2:
+            std::cout << "Wednesday\n";
+            break;
+}
+
+```
+
+If the variable day is equal to 0, then both Monday and Tuesday will be printed, as the user has forgot to put a break tag before case 1.
+
+## Challenge Exercise: Refactoring
+
+Refactor your solution to exercise 5 by using a switch case, with a collection of cases for the pitches that result in the output note being increment by 1, and a second collection of cases for the pitches that result in the output note being decrement by 1.
+
+## Important Material
+
+Knowledge of the following will be assumed in next week’s practical: 
+
+1. While loop conditions. 
+2. logical operators.
+3. Using a basic string 
+4. Switch/case statements. 
 
 
 
