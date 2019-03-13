@@ -74,6 +74,91 @@ We have previously seen the << and >> operators used for inserting variables int
     a = a << 1;
 ```
 
+In the above code, ‘a’ is now equal to 2, as it the bit that was representing the **1**, was shifted left into the bit representing **2**. If we shift the value 13 left by 1 place, we get 26, see the below table for a visual representation of this.
 
+```cpp
+13 << 1
+```
+
+| Bit 7 | bit 6 | bit 5 | bit 4 | bit 3 | bit 2 | bit 1 | bit 0 | value |
+| --- | --- | --- | --- | --- | --- | --- | --- |  --- |
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | --- |
+| 0 | 0 | 0 | 0 | 1 | 1 | 0 | 1 | 13 |
+| 0 | 0 | 0 | 1 | 1 | 0 | 1 | 0 | 26 |
+
+If you use the shift left operator the upper values can get lost. For example, if our variable is an 8-bit data type, and the top bit is 1, shifting this value left by 1 will result in the loss of this top bit.
+
+```cpp
+133 << 1
+```
+
+| Bit 7 | bit 6 | bit 5 | bit 4 | bit 3 | bit 2 | bit 1 | bit 0 | value |
+| --- | --- | --- | --- | --- | --- | --- | --- |  --- |
+| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 | --- |
+| 1 | 0 | 0 | 0 | 0 | 1 | 0 | 1 | 133 |
+| 0 | 0 | 0 | 0 | 1 | 0 | 1 | 0 | 10 |
+
+The right shift operator is same as the left shift operator but shifts the bits in the opposite direction. Bits can also be lost by shifting them too far to the right. The general form of the bit shift operator looks like the following:
+
+```cpp
+/* variable or constant to shift */ << /* number of bits to shift by*/
+
+/* variable or constant to shift */ >> /* number of bits to shift by*/
+
+```
+
+To set an individual bit of a variable the following code can be applied:
+
+```cpp
+int a = 1 << 7;
+```
+
+Using what we have learnt so far, add code to your bit grid callback that updates the state of the grid when the user clicks on it, to reflect the location they have just clicked. 
+
+Note that bits are represented from right to left whereas clicks are reported from left-right. You will need to use the following code at the top of your callback to invert x.
+
+```cpp
+x = 15 - x;
+//... code for setting the grid.
+```
+
+Once you have completed this exercise you should encounter a strange bug, write a description of this somewhere safe, we will fix this later on in the practical!
+
+## Bit wise operators
+
+There are two more important bit wise operators that we need to know about, bit wise and (&) and bit wise or (|). These are very similar to the logical and/or operators (&&, ||) except they compute the result for each bit.
+
+If you have not done so already download the Binary Grid application from blackboard. Using the application compute the following values and note down their value. Note that you do not need to write code for this exercise.
+
+| Value a |	Value B | Operation | Result |
+| --- | --- | --- | --- |
+| 0000 1111 | 0000 0000 | or | --- |	
+| 0000 1111 | 0000 0000 | & | --- |	
+| 0100 0000 | 0100 0000 | or | --- |	
+| 1010 1010 | 0101 0101 | or | --- |		
+| 1010 1010 | 0101 0101 | & | --- |	
+| 1001 0000 | 1111 0000 |& | --- |
+
+Based on this we can update bits within a variable using the following code. 
+
+```cpp
+int a = 2;
+a = a | 8;
+```
+
+## Bit wise NOT and XOR
+
+There are two other bit wise operations worth mentioning. The first bit wise not (~) will simply invert each of the bits. For example, the binary value:
+
+~0000 0001 	will become 	1111 1110
+
+The Bit wise not operator is reasonably uncommon, however the bitwise XOR (^) is even more so. The output of the XOR operator is 1 if the individual bits are different. The truth table for this is given below:
+
+| Input A | Input B | Result |
+| --- | --- | --- |
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1	| 0 |
 
 
