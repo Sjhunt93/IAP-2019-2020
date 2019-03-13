@@ -187,3 +187,7 @@ void AserveComs::aserveConfigureOscillatorMode (eOscillatorMode mode)
     sender.send(AserveOSC::mode, m);
 
 }
+void AserveComs::aservePanOscillator (int channel, float left, float right)
+{
+    sender.send(AserveOSC::pan, channel, left, right);
+}

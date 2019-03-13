@@ -349,6 +349,17 @@ public:
      */
     void aserveConfigureOscillatorMode (eOscillatorMode mode);
     
+    /**
+     Can be used to pan oscillators left/right
+     
+        @param     channel      oscillator channel to pan
+        @param     left         amount of left pan range 0 - 1.0
+        @param     right        amount of right pan range 0 - 1.0
+     THIS IS AN EXPERIMENTAL FEATURE
+
+     */
+    void aservePanOscillator (int channel, float left, float right);
+    
     //------------------------------------------------------------------------------------------
     AserveComs ();
     virtual ~AserveComs ();
