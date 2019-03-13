@@ -203,6 +203,6 @@ Some steps for getting started are provided bellow:
 
 ## Debug & Challenge Exercise: Snake
 
-A version of Snake has been partially completed but is broken and requires you to fix the many errors. Download the files from blackboard.
+A version of Snake has been partially completed but is broken and requires you to fix the many errors. Download the files from <a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Practical%2015/Debug">here</a>
 
 
