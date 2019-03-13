@@ -17,11 +17,14 @@ The representation of binary integers has been discussed in a previous practical
 
 In a decimal (base 10) number, the value of each digit is between 0 and 9. The position of each digit within a number indicates the power of 10 multiplied by that digit. That multiplier increases by a factor of 10 each time the position moves one digit to the left. For example, for a decimal number with 6 digits the multipliers are as follows: 
 
--> insert image 6bit
+<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/6bit.png" height=200/>
+
 
 In a binary (base 2) number, the value of each digit is 0 or 1. The position of each digit within a number indicates the power of 2 multiplied by that digit. That multiplier increases by a factor of 2 each time the position moves one digit to the left. For example, for a binary number with 16 digits the multipliers are as follows: 
 
--> insert image 16 bit
+<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/16bit.png" height=200/>
+
+
 
 Note that bits are numbered from 0 to 15 in a 16-bit number. The value of each multiplier is calculated by the formula 2n where n is the bit number. Some example binary to decimal conversions are as follows: 
 
@@ -160,5 +163,46 @@ The Bit wise not operator is reasonably uncommon, however the bitwise XOR (^) is
 | 0 | 1 | 1 |
 | 1 | 0 | 1 |
 | 1 | 1	| 0 |
+
+
+## Exercise 3: Toggle states
+
+We now want to update our program from exercise 2 so that each time a bit on the grid is clicked, if will toggle that part on/off. We will keep track of the state of the bit grid with a 16 element **int** array called **states**, whereby each element of the array corresponds to be a single row, and each bit corresponds to a column within the row.
+
+You should first check the states array to see if the bit is already set. If it is not set then set it, if it is set then clear it. You will then need to update aserves pixel grid with a suitable function call. Some more tips are given below:
+
+To check an individual bit:
+
+```cpp
+    if (a & (1 << 4)) {
+        //check if bit 4 is 1
+    }
+```
+
+To set an individual bit:
+
+```cpp
+a = a | (1 << 2); //set bit 2
+```
+
+To clear an individual bit: (slightly complicated set of operations)
+
+```cpp
+a = a & (~ (1 << 5)); //clear bit 5	
+```
+
+## Exercise 4: Drum sequencer
+
+We will use what we have learnt so far to build a step sequencer application. In that the first 4 rows of Aserve’s bit grid will be used to trigger drums and the latter 12 used to trigger notes.  All of the code should be added within the run functions while loop.
+
+Some steps for getting started are provided bellow:
+
+1.	Add a for loop that cycles for 15 down to and including 0, call the counter variable **stepPosition**.
+2.	Add a second nested for loop that cycles from 0 up to but not including 16, call the counter variable row.
+3.	Check the bit that corresponds to the current step and row position.
+
+## Debug & Challenge Exercise: Snake
+
+A version of Snake has been partially completed but is broken and requires you to fix the many errors. Download the files from blackboard.
 
 
