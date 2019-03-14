@@ -1,4 +1,4 @@
-# Practical 8 – Flow Control: Loops
+# Tutorial 8 – Flow Control: Loops
 
 
 In this practical you will learn how to control program flow using three different types of loops: 
@@ -82,5 +82,78 @@ for (initialisation; condition; update)
 -	The **initialization** statement is often used to initialize a variable (i.e. a counter). Think of this as what value do I want to start my loop at.
 -	 The **condition** statement sets the condition that controls whether the loop should continue or stop, this is normally a conditional test to see whether the counting variable has reached the value you wish to count to. 
 -	The **update** statement controls how the value of the counting variable is modified for each cycle of the loop. 
+
+
+For example, the following code fragment would produce the numbered sequence 0-4
+
+```cpp
+for (int count = 0; count < 5; count = count + 1) 
+{
+   std::cout << count << "\n";
+}
+```
+
+The process is as follows: 
+1.	The initialisation statement sets the start value for the variable count. Initializes count to zero in the above example. Note that we can declare variables here for use in our loop. 
+2.	The condition is tested to check the value of the counting variable to establish whether the loop should continue or exit. In this example the loop continues while count is less than 5.
+3.	If the outcome of condition is true, the statements enclosed within the braces of the for loop are executed.
+4.	The value of the counting variable is then changed by the update statement. In the above example the value of count is increased by one.
+5.	Steps 2 - 4 then repeat until the outcome of the condition (step 2) is found to be false.
+
+## Exercise 4: For loop MIDI – Frequency Table
+
+Write a program that prints out a table of MIDI note numbers and their corresponding frequencies in Hz. 
+
+MIDI note numbers are encoded into 7-bits, which gives the note range 0 to 127 (C-1 to G9). Use a for loop to count from 0 up to and including 127, printing the note number and converted frequency value at each cycle of the loop (recall the formula for converting note numbers to frequencies from earlier practical’s).  You may wish to use the mtof() function.
+
+Once you have this working, modify the loop so that the table is displayed in descending order, from 127 to 0. 
+
+
+## Challenge Exercise: Making a saw wave from sine waves
+
+Load the example code (link) into your IAP.h and IAP.cpp files.
+
+We will now add two for loops to our monophonic synthesizer to artificially create a low-fi saw wave oscillator from a series of sine waves. To achieve this **rearrange** and **add** the following code to the note on branch of the if statement inside the note callback function.
+
+
+```cpp
+1.	float amplitude = 1.0 / (counter + 1);
+
+2.	float oscFreq = frequency * (counter + 1);
+
+3.	aserveOscillator(counter, oscFreq, amplitude, 0);
+
+4.	for (int counter = 0; counter < 16; counter++) 
+
+   {
+
+5.	float frequency = mtof(note);
+
+6.	}
+```
+
+**Add a separate for loop to the else condition for turning off all 16 oscillators.**
+
+for more information on additive synthesis see the following links:
+
+<a href="https://www.youtube.com/watch?v=K3D1fPjWAnc">Video 1</a>
+
+<a href="https://www.youtube.com/watch?v=YsZKvLnf7wU">Video 2</a>
+
+## Important Material
+
+In general a for loop is the most commonly used loop, and you are far more likely to see a while loop than a do-while.
+
+Knowledge of the following will be assumed in the next practical: 
+
+1.	while loops.
+2.	do while loops.
+3.	for loops. 
+
+## Extra material
+If you have finished this practical within the allocated time, then please complete the number conversion practical found on blackboard. It can be found in Learning materials -> Extra Practical’s.
+
+
+
 
 
