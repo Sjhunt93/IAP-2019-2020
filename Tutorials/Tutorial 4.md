@@ -1,4 +1,4 @@
-# Practical 4 – Flow Control
+# Tutorial 4 – Flow Control
 
 In this practical we will learn how to control program flow using 'if' statements. By the end of this practical you should understand: 
 
@@ -122,7 +122,7 @@ If the outcome of condition 1 is true then code block 1 is executed. If the outc
 
 To demonstrate using if/else if/else we will construct a basic drum pad sampler.
 
-Download the Drum Sequencer folder from blackboard, and copy the code into both IAP.cpp and IAP.h files.
+<a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Tutorial%204/Exercise%203">Download both files</a>, and copy the contents into both IAP.cpp and IAP.h files.
 
 You will see one new line of code that we have not seen before inside the run loop.
 
@@ -191,7 +191,7 @@ Your drum sampler should now only trigger samples when the pad is pushed down.
 
 ## Debug & Challenge Exercise
 
-Open up the debug folder (from blackboard) for this practical. Load both .cpp and .h files into the project. You must fix the program so that it runs a basic monophonic synth correctly. 
+Open up the <a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Tutorial%204/Debug">debug folder</a> for this practical. Load both IAP.cpp and IAP.h files into the project. You must fix the program so that it runs a basic monophonic synth correctly. 
 
 Issues include typos, numerical errors, out of range numbers and others. Make sure you save your solution for this to CodeBook.
 

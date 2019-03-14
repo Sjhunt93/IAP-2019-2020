@@ -1,4 +1,4 @@
-# IAP Practical 1 – Familiarisation 
+# Tutorial 1 – Familiarisation 
 
 This practical is designed to help familiarise you with the development tools that will be used for Introductory Audio Programming. You will be developing software in the programming language C++ using the Apple Integrated Development Environment (IDE) called Xcode. By the end of this session you should be familiar with: 
 
