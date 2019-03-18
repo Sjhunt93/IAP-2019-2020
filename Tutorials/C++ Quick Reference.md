@@ -5,7 +5,8 @@ Use this document to see short examples of the various C++ topics we have coverd
 Topics Covered: 
 
 
-1. Variables and constants
+
+1. [Variables and constants](#variables)
 2. Text Input 
 3. Text Output
 4. Operators
@@ -17,13 +18,13 @@ Topics Covered:
 10. && and ||
 11. Class
 12. Array
-13. Vector
+13. [Vector](#vector)
 
 *use Cmd/Ctr + f to find a topic :D*
 
 # Variables
 
-### Declaring and setting variables
+### Declaring and setting variables  <a name="variables"></a>
 
 ```cpp
     int age = 25;
@@ -367,7 +368,7 @@ stuff for class will go here
 ```
 
 <hr>
-# Vector
+# Vector <a name="vector"></a>
 
 ### Declaration
 ```cpp
