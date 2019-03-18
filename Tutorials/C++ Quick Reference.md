@@ -64,6 +64,8 @@ public:
   int number = 6 - 5;
   int number = 6 / 2;
   int number = 6 * 5;
+  // Division with remainder
+  int number = 6 % 2; 
   ```
   
 ### With variables
@@ -82,11 +84,100 @@ public:
   number += 3;  
   number -= 11;
 ```
-### incrementing & decrementing (single values only)
+### Incrementing & decrementing (single values only)
 
 ```cpp
   number++; //same as number += 1
   number--; //same as number -= 1
+```
+### Powers
+
+```cpp
+    float number = pow(2, 5); // 2 to the power of 5
+    
+    float number = pow(16, 0.5); // calculate square root of 16, i.e. raise to the power of 0.5
+```
+
+<hr>
+
+# Logical Operators
+
+```cpp
+    bool lessThan =         5 < 2;
+    bool lessThanEqual =    5 <= 5;
+    bool greaterThan =      5 > 2;
+    bool greaterThanEqual = 2 >= 2;
+    bool isEqual =          5 == 5;
+    bool isNotEqual =       5 != 4;
+```
+
+<hr>
+
+# Conditional statements
+
+### if
+```cpp
+    int number = 5;
+    
+    if (number < 10) {
+    // compute this code only if number is less than 10
+    }
+```
+
+### if-else
+
+```cpp
+    if (number == 5) {
+        // compute this code only if number equals 5
+    }
+    else {
+        //compute this code if number is any other value
+    }
+```
+
+### if-else-if
+```cpp
+    if (number == 5) {
+        // compute this code only if number equals 5
+    }
+    else if (number == 10) {
+        // compute this code only if number equals 10
+    }
+    else {
+        //compute this code if number is any other value
+    }
+```
+
+<hr>
+
+# Switch
+
+```cpp
+    int day;
+    switch (day) {
+        case 0: // same as saying if (day == 0) 
+            std::cout << "Monday \n";
+            break;
+        case 1: // same as saying else if (day == 1) 
+            std::cout << "Tuesday \n";
+            break;
+        case 2:
+            std::cout << "Wednesday \n";
+            break;
+        case 3:
+            std::cout << "Thursday \n";
+            break;
+        case 4:
+            std::cout << "Friday \n";
+            break;
+        case 5: // fall through case
+        case 6: // same as say if (day == 5 ||| day == 6)
+            std::cout << "Friday \n";
+            break;
+        default:
+            // error handling for values that don't match
+            break;
+    }
 ```
 
 <hr>
@@ -135,6 +226,8 @@ public:
   }
 ```
 
-  
+<hr>
+
+
 
   
