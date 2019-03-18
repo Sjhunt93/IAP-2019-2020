@@ -7,17 +7,17 @@ Topics Covered:
 
 
 1. [Variables and constants](#variables)
-2. Text Input 
-3. Text Output
-4. Operators
-5. Logical Comparison
-6. If statments
-7. Switch case
-8. Loops
-9. Functions
-10. && and ||
+2. [Text Output](#tin)
+3. [Text Input](#tout)
+4. [Operators](#ops)
+5. [Logical Comparison](#logic)
+6. [If statments](#if)
+7. [Switch case](#switch)
+8. [Loops](#loop)
+9. [Functions](#func)
+10. [&& and ||](#aor)
 11. [Class](#class)
-12. Array
+12. [Array](#array)
 13. [Vector](#vector)
 
 *use Cmd/Ctr + f to find a topic :D*
@@ -50,7 +50,7 @@ public:
 ```
 <hr>
 
-# Printing
+# Text Output <a name="tout"></a>
 
 ### Printing basic text
 
@@ -66,7 +66,7 @@ public:
 
 <hr>
 
-# Text Input
+# Text Input <a name="tin"></a>
 
 ### Setting a variable
 ```cpp
@@ -79,7 +79,7 @@ public:
 
 <hr>
 
-# Operators
+# Operators <a name="ops"></a>
 
 ### Basic math
 
@@ -124,7 +124,7 @@ public:
 
 <hr>
 
-# Logical Comparisons
+# Logical Comparisons  <a name="logic"></a>
 
 ```cpp
     bool lessThan =         5 < 2;
@@ -137,7 +137,7 @@ public:
 
 <hr>
 
-# Conditional statements
+# Conditional statements <a name="if"></a>
 
 ### if
 ```cpp
@@ -174,7 +174,7 @@ public:
 
 <hr>
 
-# Switch
+# Switch <a name="switch"></a>
 
 ```cpp
     int day;
@@ -206,7 +206,7 @@ public:
 
 <hr>
 
-# Loops
+# Loops <a name="loop"></a>
 
 ### While true
 
@@ -252,7 +252,7 @@ public:
 
 <hr>
 
-# Functions
+# Functions <a name="func"></a>
 
 ### with no arguments
 
@@ -296,7 +296,7 @@ public:
 
 <hr>
 
-# && and ||
+# && and || <a name="aor"></a>
 
 ### && (and)
 ```cpp
@@ -363,7 +363,7 @@ class Animal {
 
 <hr>
 
-# Array
+# Array <a name="array"></a>
 
 ### Declaration
 ```cpp
