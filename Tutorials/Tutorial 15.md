@@ -1,15 +1,15 @@
 
-# Practical 15 – Bit wise manipulation
+# Practical 15 – Bitwise manipulation
 
 In this practical we will learn about bitwise manipulation - a powerful feature of the C ++ language that enables variables to be accessed and modified at the bit level. On successful completion of this practical you will understand: 
 
 1.	The binary representation of integer numbers.
-2.	How the bitwise operators &, |, « and » can be used to isolate bits and merge binary data. 
+2.	How the bitwise operators &, |, «, and » can be used to isolate bits and merge binary data. 
 3.	How to communicate with Aserve’s Bit Representation component. 
 
 ## Introduction
 
-C++ is a powerful and widely used programming language as it features the many advantages of a high-level language in addition to many useful operations which are usually associated with low-level languages. Bitwise manipulation is a low-level feature which is used in embedded systems (where a computer is an internal part of a larger system, such as an industrial process or a digital mixing console) and systems programming (where software often deals directly with the underlying hardware devices). Furthermore, raw MIDI requires bit wise operations to extract all of its contents.
+C++ is a powerful and widely used programming language as it features the many advantages of a high-level language in addition to many useful operations which are usually associated with low-level languages. Bitwise manipulation is a low-level feature which is used in embedded systems (where a computer is an internal part of a larger system, such as an industrial process or a digital mixing console) and systems programming (where software often deals directly with the underlying hardware devices). Furthermore, raw MIDI requires bitwise operations to extract all of its contents.
 
 ## Decimal and Binary Forms
 
@@ -127,9 +127,9 @@ x = 15 - x;
 
 Once you have completed this exercise you should encounter a strange bug, write a description of this somewhere safe, we will fix this later on in the practical!
 
-## Bit wise operators
+## Bitwise operators
 
-There are two more important bit wise operators that we need to know about, bit wise and (&) and bit wise or (|). These are very similar to the logical and/or operators (&&, ||) except they compute the result for each bit.
+There are two more important bitwise operators that we need to know about, bitwise and (&) and bitwise or (|). These are very similar to the logical and/or operators (&&, ||) except they compute the result for each bit.
 
 If you have not done so already download the Binary Grid application from blackboard. Using the application compute the following values and note down their value. Note that you do not need to write code for this exercise.
 
@@ -149,13 +149,13 @@ int a = 2;
 a = a | 8;
 ```
 
-## Bit wise NOT and XOR
+## Bitwise NOT and XOR
 
-There are two other bit wise operations worth mentioning. The first bit wise not (~) will simply invert each of the bits. For example, the binary value:
+There are two other bitwise operations worth mentioning. The first bitwise not (~) will simply invert each of the bits. For example, the binary value:
 
 ~0000 0001 	will become 	1111 1110
 
-The Bit wise not operator is reasonably uncommon, however the bitwise XOR (^) is even more so. The output of the XOR operator is 1 if the individual bits are different. The truth table for this is given below:
+The Bitwise not operator is reasonably uncommon, however the bitwise XOR (^) is even more so. The output of the XOR operator is 1 if the individual bits are different. The truth table for this is given below:
 
 | Input A | Input B | Result |
 | --- | --- | --- |
