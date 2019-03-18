@@ -426,5 +426,62 @@ class Animal {
     myVector.push_back(10); // will increase size by 1 then set last element to be 10
 ```
 
+# File
+
+### Opening a file
+
+```cpp
+    // for reading
+    std::ifstream fileInputStream;
+    fileInputStream.open("file.txt", std::fstream::in);
+    
+    // for writing
+    std::ofstream stream;
+    stream.open("file.txt", std::ofstream::out);
+```
+
+### Checking for errors
+
+```cpp
+    if (stream.is_open()) { 
+        // file opened ok :)
+    }
+    else {
+        //error :(
+    }
+```
+
+### Closing file
+
+```cpp
+    stream.close();
+```
+
+### Reading a line from a file
+
+```cpp
+    std::string line;
+    std::getline(stream, line);
+```
+
+### reading contents of a file line-by-line
+
+```cpp
+    std::string line;
+    while (! stream.eof()) {
+        std::getline(stream, line);
+    }
+```
+
+### writing to a file
+```cpp
+    stream << "Hello file!\n";
+    stream << 10;
+    stream << 10.12565;
+```
+
+
+
+
 
   
