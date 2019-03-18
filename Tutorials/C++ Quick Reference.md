@@ -2,10 +2,23 @@
 
 Use this document to see short examples of the various C++ topics we have coverd. This guide is intended as a *reference*, and does not replace the need to complete each tutorial.
 
+Topics Covered: 
+*use Cmd/Ctr + f to find a topic :D *
+
+1. Variables and constants
+2. Text Input 
+3. Text Output
+4. Operators
+5. Logical Comparison
+6. If statments
+7. Switch case
+8. Loops
+9. Functions
+10. && and ||
 
 # Variables
 
-### declaring and setting variables
+### Declaring and setting variables
 
 ```cpp
     int age = 25;
@@ -13,7 +26,7 @@ Use this document to see short examples of the various C++ topics we have coverd
     float height = 1.7;
 ```
 
-### declaring shared variables
+### Declaring shared variables
 
 ```cpp
 class IAP : public AserveComs  {
@@ -23,18 +36,23 @@ public:
     // SHARED VARIABLES
     int lastNote;
 ```
+### Declaring constant variables
 
+```cpp
+    const int readOnlyNumber = 10;
+    const std::string readOnlyString = "Read Only";
+```
 <hr>
 
 # Printing
 
-### printing basic text
+### Printing basic text
 
 ```cpp
   std::cout << "Some basic text with a new line \n";
 ```
 
-### printing variables
+### Printing variables
 
 ```cpp    
   std::cout << "The value of a variable " << number << "\n";
@@ -44,7 +62,7 @@ public:
 
 # Text Input
 
-### setting a variable
+### Setting a variable
 ```cpp
   int age;
   std::cin >> age;
@@ -100,7 +118,7 @@ public:
 
 <hr>
 
-# Logical Operators
+# Logical Comparisons
 
 ```cpp
     bool lessThan =         5 < 2;
@@ -227,6 +245,69 @@ public:
 ```
 
 <hr>
+
+# Functions
+
+### with no arguments
+
+```cpp
+    void error (); //function declaration
+```
+
+```cpp
+    void IAP::error () //function definition
+    {
+        std::cout << "Error!;
+    }
+```
+
+### with a single argument
+
+```cpp
+    void errorCode (int code); //function declaration
+```
+
+```cpp
+    void IAP::errorCode (int code) //function definition
+    {
+        std::cout << "Error code received" << code << "!";
+    }
+```
+
+### with a single argument and single return type
+
+```cpp
+    int squareNumber (int num); //function declaration
+```
+
+```cpp
+    int IAP::squareNumber (int num) //function definition
+    {
+        int sum = num * num;
+        return num; //return num
+    }
+```
+
+<hr>
+
+# && and ||
+
+### && (and)
+```cpp
+    int number = 5;
+    if (number >= 0 && number <= 10) {
+        // code will only execute if both conditions are true
+    }
+```
+
+### || (or)
+
+```cpp
+    int number = 7;
+    if (number == 7 || number == 13) {
+        // code will execute if either conditions are true
+    }
+```
 
 
 
