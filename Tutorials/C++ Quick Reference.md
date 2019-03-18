@@ -16,7 +16,7 @@ Topics Covered:
 8. Loops
 9. Functions
 10. && and ||
-11. Class
+11. [Class](#class)
 12. Array
 13. [Vector](#vector)
 
@@ -318,8 +318,48 @@ public:
 
 <hr> 
 
-# Class
-stuff for class will go here
+# Class <a name="class"></a>
+
+### Class decleration
+
+```cpp
+class Animal {
+    int numOfLegs;
+    std::string type;
+};
+```
+### Class instance
+
+```cpp
+    Animal raccoon;
+```
+
+### Setting member variables
+
+```cpp
+    raccoon.type = "mammal";
+    raccoon.numOfLegs = "4";
+```
+
+### Member functions
+
+
+```cpp
+class Animal {
+    int numOfLegs;
+    std::string type;
+    
+    bool isDangerous ()
+    {
+        if (numOfLegs > 4) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+};
+```
 
 <hr>
 
@@ -368,6 +408,7 @@ stuff for class will go here
 ```
 
 <hr>
+
 # Vector <a name="vector"></a>
 
 ### Declaration
