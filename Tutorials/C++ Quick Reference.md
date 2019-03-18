@@ -3,7 +3,7 @@
 Use this document to see short examples of the various C++ topics we have coverd. This guide is intended as a *reference*, and does not replace the need to complete each tutorial.
 
 Topics Covered: 
-*use Cmd/Ctr + f to find a topic :D *
+
 
 1. Variables and constants
 2. Text Input 
@@ -15,6 +15,11 @@ Topics Covered:
 8. Loops
 9. Functions
 10. && and ||
+11. Class
+12. Array
+13. Vector
+
+*use Cmd/Ctr + f to find a topic :D*
 
 # Variables
 
@@ -309,6 +314,75 @@ public:
     }
 ```
 
+
+<hr> 
+
+# Class
+stuff for class will go here
+
+<hr>
+
+# Array
+
+### Declaration
+```cpp
+    std::array<int, 5> myArray; // array with 5 integer values
+```
+
+### Setting values
+
+```cpp
+    std::array<int, 5> myArray; // array with 5 integer values
+
+    myArray[0] = 10; //setting first element to be 10
+    ...
+    myArray[4] = 56; //setting last element to be 56
+
+    myArray[5] = 65; //ERROR out of bounds
+
+    std::cout << myArray[1]; // print second element
+```
+### Iteration
+```cpp
+
+    std::array<int, 5> myArray; // array with 5 integer values
+
+    //after setting some values
+
+    for (int i = 0; i < myArray.size(); i++) {
+        std::cout << myArray[i] << "\n"; //print each element of myArray in order
+    }
+```
+
+### Quick Initialisation
+
+```cpp
+    std::array<int, 3> = {0,1,2}; //need as many values in braces as there are elements
+```
+
+### C style array (avoid if possible!)
+
+```cpp
+    int simpleArray[10]; //use std::array instead if possible
+```
+
+<hr>
+# Vector
+
+### Declaration
+```cpp
+    std::vector<int> myVector; // declare vector of type int
+```
+
+### Resizing
+```cpp
+    myVector.resize(10); // vector has 10 elements
+```
+
+### Adding values
+```cpp
+    myVector.push_back(10); // will increase size by 1 then set last element to be 10
+```
 
 
   
