@@ -19,6 +19,8 @@ Topics Covered:
 11. [Class](#class)
 12. [Array](#array)
 13. [Vector](#vector)
+14. [Files](#file)
+15. [String manipulation](#strmanip)
 
 *use Cmd/Ctr + f to find a topic :D*
 
@@ -426,7 +428,7 @@ class Animal {
     myVector.push_back(10); // will increase size by 1 then set last element to be 10
 ```
 
-# File
+# File <a name="file"></a>
 
 ### Opening a file
 
@@ -451,13 +453,13 @@ class Animal {
     }
 ```
 
-### Closing file
+### Closing a file
 
 ```cpp
     stream.close();
 ```
 
-### Reading a line from a file
+### Reading a single line from a file
 
 ```cpp
     std::string line;
@@ -481,7 +483,15 @@ class Animal {
 ```
 
 
+# String manipulation <a name="strmanip"></a>
 
+### Appending two strings
+```cpp
+std::string firstName = "dennis ";
+std::string lastName = "ritchie";
+std::string fullName = firstName + lastName; 
+```
 
+ 
 
   
