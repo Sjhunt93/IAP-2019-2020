@@ -1,4 +1,4 @@
-# Practical 2 - Variables and Program Input/Output 
+# Tutorial 2 - Variables and Program Input/Output 
 
 In this practical, we will build on last week’s work by enabling our programs to receive and respond to user input. By the end of this practical you should be familiar with: 
 
