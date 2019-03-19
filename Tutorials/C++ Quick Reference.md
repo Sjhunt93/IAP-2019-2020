@@ -555,7 +555,6 @@ std::string fullName = firstName + lastName;
     // Bitwise Or
     int z = x | y; // z is 1111 1111
 ```
-
 ### Bitwise AND
 
 ```cpp
@@ -565,8 +564,7 @@ std::string fullName = firstName + lastName;
     int z = x & y; // z is 0001 1000
 ```
 
-
-### Bitwise NOT
+### Bitwise NOT
 
 ```cpp
     int x = 15; // 0000 1111
@@ -575,7 +573,7 @@ std::string fullName = firstName + lastName;
     int z = ~x; // z is 1111 0000
 ```
 
-### Bitwise XOR
+### Bitwise XOR
 
 ```cpp
 
@@ -587,6 +585,27 @@ std::string fullName = firstName + lastName;
  
 ```
 
+### Checking a bit
 
+```cpp
+    if (a & (1 << 4)) {
+        //check if bit 4 is 1
+    }
+```
+### Set a bit
+
+```cpp
+    a = a | (1 << 2); //set bit 2
+```
+
+### Clear a bit
+```cpp
+    a = a & (~ (1 << 5)); //clear bit 5	
+```
+
+### Toggle a bit
+```cpp
+    a ^= 1 << 4; //Toggle bit 4
+```
   
 
