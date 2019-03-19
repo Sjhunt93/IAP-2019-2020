@@ -20,7 +20,8 @@ Topics Covered:
 12. [Array](#array)
 13. [Vector](#vector)
 14. [Files](#file)
-15. [String manipulation](#strmanip)
+15. [String Manipulation](#strmanip)
+16. [Bit Wise Manipulation](#bitwise)
 
 *use Cmd/Ctr + f to find a topic :D*
 
@@ -530,6 +531,62 @@ std::string fullName = firstName + lastName;
         float floatValue = std::stof(str);
     }
 ```
+
+# Bitwise Manipulation <a name="bitwise"></a>
+
+### Bit Shifting
+
+```cpp
+    int a = 1; //0000 0001
+    //shift by 1 place to the right
+    a = a << 1; // a is now 0000 0010
+    
+    // shift by 1 place to the left
+    a = a >> 1; // a is now 0000 0001
+```
+
+### Bitwise OR
+
+```cpp
+
+    int x = 15; // 0000 1111
+    int y = 240; // 1111 0000
+    
+    // Bitwise Or
+    int z = x | y; // z is 1111 1111
+```
+
+### Bitwise AND
+
+```cpp
+    int x = 15; // 0001 1111
+    int y = 240; // 1111 1000
+    // Bit wise And
+    int z = x & y; // z is 0001 1000
+```
+
+
+### Bitwise NOT
+
+```cpp
+    int x = 15; // 0000 1111
+    
+    // Bitwise Not
+    int z = ~x; // z is 1111 0000
+```
+
+### Bitwise XOR
+
+```cpp
+
+    int x = 15; // 0001 1111
+    int y = 240; // 1111 1000
+    
+    // Bitwise XOR
+    int z = x ^ y; // z is 1110 0111
  
+```
+
 
   
+
