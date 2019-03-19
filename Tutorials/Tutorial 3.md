@@ -1,5 +1,5 @@
 
-# Practical 3 – Processing MIDI input 
+# Tutorial 3 – Processing MIDI input 
 
 In this practical we will focus on processing MIDI input data, and building our first synthesizer. By the end of this practical you should have knowledge of:
 
