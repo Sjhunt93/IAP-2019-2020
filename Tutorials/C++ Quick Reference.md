@@ -199,7 +199,7 @@ public:
             break;
         case 5: // fall through case
         case 6: // same as say if (day == 5 ||| day == 6)
-            std::cout << "Friday \n";
+            std::cout << "Weekend \n";
             break;
         default:
             // error handling for values that don't match
