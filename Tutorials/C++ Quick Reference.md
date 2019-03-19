@@ -492,6 +492,44 @@ std::string lastName = "ritchie";
 std::string fullName = firstName + lastName; 
 ```
 
+### Substring
+
+```cpp
+    // Start from charecter 0 up to but not including 3
+    std::string subStr = fullName.substr(0, 3);
+    
+    // start from charecter 6 up to the end of the string
+    std::string subStr = fullName.substr(6);
+```
+
+### Finding Substrings
+
+```cpp
+    // find the position of ','
+    std::size_t pos = fullName.find(",");
+    
+    if (pos == std::string::npos) {
+        //not found
+    }
+    else {
+        std::cout << "Substring starts at charecter:" << pos << "\n";
+    }
+```
+
+### String to int
+
+```cpp
+    if (str.size() > 0) {
+        int intValue = std::stoi(str); 
+    }
+```
+### String to float
+
+```cpp
+    if (str.size() > 0) {
+        float floatValue = std::stof(str);
+    }
+```
  
 
   
