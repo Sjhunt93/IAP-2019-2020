@@ -558,8 +558,8 @@ std::string fullName = firstName + lastName;
 ### Bitwise AND
 
 ```cpp
-    int x = 15; // 0001 1111
-    int y = 240; // 1111 1000
+    int x = 31; // 0001 1111
+    int y = 248; // 1111 1000
     // Bit wise And
     int z = x & y; // z is 0001 1000
 ```
@@ -577,8 +577,8 @@ std::string fullName = firstName + lastName;
 
 ```cpp
 
-    int x = 15; // 0001 1111
-    int y = 240; // 1111 1000
+    int x = 31; // 0001 1111
+    int y = 248; // 1111 1000
     
     // Bitwise XOR
     int z = x ^ y; // z is 1110 0111
