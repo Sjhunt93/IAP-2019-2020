@@ -72,8 +72,8 @@ To create an instance of our person add the following line of code to our shared
 
 ```cpp
   //---------------------------------------------------------------------------------
-  // SHARED VARIABLES (IAP member variables) 14
-  Person 
+  // SHARED VARIABLES (IAP member variables)
+  Person student;
 ```
 
 Finally lets set some of the **student’s** member variables.
