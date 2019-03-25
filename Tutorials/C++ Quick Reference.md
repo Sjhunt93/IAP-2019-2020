@@ -22,6 +22,8 @@ Topics Covered:
 14. [Files](#file)
 15. [String Manipulation](#strmanip)
 16. [Bit Wise Manipulation](#bitwise)
+17. [Tenary Operator](#ternary)
+18. [2D data structures](#twod)
 
 *use Cmd/Ctr + f to find a topic :D*
 
@@ -251,6 +253,24 @@ public:
   for (int counter = 4; counter >= 0; counter--) {
     //will execute 5 times
   }
+```
+### Range based for loop
+
+```cpp
+    std::vector<int> values = {0, 1, 3, 5};
+    for (int i : values) {
+        std::cout << i << ", ";
+    }
+```
+
+### Range based for loop (write access)
+
+```cpp
+    std::vector<int> values = {0, 1, 3, 5};
+    for (int & i : values) {
+        i *= 2;
+        std::cout << i << ", ";
+    }
 ```
 
 <hr>
