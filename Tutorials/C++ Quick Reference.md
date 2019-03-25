@@ -26,7 +26,8 @@ Topics Covered:
 19. [2D data structures](#twod)
 20. [Sorting, reversing, shuffling](#sort)
 21. [enums](#enum)
-22. [pointers](#pointers)
+22. [defines](#define)
+23. [pointers](#pointers)
 
 *use Cmd/Ctr + f to find a topic :D*
 
