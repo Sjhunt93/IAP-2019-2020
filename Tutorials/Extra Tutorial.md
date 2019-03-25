@@ -154,7 +154,7 @@ However, be aware than you can only assign values to waveType that were specifie
   int waveInt = 3;
     
    waveType = static_cast<eWaveTypes>(waveInt);
-``
+```
 
 ## Exercise 1: Code refactoring
 
