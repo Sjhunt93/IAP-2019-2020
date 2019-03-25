@@ -628,4 +628,24 @@ std::string fullName = firstName + lastName;
     a ^= 1 << 4; //Toggle bit 4
 ```
   
+# Tenary Operator <a name="ternary"></a>
+
+### With variables
+
+```cpp
+
+errorString = (errorCode == 0) ? "No Error" : "Error";
+
+```
+
+### With functions
+
+```cpp
+   (filterType == 1) ? aserveHPF(cutoff) : aserveLPF(cutoff);
+```
+
+# 2D data structures <a name="twod"></a>
+
+### 2D arrays
+
 
