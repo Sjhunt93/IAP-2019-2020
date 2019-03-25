@@ -97,7 +97,7 @@ Note that doing the following, will first create a vector with 3 elements, and t
 
 ## Exercise 1: Using a vector I
 
-We will modify last weeks’ sequencer practical to use a vector instead. Firstly, reload your solution to practical 10, exercise 1. 
+We will modify the last tutorials sequencer exercise to use a vector instead. Firstly, reload your solution to practical 10, exercise 1. 
 
 1.	Replace the std::array with a **std::vector**
 2.	After the **std::vector** declaration call resize on the vector to set its size use the same size value as your did for your array
@@ -106,7 +106,7 @@ Your program should work exactly as it did before. We will now show another way 
 
 ## Exercise 2: Using a vector II
 
-To practice using a vector we will create a simple program that computes the average of a sequence of numbers. The code for this exercise is supplied <a href="">here</a>.
+To practice using a vector we will create a simple program that computes the average of a sequence of numbers. The code for this exercise is supplied <a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Tutorial%2011/Exercise%202">here</a>.
 
 For this exercise you are completing a partially built program that is designed to average as many numbers as the user enters. We will be using a vector to store the numbers the user enters. You will need to add 4 lines of code to fix this program, the /* */ comment placeholders highlight the locations. Before adding the complete program to codebook make sure you leave suitable comments explaining the programs operation. You may delete the pre-supplied comments.
 
@@ -116,7 +116,7 @@ Instead of specifying an initial size for the vector we simply call **push_back*
 
 We will now use our knowledge of vectors to build a fully fledged note sequencer. The steps to achieve this are as follows.
 
-Use the supplied template on blackboard for starting this exercise. **You will also need to add your IAPSynth class as we have done previously.**
+Use the supplied <a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Tutorial%2011/Exercise%203">template</a> for starting this exercise. **You will also need to add your IAPSynth class as we have done previously.**
 
 1.	First add a std::vector as a shared variable called **noteList**
 2.	Add a second shared variable of type bool called **playBtn**, and set it to false.
