@@ -169,4 +169,95 @@ a.	Note that values within calculations are fine as they are.
 
 
 
- 
+# Array/Vector functions: Homework exercise
+
+There are a number of functions built into the standard C++ Library (std) that are powerful tools for performing operations on arrays and vectors. In this exercise we will look at and explore a number of these including:
+
+1.	Passing arrays/vectors as function arguments
+2.	Finding items within an array/vector
+3.	Sorting array/vector
+4.	Reversing array/vector
+5.	Randomising array/vector
+
+## Passing arrays & vectors to functions
+
+Arrays can be passed to functions just like normal variables, however it is difficult to do this effectively as you need to specify the size of the array as the argument.
+
+```cpp
+  void printArray (std::array<int, 4> array);
+```
+
+Meaning that if we wanted to pass an array with 6 elements we would have to create another function just for this (and for each subsequent array size)
+
+```cpp
+  void printArray (std::array<int, 6> array);
+```
+
+As you might imagine this is cumbersome and inefficient. Instead if we replace the argument with a vector instead of an array, we can pass in a vector of any size:
+
+```cpp
+  void printVector (std::vector<int> vector);
+```
+Note this function will only work with integer vectors.
+
+## Exercise 1:
+
+Add the **printVector** function declaration shown above to your IAP.h file. Once you have done this complete the function definition inside IAP.cpp, the function should use a loop to iterate over each element of the vector and print the value stored at that index. Write suitable code in your run() function to test the printVector function. **Note you should not use shared variables for this exercise.**
+
+## Finding items
+
+As arrays can hold a large number of variables if very common to search through and find the position (index) of them. Study the following code.
+
+<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/finding.png" \>
+
+This code shown above is a common routine for searching through an array. Firstly, we create a for loop for iterating over each element of the array, we then check each array element for the value we are looking for, which in this case is 16. If this value is found, we then set the indexOfValueToLookFor variable to be the index that holds 16. We can then call break to exit the loop. In this example we use -1 to symbolise that the value requested was not found.
+
+## Exercise 2:
+
+Adapt the code supplied above to write a generalized find Index function. This function should take a **vector** as its argument and a **value** to look for. It should return an int which corresponds to the index of the value (if it contains it), or a -1 value if it does not. **Note you should not use shared variables for this exercise. **
+
+Add the following <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Code%20Exercises/Extra%20Tutorial/sorting/find%20function%20unit%20test.txt">unit test code</a> to your solution to test your findIndex function.
+
+## Sorting
+
+There are a number of algorithms for sorting the elements of an array into acceding order. At this stage of the course we will use the inbuilt sorting methods found in the **std library**, however we will implement our own rudimentary sorting algorithm towards the end of this course.
+
+To sort an array we can simply use the std::sort function.
+
+```cpp
+  std::array<int, 10> array;
+    
+  //... add elements to array
+    
+  std::sort(array.begin(), array.end());
+```
+
+The std::sort function takes two arguments called **iterators** one for specifying where we would like to start sorting from and another to specify where we would like to stop sorting. As we want to sort the entire array we can use the **begin** and **end** member functions. We will cover **iterators** in detail towards the end of this module, for now we can simply use them without worrying too much about them.
+
+## Reversing 
+
+There are a few occasions where we might want to reverse the contents of an array. For example, playing a sequence of notes backwards or reversing the sorted order of a list. For this we can use the std::reverse function.
+
+```cpp
+  std::reverse(array.begin(), array.end());
+```
+
+The syntax for this should look very similar to std::sort
+
+
+## Randomize
+
+Another useful function that you may wish to use from time to time is std::random_shuffle
+
+```cpp
+  std::random_shuffle(array.begin(), array.end());
+```
+
+You can use this to shuffle or randomize the order of the elements within an array.
+
+**Note that all of the above functions can be applied to both arrays and vectors.**
+
+## Exercise 3: Sort, Reverse, Randomize
+
+To conclude this tutorial, you should try out each of the 3 functions discussed previously. A placeholder for this exercise can be found <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Code%20Exercises/Extra%20Tutorial/sorting/getting%20started.txt">here</a>
+
