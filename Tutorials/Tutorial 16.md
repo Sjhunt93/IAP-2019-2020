@@ -46,7 +46,7 @@ std::vector<std::array<int, 10> > vectorOf10ElementArrays;
 
 ## Exercise 1: 
 
-We will be remaking a scale function.
+We will be remaking our scale function.
 
 We will be using a 2D std::array with an inner size of 12 and an outer size of 8. This array will hold scale information and allow us to quickly quantize note numbers into a scale. The outer index will specify the scale number, and the inner number will specify each scale degree. We can set the values for a single scale by using the following line of code:
 
@@ -61,6 +61,20 @@ Note that we must supply as many arguments between the {} as there are elements 
   scales[0][1] = 1;
   scales[0][2] = 0;
   ...
+```
+
+To get started:
+1. Reload a previous synthesiser program to use for this exercise.
+2. Create a shared std::array called scales as specified above.
+3. Create a shared variable called chosenScale.
+4. At the start of your run function setup the scale values.
+5. You can use the following code snippet to quantise notes to a scale.
+
+```cpp
+
+int pitch = note % 12;
+return note + scales[chosenScale][pitch];
+
 ```
 
 ## Auto
@@ -81,7 +95,6 @@ When we run a program contain the above code and then open the debugger we can s
 
 
 If you can determine the data type yourself then you should declare it as such, however there are a number of useful occasions where we might use the auto type. We will return to this at the end of this tutorial.
-
 
 
 ## Range based for loops
@@ -125,7 +138,7 @@ Note then when using range-based loops, it is very common to the replace the dat
 ```
 
 ## Exercise 2: Range based for loops
-Refactor the <a href="">supplied code</a> to use these new range based for loops.
+Refactor a previous program that you have written to use a range based for loop. Practical 10 exercise 3 or practical 11 exercise 3 are good starting points, however you may choose a different one.
 
 ## Ternary Operator
 
@@ -180,7 +193,11 @@ or:
 
 ## Exercise 3:
 
-Use the ternary operator to refactor the following program.
+Use the ternary operator to refactor a previous program that you have written.
+
+
+## Git
+
 
 
 
