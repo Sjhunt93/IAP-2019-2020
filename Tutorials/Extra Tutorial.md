@@ -208,13 +208,13 @@ Add the **printVector** function declaration shown above to your IAP.h file. Onc
 
 As arrays can hold a large number of variables if very common to search through and find the position (index) of them. Study the following code.
 
-<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/finding.png" \>
+<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/finding.png" />
 
 This code shown above is a common routine for searching through an array. Firstly, we create a for loop for iterating over each element of the array, we then check each array element for the value we are looking for, which in this case is 16. If this value is found, we then set the indexOfValueToLookFor variable to be the index that holds 16. We can then call break to exit the loop. In this example we use -1 to symbolise that the value requested was not found.
 
 ## Exercise 2:
 
-Adapt the code supplied above to write a generalized find Index function. This function should take a **vector** as its argument and a **value** to look for. It should return an int which corresponds to the index of the value (if it contains it), or a -1 value if it does not. **Note you should not use shared variables for this exercise. **
+Adapt the code supplied above to write a generalized find Index function. This function should take a **vector** as its argument and a **value** to look for. It should return an int which corresponds to the index of the value (if it contains it), or a -1 value if it does not. **Note you should not use shared variables for this exercise.**
 
 Add the following <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Code%20Exercises/Extra%20Tutorial/sorting/find%20function%20unit%20test.txt">unit test code</a> to your solution to test your findIndex function.
 
