@@ -1,4 +1,4 @@
-# Practical 10 – Arrays
+# Tutorial 10 – Arrays
 
 
 In this practical you will learn how to create and work with arrays: a useful data structure that enables lots of variables of the same type to be collected into a single data structure. We will learn: 
