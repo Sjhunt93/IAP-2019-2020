@@ -5,31 +5,57 @@ Use this document to see short examples of the various C++ topics we have coverd
 Topics Covered: 
 
 
-
-1. [Variables and constants](#variables)
-2. [Text Output](#tin)
-3. [Text Input](#tout)
-4. [Operators](#ops)
-5. [Logical Comparison](#logic)
-6. [If statments](#if)
-7. [Switch case](#switch)
-8. [Loops](#loop)
-9. [Functions](#func)
-10. [&& and ||](#aor)
-11. [Class](#class)
-12. [Array](#array)
-13. [Vector](#vector)
-14. [Files](#file)
-15. [String Manipulation](#strmanip)
-16. [Bit Wise Manipulation](#bitwise)
-17. [Tenary Operator](#ternary)
-18. [2D data structures](#twod)
+1. [Comments](#comments)
+2. [Variables and constants](#variables)
+3. [Text Output](#tin)
+4. [Text Input](#tout)
+5. [Operators](#ops)
+6. [Logical Comparison](#logic)
+7. [If statments](#if)
+8. [Switch case](#switch)
+9. [Loops](#loop)
+10. [Functions](#func)
+11. [&& and ||](#aor)
+12. [Class](#class)
+13. [Array](#array)
+14. [Vector](#vector)
+15. [Files](#file)
+16. [String Manipulation](#strmanip)
+17. [Bit Wise Manipulation](#bitwise)
+18. [Tenary Operator](#ternary)
+19. [2D data structures](#twod)
+20. [Sorting, reversing, shuffling](#sort)
+21. [enums](#enum)
+22. [pointers](#pointers)
 
 *use Cmd/Ctr + f to find a topic :D*
 
-# Variables
 
-### Declaring and setting variables  <a name="variables"></a>
+# Comments <a name="comments"></a>
+### Single line
+```cpp
+// this is a single line comment 
+// comments are ingnored by the compiler!
+// write something usefull about your program using them
+int age; // variable for storing age
+
+```
+
+### Multi-line comment
+
+```cpp
+/*
+This is a multi-line comment
+
+std::cout << "this line of code will never be executed \n"
+
+*/
+
+aserveSleep(1000 /* comment inside some code */);
+```
+# Variables <a name="variables"></a>
+
+### Declaring and setting variables 
 
 ```cpp
     int age = 25;
@@ -316,6 +342,28 @@ public:
         return num; //return num
     }
 ```
+
+### Using references to enable multiple return values
+
+```cpp
+    void IAP::swap (int & a, int & b)
+    { 
+        //will swap the contents of a and b
+        //a and b are passed by reference so the original values passed in can be modified
+        int c = a;
+        a = b;
+        b = c;
+    }    
+    
+    ... some other part of our program
+    
+    int valueA = 10;
+    int valueB = 5;
+    swap(valueA, valueB);
+    
+    // contents of valueA and valueB have been swapped
+```
+
 
 <hr>
 
