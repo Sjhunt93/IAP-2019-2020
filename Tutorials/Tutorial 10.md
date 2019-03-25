@@ -118,7 +118,9 @@ Your program should operate as it did previously, however it is not much more co
 1.	Remove the switch case structure from the CC callback. 
 2.	Then add the following code inside the if-statement
 
+```cpp
 sliderValues[cc-41] = value;
+```
 
 Your finished program should operate exactly the same as before but this time be a lot more concise. The process of refactoring is about restructuring existing code so that it is cleaner and more concise without changing its functionality. If you compare the program you had at the start of this exercise with what we have ended up with, you should clearly see the difference.
 
@@ -128,7 +130,7 @@ Your finished program should operate exactly the same as before but this time be
 
 It should now be relatively easy to extend our program to use 8 rather than 4 steps. Something that would have been much harder had we used 8 single variables instead of an array. To achieve this:
 
-1.	Change your arrayValues array to be 8 elements in size rather than 4
+1.	Change your **arrayValues** array to be 8 elements in size rather than 4
 2.	Modify the the CC callback accordingly 
 
 By changing only two lines of code we have gone from having a 4-step sequencer to an 8-step sequencer. Using arrays allows our programs to scale very quickly and we end up writing a lot less code.
