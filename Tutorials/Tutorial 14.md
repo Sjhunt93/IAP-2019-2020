@@ -64,7 +64,7 @@ Once we are done with the file we need to close it. We simply call the member fu
 
 ## Exercise 1: Reading from a file
 
-Please download <a href="">exercise1.txt</a> from blackboard and place the file in the following location:
+Please download <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Code%20Exercises/Tutorial%2014/exercise1.txt">exercise1.txt</a> and place the file in the following location:
 
 ```cpp
 “Your iap project folder”/iapProj/Builds/MacOSX/build/Debug/
@@ -271,7 +271,7 @@ The function should do the following:
 4.	Return true;
 
 
-To test this code, download the test code from <a href="">here</a>. Add this code to your run() function. Read the comments carefully and check that you getting the correct values printed out.
+To test this code, download the test code from <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Code%20Exercises/Tutorial%2014/string%20split%20unit%20test.txt">here</a>. Add this code to your run() function. Read the comments carefully and check that you getting the correct values printed out.
 
 ## Challenge Exercise: Aserve file playback system
 
