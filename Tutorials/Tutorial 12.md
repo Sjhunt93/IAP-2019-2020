@@ -11,8 +11,8 @@ The projects are as follows:
     - Supplied as a pseudocode 
 3.	Arpeggiator
     - Supplied as a flowchart file
-4.	A generative engine that samples from the inputs
-    - An adaption of exercise 3 from last week
+4.	A generative music application
+    - Supplied as a basic program
     
 ## Program 1: Attack and Release Envelopes.
 
