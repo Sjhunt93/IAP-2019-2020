@@ -10,14 +10,14 @@ Read the following <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/maste
 ## Tutorials
 
 ### Part I
-1.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Tutorial%201.md">Familiarisation</a>
-2.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Tutorial%202.md">Variables and Program Input/Output</a>
-3.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Tutorial%203.md">Processing MIDI input</a>
-4.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Tutorial%204.md">Flow Control</a>
-5.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Tutorial%205.md">Functions I</a>
-6.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Tutorial%206.md">Functions II</a>
-7.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Tutorial%207.md">Switch Case and Combinational if Statements</a>
-8.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Tutorial%208.md">Flow Control: Loops</a>
+1.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/1%20-%20Familiarisation.md">Familiarisation</a>
+2.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/2%20-%20Variables%20and%20IO.md">Variables and Program Input/Output</a>
+3.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/3%20-%20Processing%20MIDI%20Input.md">Processing MIDI input</a>
+4.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/4%20-%20Flow%20Control.md">Flow Control</a>
+5.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/5%20-%20Functions.md">Functions I</a>
+6.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/6%20-%20Functions%20II.md">Functions II</a>
+7.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/7%20-%20Switch%20and%20Combinational%20Logic.md">Switch Case and Combinational if Statements</a>
+8.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/8%20-%20Loops.md">Flow Control: Loops</a>
 
 
 
