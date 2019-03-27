@@ -111,7 +111,7 @@ Once you have this working, modify the loop so that the table is displayed in de
 
 ## Challenge Exercise: Making a saw wave from sine waves
 
-Load the example code (link) into your IAP.h and IAP.cpp files.
+Load the example <a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Tutorial%208/Exercise%205">code</a> into your IAP.h and IAP.cpp files.
 
 We will now add two for loops to our monophonic synthesizer to artificially create a low-fi saw wave oscillator from a series of sine waves. To achieve this **rearrange** and **add** the following code to the note on branch of the if statement inside the note callback function.
 
