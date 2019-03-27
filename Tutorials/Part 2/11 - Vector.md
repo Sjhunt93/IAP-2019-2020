@@ -1,5 +1,5 @@
 
-## Practical 11 – Vector
+# Tutorial 11 – Vector
 
 In last weeks practical we learnt how to create arrays of a fixed length. This week we will learn to use an array whose length can grow and shrink dynamically at run time. We will learn:
 
