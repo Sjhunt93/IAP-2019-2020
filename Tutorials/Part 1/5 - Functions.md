@@ -1,4 +1,4 @@
-# Practical 5 – Functions
+# Tutorial 5 – Functions
 
 In this practical we will learn how common functionality in larger programs can be written as smaller sub-components called 'functions'. On successful completion of this practical you will have an understanding of: 
 
