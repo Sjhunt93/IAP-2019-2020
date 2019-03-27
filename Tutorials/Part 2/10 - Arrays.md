@@ -92,7 +92,7 @@ Extended the previous exercise to include a second array for storing amplitude v
 
 ## Exercise 3: refactoring 
 
-For this exercise we will be refactoring a badly written program using arrays. You will need to download the files from <a href="">here</a>, and copy them into your project overriding the contents of your existing .cpp and .h files.
+For this exercise we will be refactoring a badly written program using arrays. You will need to download the files from <a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Tutorial%2010/Exercise%203">here</a>, and copy them into your project overriding the contents of your existing .cpp and .h files.
 
 **Note for this exercise we will be using the IAPSynth class that we built during last weeks practical. You will need to complete last weeks practical before starting this one. You will need to add the IAPSynth class to the top of IAP.h.**
 
