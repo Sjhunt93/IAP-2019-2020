@@ -1,5 +1,5 @@
 
-# Practical 15 – Bitwise manipulation
+# Tutorial 15 – Bitwise manipulation
 
 In this practical we will learn about bitwise manipulation - a powerful feature of the C ++ language that enables variables to be accessed and modified at the bit level. On successful completion of this practical you will understand: 
 
