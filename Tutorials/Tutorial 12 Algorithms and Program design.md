@@ -16,17 +16,17 @@ The projects are as follows:
     
 ## Program 1: Attack and Release Envelopes.
 
-Firstly, download and open the supplied files from <a href="">here</a> and copy them into both IAP.h and IAP.cpp.
+Firstly, download and open the supplied files from <a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Tutorial%2012/AR%20Synth">here</a> and copy them into both IAP.h and IAP.cpp.
 
 For this exercise you will fill in the blanks by following the comments in the supplied file. All the **shared variables** you will require for this program are provided for you, and you should not need to declare any others. A brief description of the program is provided bellow.
 
 On most synthesizer it is desirable for the sound to ramp up it to its full amplitude, rather than produce its full amplitude instantaneously.  For example, a piano has a very short attack time, meaning that it reaches its full amplitude very quickly, where as a stringed instrument (e.g. violin) can gradually increase its amplitude. Release time is the opposite of attack and determines how quickly a note will reduce its amplitude to 0 (stop). In this program we will ramp the volume up and down in the run part of our program, increasing or decreasing the *amplitude* in small amounts each 1ms. The callbacks will be used to trigger the attack and release stages. 
 
--> insert image here
+<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/asdr.png" />
 
 ## Program 2: Polyphonic Synthesizer
 
-Firstly, download and open the supplied files from <a href="">here</a> and copy them into both IAP.h and IAP.cpp.
+Firstly, download and open the supplied files from <a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Tutorial%2012/Polyphonic%20Synth">here</a> and copy them into both IAP.h and IAP.cpp.
 
 Historically in previous practical’s we have simply updated the frequency of an oscillator each time a new note is played, and by keeping the channel number the same each time we have limited ourselves to a monophonic synth. As Aserve has 24 channels, we can in theory have 24 oscillators all at different frequencies playing at once. Therefore, what we want to do is apply the following logic:
 
@@ -67,7 +67,8 @@ To implement this program, you need to first have completed the previous exercis
 
 You will now need to implement the following flowchart inside your run loop.
 
--> insert flowchart image
+<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/flowchart.png" />
+
 
 ## Extensions
 
@@ -83,7 +84,7 @@ Once you have setup the basic arpeggiator there are a few extensions we can appl
 
 ## Program 4: Generative music sampler
 
-You are supplied with the start of a very basic generative music application (<a href="">available here</a>). However, it does not (objectively) sound very good. There are a number of things we can do to improve this application.
+You are supplied with the start of a very basic generative music application (<a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Tutorial%2012/Generative%20Music%20Application">available here</a>). However, it does not (objectively) sound very good. There are a number of things we can do to improve this application.
 
 
 
