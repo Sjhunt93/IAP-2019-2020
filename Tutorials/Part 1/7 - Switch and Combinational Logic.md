@@ -1,4 +1,4 @@
-# Practical 7: Switch Case and Combinational if Statements
+# Tutorial 7 - Switch Case and Combinational if Statements
 
 In this practical we will develop a deeper understanding of flow control using more advanced conditional expressions and switch/case structures. On successful completion of this practical you will have an understanding of: 
 
