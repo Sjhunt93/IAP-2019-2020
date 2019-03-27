@@ -19,7 +19,15 @@ Read the following <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/maste
 7.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/7%20-%20Switch%20and%20Combinational%20Logic.md">Switch Case and Combinational if Statements</a>
 8.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/8%20-%20Loops.md">Flow Control: Loops</a>
 
-
+### Part II
+9.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/9%20-%20Classes.md">Classes</a>
+10.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/10%20-%20Arrays.md">Arrays</a>
+11.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/11%20-%20Vector.md">Vectors</a>
+12.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/12%20-%20Algorithms%20and%20Program%20design.md">Algorithms and Program Design</a>
+13.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/13%20-%20Constants%20and%20Algorithms.md">Constants and std Algorithms</a>
+14.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/14%20-%20Files%20and%20String%20Manipulation.md">Files & String manipulation</a>
+15.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/15%20-%20Bitwise%20Manipulation.md">Bitwise Manipulation</a>
+16.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/16%20-%20Some%20More%20CPP.md">Some more C++</a>
 
 
 # Applications 
