@@ -1,5 +1,5 @@
 
-# Practical 6 Functions II
+# Tutorial 6 - Functions II
 
 Functions continue to be one of the most important concepts in building larger programs. In this practical we will focus on how to share variables between functions effectively. On successful completion of this practical you will have an understanding of:
 
