@@ -697,8 +697,41 @@ errorString = (errorCode == 0) ? "No Error" : "Error";
 
 ### 2D arrays
 
+```cpp
+    std::array< std::array<int, 10>, 10> tenByTen;
+    
+    tenByTen[0][0] = 10;
+```
 
-# 2D data structures <a name="twod"></a>
+### General form
 
+```cpp
+    std::array< std::array<int, /* inner size*/>, /*outer size*/> tenByTen;
 
+    tenByTen[/*outer index*/][/*inner index*/]
+```
+
+# Sorting, reversing and shuffling <a name="sort"></a>
+
+### std::sort
+
+```cpp
+  std::array<int, 10> array;
+    
+  //... add elements to array
+    
+  std::sort(array.begin(), array.end());
+```
+
+### std::reverse
+
+```cpp
+  std::reverse(array.begin(), array.end());
+```
+
+### std::shuffle
+
+```cpp
+    std::random_shuffle(array.begin(), array.end());
+```
 
