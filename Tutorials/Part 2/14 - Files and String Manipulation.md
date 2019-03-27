@@ -1,4 +1,4 @@
-# Practical 14 – Files & String manipulation
+# Tutorial 14 – Files & String manipulation
 
 In this practical you will learn how data can be written to, and read from files. This enables text, variable values and other program data to be saved into an external file on the computer’s file system between program runs. 
 
