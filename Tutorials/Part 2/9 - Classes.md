@@ -149,7 +149,7 @@ To complete this exercise remove the print code from your IAP::run() function an
 
 ## Exercise 4. Making a Synth class
 
-The material for starting this practical is supplied here, copy and paste the contents of both IAP.h and IAP.cpp into your project.
+The material for starting this practical is supplied <a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Tutorial%209/Exercise%204">here</a>, copy and paste the contents of both IAP.h and IAP.cpp into your project.
 
 Our IAPSynth class looks slightly different to our previous class definition, as this class **inherits** from AserveComs. Inheritance is not something that we will cover on this course. 
 
