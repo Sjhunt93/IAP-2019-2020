@@ -735,3 +735,59 @@ errorString = (errorCode == 0) ? "No Error" : "Error";
     std::random_shuffle(array.begin(), array.end());
 ```
 
+# enums <a name="enum"></a>
+
+### sequential example
+
+```cpp
+    enum eWaveTypes {
+        eSine = 0,
+        eSquare, //will have the value 1
+        eSaw,
+        eReverseSaw,
+        eTri,
+        eNoise //will have the value 5
+    };
+    
+    ...
+    aserveOscillator(0, 440.0, 1.0, eSine);
+```
+
+### non-sequential example
+
+```cpp
+    enum eControls {
+        eKnob1 = 21,
+        eSlider1 = 41,
+        ePlayBtn = 115,
+    };
+```
+
+### enum as a type
+
+```cpp
+    eWaveTypes waveType; //can only hold values defined in the enum
+```
+# Defines <a name="define"></a>
+
+### constants
+
+```cpp
+    #define COLUMNS 16
+    
+    ...
+    
+    int howManyCols = COLUMNS; // same as saying = 16.
+```
+
+### with functions
+
+```cpp
+    #define SLEEP_500 aserveSleep(500);
+    
+    ...
+    SLEEP_500 //will call aserveSleep(500); 
+```
+
+
+
