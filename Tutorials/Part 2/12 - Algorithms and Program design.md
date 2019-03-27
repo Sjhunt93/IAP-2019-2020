@@ -1,4 +1,4 @@
-# Practical 12 – Algorithms and Program design
+# Tutorial 12 – Algorithms and Program design
 
 This week we will explore building a number of programs and explore several algorithms. We will not be learning any new syntax this week, but rather reinforce our understanding of the concepts covered so far.
 
