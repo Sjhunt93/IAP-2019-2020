@@ -29,6 +29,9 @@ Read the following <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/maste
 15.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/15%20-%20Bitwise%20Manipulation.md">Bitwise Manipulation</a>
 16.  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/16%20-%20Some%20More%20CPP.md">Some more C++</a>
 
+### Reference
+
+<a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/C%2B%2B%20Quick%20Reference.md">C++ Quick Reference Guide</a>
 
 # Applications 
 
