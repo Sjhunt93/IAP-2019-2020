@@ -70,6 +70,8 @@ Please download <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/C
 “Your iap project folder”/iapProj/Builds/MacOSX/build/Debug/
 ```
 
+*Please note you will need to run your project first to create the folder as the folder is created as part of xcode's compilation process.*
+
 To complete this exercise, re-arrange the following blocks of code. The program should open a file and read each line. The code is supplied in blocks to make this exercise easier. 
 
 ```cpp
