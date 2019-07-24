@@ -17,6 +17,9 @@ float IAP::mtof (int note)
 
 void IAP::run ()
 {
- 
+    for (int i = 0; i < 100; i++) {
+        aserveOscillator(i % 24, arc4random() % 500 + 100, 0.1, 1);
+        aserveSleep(100);
+    }
 }
 
