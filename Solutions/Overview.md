@@ -114,4 +114,14 @@ This unit test tests that you have correctly implemented the major scale quantiz
 
 
 
+# Test 6: High Frequency Test
+*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/8%20-%20Loops.md">Exercise 8.3</a>*
+
+This unit test tests that you have correctly implemented a looping high frequency test. This unit test will require you to adapt one of your solutions from exercise 8. When you run this unit test Aserve will send out a modwheel control change message. When this happens you should start a high frequency test. This test should start with a frequency value of 20hz and increment the frequency value by 17 on each loop increment. Note that you should sleep for 10ms on each loop increment. The test should only run while the frequency value is less then 17,300 hz. Note you may place code in either the modwheel callbacj function, or in your run function.
+
+| # | Input From Aserve | Output expected from project |
+| --- | --- | --- |
+| 1 | Modwheel moved | Start an oscillator at 20 hz and increment this frequency by 17 hz upto 17,300 hz. | 
+
+
 
