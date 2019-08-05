@@ -124,4 +124,17 @@ This unit test tests that you have correctly implemented a looping high frequenc
 | 1 | Modwheel moved | Start an oscillator at 20 hz and increment this frequency by 17 hz upto 17,300 hz. | 
 
 
+# Test 7: Vector Sequencer
+*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/11%20-%20Vector.md">Exercise 11.3</a>*
+
+This unit test will test all of the features of exercise 11.3. 
+
+**Note that for the test you will need to stop and re-run your project between tests.**
+
+| # | Input From Aserve | Output expected from project |
+| --- | --- | --- |
+| 1 | 10 MIDI messages 5 note on, 5 note off | Each note should be synthesised | 
+| 2 | CC 115 with a value of 127 | The program should output the note on messages sent previously in 250ms intervals, this should repeat |
+| 3 | CC 114 with a value of 127 | Playback should stop, oscillator state should be switched off |
+
 
