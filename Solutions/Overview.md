@@ -91,4 +91,15 @@ This unit test tests that you have correctly implemented the expected behaviour 
 | 4 | note off MIDI message b | Switch off Oscillator 0 as note off number matches the playing oscillator |
 
 
+# Test 5: Scale Quantization
+*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/7%20-%20Switch%20and%20Combinational%20Logic.md">Exercise 7.4</a>*
+
+This unit test tests that you have correctly implemented the major scale quantization function. All notes should be quantised to the C major scale (white keys) this means each time a black key is pressed the corresponding note is transposed by 1 semitone (value increased by 1). The test will iteratively output MIDI note numbers from 0-127 and expect the oscillator on channel 0 to be updated accordingly. 
+
+| # | Input From Aserve | Output expected from project |
+| --- | --- | --- |
+| 1 | MIDI notes from 0 - 127 | Switch on Oscillator 0 with correct frequency - all frequencies should correspond to notes in the C-major scale | 
+
+
+
 
