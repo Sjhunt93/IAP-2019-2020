@@ -51,6 +51,33 @@ The table bellow outlines each test and the tutorial exercise they correspond to
 | 4 | Fix noteoff | 6.4 | noteoff |
 
 
+# Test 1: Midi Note to Frequency
+*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/3%20-%20Processing%20MIDI%20Input.md">Exercise 3.3</a>*
+
+This unit test tests that you have correctly implemented the equation for converting note numbers into oscillator frequencies. The test will iteratively output MIDI note numbers from 0-127 and expect the oscillator on channel 0 to be updated accordingly. 
+
+| # | Input From Aserve | Output expected from project |
+| --- | --- | --- |
+| 1 | MIDI notes from 0 - 127 | Switch on Oscillator 0 with correct frequency | 
+
+# Test 2: Drum Sampler
+*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/4%20-%20Flow%20Control.md">Exercise 4.4</a>*
+
+This unit test tests that you have correctly implemented exercise 4.4. The test will simulate pushing each of the top 4 drum pads on the impulse keyboard. The sample should only be triggered when the pad is pushed down (velocity greater then 0) but not when the pad is released (velocity value is 0).
+
+| # | Input From Aserve | Output expected from project |
+| --- | --- | --- |
+| 1 | Note on MIDI message with note number 67 | play sample channel 0 | 
+| 2 | Note off MIDI message with note number 67 | nothing | 
+| 3 | Note on MIDI message with note number 69 | play sample channel 1 | 
+| 4 | Note off MIDI message with note number 69 | nothing | 
+| 5 | Note on MIDI message with note number 71 | play sample channel 2 | 
+| 6 | Note off MIDI message with note number 71 | nothing | 
+| 7 | Note on MIDI message with note number 72 | play sample channel 3 | 
+| 8 | Note off MIDI message with note number 72 | nothing | 
+
+
+
 # Test 4: Fix noteoff
 *Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/6%20-%20Functions%20II.md">Exercise 6.4</a>*
 
