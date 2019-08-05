@@ -77,6 +77,18 @@ This unit test tests that you have correctly implemented exercise 4.4. The test 
 | 8 | Note off MIDI message with note number 72 | nothing | 
 
 
+# Test 3: Chord Machine
+*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/5%20-%20Functions.md">Exercise 5.3</a>*
+
+This unit test tests that you have correctly implemented exercise 5.3. This test will simulate pushing each of the top 4 drum pads on the impulse keyboard. The first 3 pads should play major chords, and the 4th pad a minor chord. Each note of the chord must be played on a different channel at the same time. See the below table for the exact expected chords.
+
+| # | Input From Aserve | Output expected from project |
+| --- | --- | --- |
+| 1 | Note on MIDI message with note number 67 | Output MIDI notes 60 64 67 (C major) as frequencies on the first 3 oscillator channels | 
+| 2 | Note on MIDI message with note number 69 | Output MIDI notes 65 69 72 (F major) as frequencies on the first 3 oscillator channels | 
+| 3 | Note on MIDI message with note number 71 | Output MIDI notes 67 71 74 (G major) as frequencies on the first 3 oscillator channels | 
+| 4 | Note on MIDI message with note number 72 | Output MIDI notes 57 60 64 (A minor) as frequencies on the first 3 oscillator channels | 
+
 
 # Test 4: Fix noteoff
 *Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/6%20-%20Functions%20II.md">Exercise 6.4</a>*
