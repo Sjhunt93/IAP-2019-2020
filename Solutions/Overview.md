@@ -27,9 +27,13 @@ Each of the tests are listed in the scrolling menu, the coloured circle depicts 
 
 Once a test has been run the solution to the test will be copied from your Xcode project to the Solutions/Unit Tests folder inside your project folder. The files are prepended with *Failed* if the test fails or *Pass* if they pass. When re-opening Aserve, this folder is scanned and the interface updates accordingly, keeping track of each test. It is important that you **do not** manually edit the files in this folder. You should ensure that you keep a backup copy of each unit test that has passed inside codebook.
 
+<img src="Images/unittestfiles.png"/>
+
 ## File paths
 
-There may be occasions where you need to specify the location of your project and Solutions folder. To do this open settings -> unit test setup (from the dropdown menu). However you should speak to a member of staff before changing any of the settings - as the project should be setup automatically for you.
+There may be occasions where you need to specify the location of your project and Solutions folder. To do this open settings -> unit test setup (from the dropdown menu). **However you should speak to a member of staff before changing any of the settings - as the project should be setup automatically for you.**
+
+
 
 # The Tests
 
@@ -44,5 +48,6 @@ The table bellow outlines each test and the tutorial exercise they correspond to
 | 1 | Midi Note to Frequency | 3.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/3%20-%20Processing%20MIDI%20Input.md">Our first monophonic synthesizer</a> |
 | 2 | Drum Sampler | 4.4 |  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/4%20-%20Flow%20Control.md">Fixing the drum sampler </a> |
 | 3 | Chord Machine | 5.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/5%20-%20Functions.md">Chord Machine </a> |
+| 4 | Fix noteoff | 6.4 | noteoff |
 
 
