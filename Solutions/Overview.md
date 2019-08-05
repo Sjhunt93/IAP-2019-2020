@@ -13,4 +13,36 @@ A unit test is normal software development is test designed to validate some cod
 
 To view the unit test pannel in Aserve select it from the dropdown menu (it is hidden by default).
 
-<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/aserveunitmenu.png" />
+<img src="Images/aserveunitmenu.png" />
+
+Once open you should see the unit test pannel appear on the right hand side.
+
+<img src="Images/unittests.png" />
+
+# Description
+
+Each of the tests are listed in the scrolling menu, the coloured circle depicts the current state of each test. Red means the test failed, orange means the test is currently running and green means the test has passed. To run a test simply select it from the menu and then hit the *Run Selected Test* button. Error messages will be shown in the text box below.
+
+# Saving
+
+Once a test has been run the solution to the test will be copied from your Xcode project to the Solutions/Unit Tests folder inside your project folder. The files are prepended with *Failed* if the test fails or *Pass* if they pass. When re-opening Aserve, this folder is scanned and the interface updates accordingly, keeping track of each test. It is important that you **do not** manually edit the files in this folder. You should ensure that you keep a backup copy of each unit test that has passed inside codebook.
+
+## File paths
+
+There may be occasions where you need to specify the location of your project and Solutions folder. To do this open settings -> unit test setup (from the dropdown menu). However you should speak to a member of staff before changing any of the settings - as the project should be setup automatically for you.
+
+# The Tests
+
+The table bellow outlines each test and the tutorial exercise they correspond to.
+
+
+
+
+
+| Number | Unit Test Name | Exercise Number | Exercise Name |
+| --- | --- | --- | --- |
+| 1 | Midi Note to Frequency | 3.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/3%20-%20Processing%20MIDI%20Input.md">Our first monophonic synthesizer</a> |
+| 2 | Drum Sampler | 4.4 |  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/4%20-%20Flow%20Control.md">Fixing the drum sampler </a> |
+| 3 | Chord Machine | 5.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/5%20-%20Functions.md">Chord Machine </a> |
+
+
