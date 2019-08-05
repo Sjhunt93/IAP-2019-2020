@@ -52,8 +52,9 @@ The table bellow outlines each test and the tutorial exercise they correspond to
 
 
 # Test 4: Fix noteoff
+*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/6%20-%20Functions%20II.md">Exercise 6.4</a>*
 
-This unit test, tests that you have correctly implemented the correct behaviour for note off messages. In that the oscillator should always play note on messages when received but only switch off when the note number of a note off messages matches the frequency of the oscillator that is currently playing.
+This unit test tests that you have correctly implemented the expected behaviour for note off messages for a monophonic synthesiser. The oscillator should always play note on messages when received but only switch off when the note number of a note off messages matches the frequency of the oscillator that is currently playing.
 
 | # | Input From Aserve | Output expected from project |
 | --- | --- | --- |
