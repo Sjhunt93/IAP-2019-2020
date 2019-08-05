@@ -51,3 +51,16 @@ The table bellow outlines each test and the tutorial exercise they correspond to
 | 4 | Fix noteoff | 6.4 | noteoff |
 
 
+# Test 4: Fix noteoff
+
+This unit test, tests that you have correctly implemented the correct behaviour for note off messages. In that the oscillator should always play note on messages when received but only switch off when the note number of a note off messages matches the frequency of the oscillator that is currently playing.
+
+| # | Input From Aserve | Output expected from project |
+| --- | --- | --- |
+| 1 | Note on MIDI message a | Switch on Oscillator 0 with correct frequency and amplitude | 
+| 2 | Note on MIDI message b | Update Oscillator 0 with correct frequency and amplitude | 
+| 3 | Note off MIDI message a | Nothing as oscillator is playing note b |
+| 4 | note off MIDI message b | Switch off Oscillator 0 as note off number matches the playing oscillator |
+
+
+
