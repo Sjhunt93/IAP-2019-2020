@@ -137,4 +137,9 @@ This unit test will test all of the features of exercise 11.3.
 | 2 | CC 115 with a value of 127 | The program should output the note on messages sent previously in 250ms intervals, this should repeat |
 | 3 | CC 114 with a value of 127 | Playback should stop, oscillator state should be switched off |
 
+# Test 8: File read
+
+For this test you will need to launch the test then run your program. Please ensure your program is not running before starting the unit test.
+
+
 
