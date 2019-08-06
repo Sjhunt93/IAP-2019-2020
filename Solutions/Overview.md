@@ -165,7 +165,7 @@ For this you will need to adapt your solution to unit test 7. Ensure this test i
 | 4 | CC 115 with a value of 127 | The program should output the note on messages sent previously in 250ms intervals, this should not repeat |
 | 5 | CC 113 with a value of 127 | All notes sent previously should be sorted into descending order |
 | 6 | CC 115 with a value of 127 | The program should output the note on messages sent previously in 250ms intervals, this should not repeat |
-| 7 | CC 113 with a value of 127 | All notes sent previously should be randomly shuffled |
+| 7 | CC 116 with a value of 127 | All notes sent previously should be randomly shuffled |
 | 8 | CC 115 with a value of 127 | The program should output the note on messages sent previously in 250ms intervals, this should not repeat |
 
 
