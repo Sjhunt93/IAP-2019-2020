@@ -160,7 +160,7 @@ However, be aware than you can only assign values to waveType that were specifie
 
 ## Exercise 1: Code refactoring
 
-Obtain a copy of the following <a href="files">files</a> copy them into your project. You will be refactoring this project to make use of the topics we discussed in this handout. 
+Obtain a copy of the following <a href="https://github.com/Sjhunt93/IAP-2018-2019/tree/master/Code%20Exercises/Extra%20Tutorial/enums">files</a> copy them into your project. You will be refactoring this project to make use of the topics we discussed in this handout. 
 
 1.	You should make any variables const that are not going to be modified after being initiliased
 2.	Replace any arbitrary literals with constants
