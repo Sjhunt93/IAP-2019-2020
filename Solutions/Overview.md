@@ -141,5 +141,19 @@ This unit test will test all of the features of exercise 11.3.
 
 For this test you will need to launch the test then run your program. Please ensure your program is not running before starting the unit test.
 
+# Test 9: File write
+
+For this test you will need to re-launch your program then then run the test. This test will send a number of MIDI note messages from aserve. The program will then send a stop message (CC 117) when this happens you will need to write all the MIDI note messages that you received into a text file called notes.txt
+
+The format of each message should look the following:
+
+note number, velocity value 
+
+e.g.
+60,127
+60,0
+
+
+
 
 
