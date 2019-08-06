@@ -1,6 +1,8 @@
-will put both homeworks in here.
+# Constants and Algorithms II
 
-# Constants, defines and enums: Homework exercise
+This tutorial is broken into two different parts. The first looks at sonstants, defines and enums. The second explores a few more algorithims that can be applied specifically to arrays and other data containers.
+
+# Part 1: Constants, defines and enums: 
 
 So far we have either used variables or literals to represent data. However, there are many occasions where we might to define a constant value, in essence a variable whose value cannot be updated or changed. We will explore 3 topics in this exercise:
 
@@ -169,7 +171,7 @@ a.	Note that values within calculations are fine as they are.
 
 
 
-# Array/Vector functions: Homework exercise
+# Part 2 Array/Vector Algorithms:
 
 There are a number of functions built into the standard C++ Library (std) that are powerful tools for performing operations on arrays and vectors. In this exercise we will look at and explore a number of these including:
 
@@ -200,7 +202,7 @@ As you might imagine this is cumbersome and inefficient. Instead if we replace t
 ```
 Note this function will only work with integer vectors.
 
-## Exercise 1:
+## Exercise 2:
 
 Add the **printVector** function declaration shown above to your IAP.h file. Once you have done this complete the function definition inside IAP.cpp, the function should use a loop to iterate over each element of the vector and print the value stored at that index. Write suitable code in your run() function to test the printVector function. **Note you should not use shared variables for this exercise.**
 
@@ -212,7 +214,7 @@ As arrays can hold a large number of variables if very common to search through 
 
 This code shown above is a common routine for searching through an array. Firstly, we create a for loop for iterating over each element of the array, we then check each array element for the value we are looking for, which in this case is 16. If this value is found, we then set the indexOfValueToLookFor variable to be the index that holds 16. We can then call break to exit the loop. In this example we use -1 to symbolise that the value requested was not found.
 
-## Exercise 2:
+## Exercise 3:
 
 Adapt the code supplied above to write a generalized find Index function. This function should take a **vector** as its argument and a **value** to look for. It should return an int which corresponds to the index of the value (if it contains it), or a -1 value if it does not. **Note you should not use shared variables for this exercise.**
 
@@ -257,7 +259,7 @@ You can use this to shuffle or randomize the order of the elements within an arr
 
 **Note that all of the above functions can be applied to both arrays and vectors.**
 
-## Exercise 3: Sort, Reverse, Randomize
+## Exercise 4: Sort, Reverse, Randomize
 
 To conclude this tutorial, you should try out each of the 3 functions discussed previously. A placeholder for this exercise can be found <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Code%20Exercises/Extra%20Tutorial/sorting/getting%20started.txt">here</a>
 
