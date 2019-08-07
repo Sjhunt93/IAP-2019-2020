@@ -37,10 +37,7 @@ There may be occasions where you need to specify the location of your project an
 
 # The Tests
 
-The table bellow outlines each test and the tutorial exercise they correspond to.
-
-
-
+The table bellow outlines each test and the tutorial exercise they are based on. Please note that some tutorials will need adapting for the purpose of validating the unit tests.
 
 
 | Number | Unit Test Name | Exercise Number | Exercise Name |
@@ -48,7 +45,10 @@ The table bellow outlines each test and the tutorial exercise they correspond to
 | 1 | Midi Note to Frequency | 3.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/3%20-%20Processing%20MIDI%20Input.md">Our first monophonic synthesizer</a> |
 | 2 | Drum Sampler | 4.4 |  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/4%20-%20Flow%20Control.md">Fixing the drum sampler </a> |
 | 3 | Chord Machine | 5.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/5%20-%20Functions.md">Chord Machine </a> |
-| 4 | Fix noteoff | 6.4 | noteoff |
+| 4 | Monophonic Synth | 6.4 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/6%20-%20Functions%20II.md">noteoff</a> |
+| 5 | Scale Quantisation | 7.4 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/7%20-%20Switch%20and%20Combinational%20Logic.md">Scale Quantisation</a> |
+| 6 | High Frequency Test Loop | 8.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/8%20-%20Loops.md"> High frequency test </a> |
+
 
 
 # Test 1: Midi Note to Frequency
