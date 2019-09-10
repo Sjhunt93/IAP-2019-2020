@@ -1,10 +1,10 @@
-# Unit Tests
+# Unit Testing
 
-Unit tests are usually automated checks designed to check that a piece of code (the "unit" under test) performs a specific task exactly as designed.
+Testing code is part of good software development practice. Unit tests are usually automated checks designed to verify that a piece of code (the "unit" under test) performs a specific task exactly as designed.
 
-Testing code is part of good software development practice.
+Certain exercises in the tutorials are milestones along your journey learning C++. Aserve can automatically send messages to your iapProj program in xcode to see if your program responds in the expected way.
 
-Aserve can automatically send messages to your iapProj code in xcode,  checking to see if your program responds in the expected way for certain milestone exercises in the tutorials.
+</em>Aserve will keep a permanent record on disk of code which has passed and failed which you will submit for assessment at the end of Semester One.</em>
 
 This document outlines each of unit tests available with details of inputs and expected outcomes.
 
