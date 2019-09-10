@@ -125,7 +125,7 @@ When you complete each practical exercise you must save copies of your solutions
 
 From your Documents/iap/ folder, find and launch Aserve. You should see the following interface: 
 
-<img src="images/aserve_screen_shot_a.png" />
+<img src="../images/aserve_screen_shot_a.png" />
 
 # How Xcode and Aserve work together
 
@@ -140,7 +140,7 @@ Broadly speaking:
 * Aserve will send messages to your Xcode program when MIDI keyboard controls are touched
     * your programs can respond by telling Aserve to make sound or become silent
     
-<img src="images/AserveXcodeYourProgram.png" />
+<img src="../images/AserveXcodeYourProgram.png" />
 
 ## Exercise 2: Test Tone
 
@@ -182,7 +182,7 @@ Make sure you save your solution to this exercise to codeBook before moving on.
 
 ## Exercise 3: Sequential Programming
 
-<img src="images/score_greensleves.png" />
+<img src="../images/score_greensleves.png" />
 
 The score for the first four bars of Greensleeves is shown above. Program the score using the aserveOscillator(), and aserveSleep() functions. Do not worry if you are unable to read music, the note names and durations are indicated below and a table showing the standard piano note names, frequencies, and durations are provided at the end of this practical. 
 
@@ -225,7 +225,7 @@ aserveSleep(1000);
 ```
 The following code will now play a 1kz, 2khz and 4kz tone at the same time. Using this technique program in the following chord sequence. 
 
-<img src="images/metascore.png" />
+<img src="../images/metascore.png" />
 
 Chords | Note
 --- | ---
@@ -257,7 +257,7 @@ aserveSleep(1000); //rest duration
 ## Mario Theme
 Lets program something a little more modern. Do not worry if you do not get time to complete this exercise.
 
-<img src="images/marioscore.png" />
+<img src="../images/marioscore.png" />
 
 A table of events is given in the appendix.
 
@@ -284,7 +284,7 @@ Make sure that you have a good understanding of the following before we return n
 
 ## Appendix Item A: Standard Piano Note Names and Frequencies 
 
-<img src="images/freq_note_map.png" />
+<img src="../images/freq_note_map.png" />
 
 
 ## Appendix Item B: Note Durations
