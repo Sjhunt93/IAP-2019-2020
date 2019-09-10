@@ -50,14 +50,17 @@ You will be developing software in the programming language C++ using the Apple 
 Once you have downloaded a copy of the project proceed to open the IAP folder, and follow the diagram below to open the project.
 
 <img src="images/filestruct.png" height=200/>
-Double click on the `iapProj.xcodeproj` file.
 
-Expand the folders until you can see the `IAP.cpp` file.
+1. Double click on the file `iapProj.xcodeproj`
+2. Wait for Xcode to open the project
 
-**Single click** on `IAP.cpp` to open it for editing. If you double-click by mistake, close the separate window that will appear, and try again. Ensure your Xcode window looks the same as the screenshot bellow. You can now start the practical sessions from Tutorial 1.
+Once the Xcode application has started:
+
+3. Expand the folders on the left until you can see the file `IAP.cpp`
+4. **Single click** on `IAP.cpp` to open it for editing. 
+
+If you double-click by mistake, close the separate window that will appear, and try again. Ensure your Xcode window looks the same as the screenshot bellow. 
+
+You can now start the practical sessions from Tutorial 1.
 
 <img src="images/xcode.png" />
-
-
-
-
