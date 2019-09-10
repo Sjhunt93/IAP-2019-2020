@@ -22,7 +22,7 @@ Each weekly practical session has a specific set of sheets with instructions, in
 
 Download the IAP folder (which contains all of the required materials and applications)
 
-https://github.com/Sjhunt93/IAP-2018-2019
+https://github.com/uwePhillPhelps/IAP-2019-2020/
 
 You will also need to download the latest Xcode version and the Command Line Tools from here:
 
@@ -36,7 +36,7 @@ http://developer.apple.com/programs/register/
 
 Download this IAP folder (which contains all of the required materials and applications)
 
-https://github.com/Sjhunt93/IAP-2018-2019/tree/windows
+https://github.com/uwePhillPhelps/IAP-2019-2020/tree/windows
 
 For windows users we recomend using Microsoft's Visual Studio 2017:
 
@@ -49,14 +49,14 @@ You will be developing software in the programming language C++ using the Apple 
 
 Once you have downloaded a copy of the project proceed to open the IAP folder, and follow the diagram below to open the project.
 
-<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/filestruct.png" height=200/>
-Double click on the iapProj.xcodeproj.
+<img src="Tutorials/images/filestruct.png" height=200/>
+Double click on the `iapProj.xcodeproj` file.
 
-Expand the folders until you can see the IAP.cpp file.
+Expand the folders until you can see the `IAP.cpp` file.
 
-Single click on this to open it for editing. Ensure your Xcode window looks the same as the screenshot bellow. You can now start the practical sessions.
+**Single click** on `IAP.cpp` to open it for editing. If you double-click by mistake, close the separate window that will appear, and try again. Ensure your Xcode window looks the same as the screenshot bellow. You can now start the practical sessions from Tutorial 1.
 
-<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/xcode.png" />
+<img src="Tutorials/images/xcode.png" />
 
 
 
