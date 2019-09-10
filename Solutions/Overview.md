@@ -4,9 +4,9 @@ Testing code is part of good software development practice. Unit tests are usual
 
 Certain exercises in the tutorials are milestones along your journey learning C++. Aserve can automatically send messages to your iapProj program in xcode to see if your program responds in the expected way.
 
-<em>Aserve will keep a permanent record on disk of code which has passed and failed which you will submit for assessment at the end of Semester One.</em>
+Aserve will try to link to your <pre>IAP-2019-2020-master/Solutions</pre> folder to keep copies of code which has passed and failed. <b>You will be required to submit solutions to these exercises for assessment</b>
 
-This document outlines each of unit tests available with details of inputs and expected outcomes.
+This document outlines each of unit tests Aserve can perform with details of inputs and expected outcomes.
 
 # Setup
 
