@@ -114,6 +114,8 @@ std::cout displays the text enclosed by quotation marks on the console; however,
 
 To help you keep a reference of your work to help with future practicals and assignments, we have developed a handy application called `CodeBook`. 
 
+<img src="../images/codebook.png" />
+
 This application helps you take a snapshot of your work, with neatly organised spaces for each and every exercise of each and every practical. 
 
 1.	In finder, navigate to your `IAP-2019-2020-master/apps` folder and open CodeBook.app.
