@@ -11,18 +11,19 @@ This practical is designed to help familiarise you with the development tools th
 
 If you have not already done so, please follow the <a href="../Getting%20Started.md">getting started notes</a> before attempting this practical.
 
-## What does this code do?
+## What is all this stuff?
 
 You will write code in one of two places.
 
--	The header (IAP.h) files 
--	and a c++ (IAP.cpp) file. 
+-	The header `IAP.h` files 
+-	and a c++ `IAP.cpp` file. 
 
-For now, however we will only use the IAP.cpp file, single click on this file to open it now.
+For this first task, we will only use the `IAP.cpp` file, single click on this file to open it now.
+If you accidentally double-click, close the separate window that will appear and try again.
 
-IAP.cpp is where you will be writing most of your C++ programs for this module. Files can be identified as C++ programs by either their, .cpp or .h extension. C++ program files are written in plain text so they may be opened using any ordinary text editor (including word, textedit, notepad, and so forth.). However, Xcode takes care of many other operations needed for creating and running a program.
+`IAP.cpp` is where you will be writing most of your C++ programs for this module. Files can be identified as C++ programs by either their, .cpp or .h extension. C++ program files are written in plain text so they may be opened using any ordinary text editor (including word, textedit, notepad, and so forth.). However, Xcode takes care of many other operations needed for creating and running a program.
 
-The code for this file will be broken down and explained bellow.
+The code for this file will be broken down and explained below.
 
 ## Comments
 
@@ -44,7 +45,7 @@ These two lines tell the compiler to include the information contained in the fi
 -	Quotation marks (“ “) are used to include files that we write ourselves.
 -	Triangle brackets (< >) are used to include C++ library files.
 
-In reality C++ program include a lot of code behind the scenes. We keep this separated into different files to avoid having one massive document!
+C++ programs often include a lot of code behind the scenes. We keep each part separated into different files to avoid having one massive document!
 
 ## Run loop
 
@@ -55,7 +56,7 @@ void IAP::run ()
 }
 ```
 
-The run function is where our code gets executed. The opening brace of the run() function is where program execution begins and the closing brace } is where execution ends and the program stops.
+The run function is where our code gets executed. The opening brace of the `run()` function is where program execution begins and the closing brace } is where execution ends and the program stops.
 
 **Any code that you add to this program should go after opening brace { and before the  closing brace. }**
 
@@ -109,16 +110,18 @@ std::cout displays the text enclosed by quotation marks on the console; however,
 
 \n is what’s called an escape sequence and lets us print characters that cannot be represented easily in code. \t is another useful escape sequence. Insert it in a few places to work out what it does. 
 
-## Moving on
+## Keeping a reference archive of your work
 
-When you complete each practical exercise you must save copies of your solutions to help with future work and assignments. Save your solutions as follows: 
+To help you keep a reference of your work to help with future practicals and assignments, we have developed a handy application called `CodeBook`. 
 
-1.	In finder, navigate to your /iap/ folder and open the application codeBook.
+This application helps you take a snapshot of your work, with neatly organised spaces for each and every exercise of each and every practical. 
+
+1.	In finder, navigate to your `IAP-2019-2020-master/apps` folder and open CodeBook.app.
 2.	On the left hand side of the application you should headers for each week.
-3.	Within the header you should see labels for each exercise.
-4.	Copy and paste the contents of main.cpp and paste it into Exercise 1: Hello World. 
-5.	You can now modify main.cpp without the risk of losing any work. 
-6.	Ensure that you complete and then save each exercise each week in codeBook.
+3.	Within weekly headers you should see labels for each exercise.
+4.	Copy and paste the contents of `IAP.cpp` and paste it into `Exercise 1: Hello World` in codebook. 
+5.	You can now work on the next exercise in `IAP.cpp` in Xcode without the risk of losing any work. 
+6.	Ensure that you complete and then save each exercise each week in codebook.
 7.	Note that code book stores these files in a separate folder, you should not attempt to manually edit these.
 
 ## Aserve 2.0

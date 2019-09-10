@@ -60,7 +60,7 @@ In the examples above, the variable 'temp' was used with the literal '0' and the
 
 ## Exercise 1: Selective monophonic synth 
 
-Reload your solution to exercise 3 from practical 3. Ensure that you use both the .h and .cpp files. 
+Reload your solution to exercise 3 from practical 3. Ensure that you use both the `IAP.h` and `IAP.cpp` files. 
 
 **If you have not yet completed practical 3, please ensure you do.**
 
@@ -122,7 +122,7 @@ If the outcome of condition 1 is true then code block 1 is executed. If the outc
 
 To demonstrate using if/else if/else we will construct a basic drum pad sampler.
 
-<a href="../../Code%20Exercises/Tutorial%204/Exercise%203">Download both files</a>, and copy the contents into both IAP.cpp and IAP.h files.
+<a href="../../Code%20Exercises/Tutorial%204/Exercise%203">Download both files</a>, and copy the contents into both `IAP.cpp` and `IAP.h` files.
 
 You will see one new line of code that we have not seen before inside the run loop.
 
@@ -191,7 +191,7 @@ Your drum sampler should now only trigger samples when the pad is pushed down.
 
 ## Debug & Challenge Exercise
 
-Open up the <a href="../../Code%20Exercises/Tutorial%204/Debug">debug folder</a> for this practical. Load both IAP.cpp and IAP.h files into the project. You must fix the program so that it runs a basic monophonic synth correctly. 
+Open up the <a href="../../Code%20Exercises/Tutorial%204/Debug">debug folder</a> for this practical. Load both `IAP.cpp` and `IAP.h` files into the project. You must fix the program so that it runs a basic monophonic synth correctly. 
 
 Issues include typos, numerical errors, out of range numbers and others. Make sure you save your solution for this to CodeBook.
 
