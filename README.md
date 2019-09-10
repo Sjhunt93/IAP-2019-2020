@@ -29,7 +29,9 @@ Read the following <a href="https://github.com/uwePhillPhelps/IAP-2019-2020/blob
 15.  <a href="https://github.com/uwePhillPhelps/IAP-2019-2020/blob/master/Tutorials/Part%202/15%20-%20Bitwise%20Manipulation.md">Bitwise Manipulation</a>
 16.  <a href="https://github.com/uwePhillPhelps/IAP-2019-2020/blob/master/Tutorials/Part%202/16%20-%20Some%20More%20CPP.md">Some more C++</a>
 
-### Unit Tests
+### Unit Test assessments
+
+Certain exercises in the tutorials are important milestones along your journey learning C++ and will be assessed. Aserve can automatically test your iapProj program in xcode to see if your solution responds in the expected way. Check the following link for more info.
 
 <a href="https://github.com/uwePhillPhelps/IAP-2019-2020/blob/master/Solutions/Overview.md">Unit test assessments</a>
 
