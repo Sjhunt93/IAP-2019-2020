@@ -61,6 +61,6 @@ Once the Xcode application has started:
 
 If you double-click by mistake, close the separate window that will appear, and try again. Ensure your Xcode window looks the same as the screenshot bellow. 
 
-You can now start the practical sessions from Tutorial 1.
+You can now start the practical sessions from <a href="Part%201/1%20-%20Familiarisation.md">Tutorial 1 - familiarisation</a>
 
 <img src="images/xcode.png" />
