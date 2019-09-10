@@ -129,9 +129,7 @@ From your Documents/iap/ folder, find and launch Aserve. You should see the foll
 
 # How Xcode and Aserve work together
 
-As we've seen already, you write code inside the `iapProj` xcode project - and run this program inside xcode.
-
-To produce sound in a musical context Aserve and your Xcode program work together as a 'client and server'. This is very similar to how a client at a restaurant might request food from the serving staff. 
+To produce sound in a musical context Aserve and your Xcode program work together as a 'client and server'. This is very similar to how a client at a restaurant might request food from the serving staff. Okay maybe that's a silly analogy - but it's not too bad!
 
 Broadly speaking:
 
