@@ -135,12 +135,14 @@ To produce sound in a musical context Aserve and your Xcode program work togethe
 
 Broadly speaking:
 
-* your program will always run inside Xcode 
-   * your program can tell Aserve to make sound automatically ... or ... 
-* Aserve will send messages to your Xcode program when MIDI keyboard controls are touched
-    * your programs can respond by telling Aserve to make sound or become silent
+* your `iapproj` program will always run inside Xcode 
+   * your `iapproj` program can tell Aserve to make sound automatically ... or ... 
+* Aserve will send messages to your Xcode program when MIDI keyboard controls are moved
+    * your `iapproj` program can respond by telling Aserve to make sound or become silent
     
 <img src="../images/AserveXcodeYourProgram.png" />
+
+We'll explore the second scenario (responding to MIDI controls) in later practicals, for now let's start with something simple.
 
 ## Exercise 2: Test Tone
 
