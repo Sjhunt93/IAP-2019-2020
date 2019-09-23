@@ -1,21 +1,20 @@
-# Unit Tests
+# Unit Testing
 
-This document outlines each of the unit tests and details the expected inputs and outcomes for each specific test
+Testing code is part of good software development practice. Unit tests are usually automated checks designed to verify that a piece of code (the "unit" under test) performs a specific task exactly as designed.
 
+Certain exercises in the tutorials are milestones along your journey learning C++. Aserve can automatically send messages to your iapProj program in xcode to see if your solution to the exercise responds in the expected way.
 
-# Overview
+Aserve will try to link to your `IAP-2019-2020-master/Solutions` folder to keep copies of code which has passed and failed. **You will be required to submit your solutions folder for assessment - so be sure to keep it up to date**
 
-The Aserve unit tester is a small application embeded inside Aserve that remotely sends messages to your IAP project and expects to receive a set list of messages in return.
-
-A unit test is normal software development is test designed to validate some code inside the software that performs a specific task.
+This document outlines each of unit tests Aserve can perform with details of inputs and expected outcomes.
 
 # Setup
 
-To view the unit test pannel in Aserve select it from the dropdown menu (it is hidden by default).
+To view the unit test panel in Aserve select it from the dropdown menu (it is hidden by default).
 
 <img src="Images/aserveunitmenu.png" />
 
-Once open you should see the unit test pannel appear on the right hand side.
+Once open you should see the unit test panel appear on the right hand side.
 
 <img src="Images/unittests.png" />
 
@@ -42,23 +41,23 @@ The table bellow outlines each test and the tutorial exercise they are based on.
 
 | Number | Unit Test Name | Exercise Number | Exercise Name |
 | --- | --- | --- | --- |
-| 1 | Midi Note to Frequency | 3.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/3%20-%20Processing%20MIDI%20Input.md">Our first monophonic synthesizer</a> |
-| 2 | Drum Sampler | 4.4 |  <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/4%20-%20Flow%20Control.md">Fixing the drum sampler </a> |
-| 3 | Chord Machine | 5.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/5%20-%20Functions.md">Chord Machine </a> |
-| 4 | Monophonic Synth | 6.4 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/6%20-%20Functions%20II.md">noteoff</a> |
-| 5 | Scale Quantisation | 7.4 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/7%20-%20Switch%20and%20Combinational%20Logic.md">Scale Quantisation</a> |
-| 6 | High Frequency Test Loop | 8.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/8%20-%20Loops.md"> High frequency test </a> |
-| 7 | Music Sequencer | 11.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/11%20-%20Vector.md"> Exercise 3: Building a music sequencer </a> |
-| 8 | Reading From a File | 14.2 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/14%20-%20Files%20and%20String%20Manipulation.md"> Synthesize file contents </a> |
-| 9 | Write to a File | 14.3 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/14%20-%20Files%20and%20String%20Manipulation.md"> Writing to our file
+| 1 | Midi Note to Frequency | 3.3 | <a href="../Tutorials/Part%201/3%20-%20Processing%20MIDI%20Input.md">Our first monophonic synthesizer</a> |
+| 2 | Drum Sampler | 4.4 |  <a href="../Tutorials/Part%201/4%20-%20Flow%20Control.md">Fixing the drum sampler </a> |
+| 3 | Chord Machine | 5.3 | <a href="../Tutorials/Part%201/5%20-%20Functions.md">Chord Machine </a> |
+| 4 | Monophonic Synth | 6.4 | <a href="../Tutorials/Part%201/6%20-%20Functions%20II.md">noteoff</a> |
+| 5 | Scale Quantisation | 7.4 | <a href="../Tutorials/Part%201/7%20-%20Switch%20and%20Combinational%20Logic.md">Scale Quantisation</a> |
+| 6 | High Frequency Test Loop | 8.3 | <a href="../Tutorials/Part%201/8%20-%20Loops.md"> High frequency test </a> |
+| 7 | Music Sequencer | 11.3 | <a href="../Tutorials/Part%202/11%20-%20Vector.md"> Exercise 3: Building a music sequencer </a> |
+| 8 | Reading From a File | 14.2 | <a href="../Tutorials/Part%202/14%20-%20Files%20and%20String%20Manipulation.md"> Synthesize file contents </a> |
+| 9 | Write to a File | 14.3 | <a href="../Tutorials/Part%202/14%20-%20Files%20and%20String%20Manipulation.md"> Writing to our file
  </a> |
- | 10 | Sorting | 13.4 | <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/13%20-%20Constants%20and%20Algorithms%20II.md"> Sort, Reverse, Randomize </a> |
+ | 10 | Sorting | 13.4 | <a href="../Tutorials/Part%202/13%20-%20Constants%20and%20Algorithms%20II.md"> Sort, Reverse, Randomize </a> |
 
 
 
 
 # Test 1: Midi Note to Frequency
-*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/3%20-%20Processing%20MIDI%20Input.md">Exercise 3.3</a>*
+*Tests: <a href="../Tutorials/Part%201/3%20-%20Processing%20MIDI%20Input.md">Exercise 3.3</a>*
 
 This unit test tests that you have correctly implemented the equation for converting note numbers into oscillator frequencies. The test will iteratively output MIDI note numbers from 0-127 and expect the oscillator on channel 0 to be updated accordingly. 
 
@@ -67,7 +66,7 @@ This unit test tests that you have correctly implemented the equation for conver
 | 1 | MIDI notes from 0 - 127 | Switch on Oscillator 0 with correct frequency | 
 
 # Test 2: Drum Sampler
-*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/4%20-%20Flow%20Control.md">Exercise 4.4</a>*
+*Tests: <a href="../Tutorials/Part%201/4%20-%20Flow%20Control.md">Exercise 4.4</a>*
 
 This unit test tests that you have correctly implemented exercise 4.4. The test will simulate pushing each of the top 4 drum pads on the impulse keyboard. The sample should only be triggered when the pad is pushed down (velocity greater then 0) but not when the pad is released (velocity value is 0).
 
@@ -84,7 +83,7 @@ This unit test tests that you have correctly implemented exercise 4.4. The test 
 
 
 # Test 3: Chord Machine
-*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/5%20-%20Functions.md">Exercise 5.3</a>*
+*Tests: <a href="../Tutorials/Part%201/5%20-%20Functions.md">Exercise 5.3</a>*
 
 This unit test tests that you have correctly implemented exercise 5.3. This test will simulate pushing each of the top 4 drum pads on the impulse keyboard. The first 3 pads should play major chords, and the 4th pad a minor chord. Each note of the chord must be played on a different channel at the same time. See the below table for the exact expected chords.
 
@@ -97,7 +96,7 @@ This unit test tests that you have correctly implemented exercise 5.3. This test
 
 
 # Test 4: Fix noteoff
-*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/6%20-%20Functions%20II.md">Exercise 6.4</a>*
+*Tests: <a href="../Tutorials/Part%201/6%20-%20Functions%20II.md">Exercise 6.4</a>*
 
 This unit test tests that you have correctly implemented the expected behaviour for note off messages for a monophonic synthesiser. The oscillator should always play note on messages when received but only switch off when the note number of a note off messages matches the frequency of the oscillator that is currently playing.
 
@@ -110,7 +109,7 @@ This unit test tests that you have correctly implemented the expected behaviour 
 
 
 # Test 5: Scale Quantization
-*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/7%20-%20Switch%20and%20Combinational%20Logic.md">Exercise 7.4</a>*
+*Tests: <a href="../Tutorials/Part%201/7%20-%20Switch%20and%20Combinational%20Logic.md">Exercise 7.4</a>*
 
 This unit test tests that you have correctly implemented the major scale quantization function. All notes should be quantised to the C major scale (white keys) this means each time a black key is pressed the corresponding note is transposed by 1 semitone (value increased by 1). The test will iteratively output MIDI note numbers from 0-127 and expect the oscillator on channel 0 to be updated accordingly. 
 
@@ -121,7 +120,7 @@ This unit test tests that you have correctly implemented the major scale quantiz
 
 
 # Test 6: High Frequency Test
-*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%201/8%20-%20Loops.md">Exercise 8.3</a>*
+*Tests: <a href="../Tutorials/Part%201/8%20-%20Loops.md">Exercise 8.3</a>*
 
 This unit test tests that you have correctly implemented a looping high frequency test. This unit test will require you to adapt one of your solutions from exercise 8. When you run this unit test Aserve will send out a modwheel control change message. When this happens you should start a high frequency test. This test should start with a frequency value of 20hz and increment the frequency value by 17 on each loop increment. Note that you should sleep for 10ms on each loop increment. The test should only run while the frequency value is less then 17,300 hz. Note you may place code in either the modwheel callbacj function, or in your run function.
 
@@ -131,7 +130,7 @@ This unit test tests that you have correctly implemented a looping high frequenc
 
 
 # Test 7: Vector Sequencer
-*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/11%20-%20Vector.md">Exercise 11.3</a>*
+*Tests: <a href="../Tutorials/Part%202/11%20-%20Vector.md">Exercise 11.3</a>*
 
 This unit test will test all of the features of exercise 11.3. Aserve will send a series of note on and note off messages to your project. Your project should store these note numbers. Aserve will simulate pushing the play button at which point you should playback all the notes sent previously. This should continue to loop until a stop message is recieved (CC 114), at this point playback should stop.
 
@@ -144,7 +143,7 @@ This unit test will test all of the features of exercise 11.3. Aserve will send 
 | 3 | CC 114 with a value of 127 | Playback should stop, oscillator state should be switched off |
 
 # Test 8: File read
-*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/14%20-%20Files%20and%20String%20Manipulation.md">Exercise 14.2</a>*
+*Tests: <a href="../Tutorials/Part%202/14%20-%20Files%20and%20String%20Manipulation.md">Exercise 14.2</a>*
 
 This unit test will ensure that you know you to read information from a file. Aserve will get generate the contents of the the file named "exercise1.txt". Your program should startup and open this file, read it line-by-line convert the note number to a frequency and use Aserve's oscillator 0 to synthesize the note value. You should sleep by around 250ms between sending notes.
 
@@ -160,7 +159,7 @@ aserveSleep(10000); //Sleep for 10 seconds while unit test starts.
 
 
 # Test 9: File write
-*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/14%20-%20Files%20and%20String%20Manipulation.md">Exercise 14.3</a>*
+*Tests: <a href="../Tutorials/Part%202/14%20-%20Files%20and%20String%20Manipulation.md">Exercise 14.3</a>*
 
 This unit test will ensure that you know how to write information to a file. This test will send a number of MIDI note messages from aserve. The program will then send a stop message (CC 117) when this happens you will need to write all the MIDI note messages that you received into a text file called notes.txt. Aserve will wait for roughly 5 seconds before attempting to open the file and verify its contents. This test is somewhat similar to unit test 7.
 
@@ -183,7 +182,7 @@ For example:
 
 
 # Test 10: Sorting, Reversing, Shuffling
-*Tests: <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/Part%202/13%20-%20Constants%20and%20Algorithms%20II.md">Exercise 13.4</a>
+*Tests: <a href="../Tutorials/Part%202/13%20-%20Constants%20and%20Algorithms%20II.md">Exercise 13.4</a>
 
 For this you will need to adapt your solution to unit test 7. You will only need one vector for this unit test, and you only need to store note-on note numbers. Ensure this test is passed before attempting this one. Once the inner for loop has played you should set the playButton to be false. (so that the sequence is only played once and does not loop). Aserve will send various CC commands and these should perform various algorithims on the stored sequence, before playing it back.
 
