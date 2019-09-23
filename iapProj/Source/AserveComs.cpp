@@ -33,6 +33,16 @@ AserveComs::AserveComs ()
         addListener (this);
         timeAtStart = Time::getCurrentTime().getMillisecondCounter();
         sender.send(AserveOSC::reset);
+        
+        // Send the current executable file so aserve knows what to look for.
+        File f = File::getSpecialLocation(File::SpecialLocationType::currentExecutableFile);
+        f = f.getParentDirectory().
+            getParentDirectory().getParentDirectory().getParentDirectory().getParentDirectory();
+        f = f.getChildFile("Source");
+//        std::cout << "File path : " << f.getFullPathName() << "\n";
+        
+        sender.send(AserveOSC::fPath, f.getFullPathName());
+        
     }
     
     // tell the component to listen for OSC messages matching this address:
