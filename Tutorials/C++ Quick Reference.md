@@ -340,7 +340,7 @@ public:
     int IAP::squareNumber (int num) //function definition
     {
         int sum = num * num;
-        return num; //return num
+        return sum; //return sum
     }
 ```
 
