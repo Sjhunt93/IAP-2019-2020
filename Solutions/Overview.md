@@ -36,7 +36,7 @@ There may be **rare** occasions where you need to specify the location of your p
 
 ## Bulk testing
 
-Aserve can re-test all of the solutions currently saved in the unit test folder. To do this open Aserve, run the project once, then close the project. From the drop down settings menu select *run folder of tests*. This may take some time and Aserve will lock-up during this process.  Before using this option ensure you save and take a backup of your entire project folder.
+Aserve can re-test all of the solutions currently saved in the unit test folder. To do this open Aserve, run the project once, then close the project. From the drop down settings menu select *run folder of tests*. This may take some time and Aserve will lock-up during this process.  Before using this option ensure you save and take a backup of your entire project folder. Several windows will popup automatically, you will need to close these manually after the test is run.
 
 # The Tests
 
