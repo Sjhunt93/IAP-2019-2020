@@ -30,9 +30,13 @@ Once a test has been run the solution to the test will be copied from your Xcode
 
 ## File paths
 
-There may be occasions where you need to specify the location of your project and Solutions folder. To do this open settings -> unit test setup (from the dropdown menu). **However you should speak to a member of staff before changing any of the settings - as the project should be setup automatically for you.**
+When your project runs it sends Aserve a message specifying the location of your project and source files. This only needs to happen once. If you close Aserve for any reason, you will need to re run your project once to set the file paths. This all happens automatically and you most likely will never see any error messages because of this. However the unit test will fail if the paths are not set correctly.
 
+There may be **rare** occasions where you need to specify the location of your project and Solutions folder. To do this open settings -> unit test setup (from the dropdown menu). **However you should speak to a member of staff before changing any of the settings - as the project should be setup automatically for you.**
 
+## Bulk testing
+
+Aserve can re-test all of the solutions currently saved in the unit test folder. To do this open Aserve, run the project once, then close the project. From the drop down settings menu select *run folder of tests*. This may take some time and Aserve will lock-up during this process.  Before using this option ensure you save and take a backup of your entire project folder.
 
 # The Tests
 
