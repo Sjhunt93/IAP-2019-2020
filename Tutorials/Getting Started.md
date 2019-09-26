@@ -22,7 +22,7 @@ Each weekly practical session has a specific set of sheets with instructions, in
 
 Download the IAP folder (which contains all of the required materials and applications)
 
-https://github.com/uwePhillPhelps/IAP-2019-2020/
+https://github.com/Sjhunt93/IAP-2019-2020
 
 You will also need to download the latest Xcode version and the Command Line Tools from here:
 
@@ -36,7 +36,7 @@ http://developer.apple.com/programs/register/
 
 Download this IAP folder (which contains all of the required materials and applications)
 
-https://github.com/uwePhillPhelps/IAP-2019-2020/tree/windows
+https://github.com/Sjhunt93/IAP-2019-2020/tree/windows
 
 For windows users we recomend using Microsoft's Visual Studio 2017:
 
