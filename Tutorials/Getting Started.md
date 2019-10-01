@@ -24,7 +24,7 @@ Download the IAP folder (which contains all of the required materials and applic
 
 https://github.com/Sjhunt93/IAP-2019-2020
 
-You will also need to download the latest Xcode version and the Command Line Tools from here:
+You will also need to download the latest Xcode version and the Command Line Tools from here: (Note this is only if you are working on your own machine. The university machines already have xcode installed.
 
 https://developer.apple.com/xcode/
 
