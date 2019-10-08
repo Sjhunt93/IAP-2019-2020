@@ -133,6 +133,10 @@ void AserveComs::aserveOscillator (int channel, float frequency, float amplitude
 {
     sender.send(AserveOSC::oscilator, channel, frequency, amplitude, wavetype) ;
 }
+void AserveComs::aserveClearOscillator (int channel)
+{
+    aserveOscillator(channel, 0, 0, 0);
+}
 void AserveComs::aserveLoadSample (int channel, std::string filePath)
 {
     sender.send(AserveOSC::loadsample, channel, String(filePath));

@@ -38,6 +38,7 @@ public:
      @endcode
      */
     void aserveOscillator (int channel, float frequency, float amplitude, int wavetype);
+    void aserveClearOscillator (int channel); //turns off the oscillator
     
     /**
      Causes program execution to pause for the specified time in milliseconds.
