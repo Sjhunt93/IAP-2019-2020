@@ -38,8 +38,11 @@ AserveComs::AserveComs ()
         File f = File::getSpecialLocation(File::SpecialLocationType::currentExecutableFile);
         f = f.getParentDirectory().
             getParentDirectory().getParentDirectory().getParentDirectory().getParentDirectory();
+#ifdef JUCE_WINDOWS
+		f = f.getParentDirectory();
+#endif
         f = f.getChildFile("Source");
-//        std::cout << "File path : " << f.getFullPathName() << "\n";
+      //  std::cout << "File path : " << f.getFullPathName() << "\n";
         
         sender.send(AserveOSC::fPath, f.getFullPathName());
         
