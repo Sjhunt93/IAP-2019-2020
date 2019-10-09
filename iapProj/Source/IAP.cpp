@@ -11,6 +11,13 @@
 
 void IAP::run ()
 {
-    
+	aserveOscillator(0, 440.0, 1.0, 3);
+	aserveSleep(1000);
+
+	aserveClearOscillator(0);
+	aserveSleep(1000);
+
+	aserveOscillator(0, 440.0, 1.0, 3);
+	aserveSleep(1000);
 }
 
