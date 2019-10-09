@@ -4,17 +4,17 @@
   <tutorial name="Familiarisation ">
     <item name="Exercise 1: Hello World" type="0">
       <h src=""/>
-      <cpp src=""/>
+      <cpp src="0_0_cpp.txt"/>
       <code src=""/>
     </item>
     <item name="Exercise 2: Test Tone" type="0">
       <h src=""/>
-      <cpp src=""/>
+      <cpp src="0_1_cpp.txt"/>
       <code src=""/>
     </item>
     <item name="Exercise 3: Sequential Programming" type="0">
       <h src=""/>
-      <cpp src=""/>
+      <cpp src="0_2_cpp.txt"/>
       <code src=""/>
     </item>
     <item name="Exercise 4: Programming Chords" type="0">
