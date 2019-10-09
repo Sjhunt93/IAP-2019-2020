@@ -25,12 +25,11 @@ public:
     //---------------------------------------------------------------------------------
     // FUNCTIONS (IAP class methods)
     void run ();
-    float mtof (int note);
 
     //---------------------------------------------------------------------------------
     // CALLBACK FUNCTIONS
     
-    //void callbackNoteReceived  (int note, int velocity, int channel);
+//    void callbackNoteReceived  (int note, int velocity, int channel);
     //void callbackModWheelMoved (int value);
     //void callbackPitchbendWheelMoved (int value);
     //void callbackCCValueChanged (int cc, int value);

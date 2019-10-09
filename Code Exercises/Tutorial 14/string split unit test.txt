@@ -1,0 +1,35 @@
+    {
+        using namespace std;
+        string testA = "hello-sam";
+        string a, b;
+        
+        splitString(testA, "-", a, b);
+        /*
+         should print:
+         hello
+         sam
+         */
+        std::cout << a << "\n";
+        std::cout << b << "\n";
+        
+        string testB = "10||5";
+        splitString(testB, "||", a, b);
+        /*
+         should print:
+         10
+         5
+         */
+        std::cout << a << "\n";
+        std::cout << b << "\n";
+        
+        string testC = "thisShouldNotSplit";
+        splitString(testC, ",", a, b);
+        /*
+         should print:
+         
+         
+         */
+        std::cout << a << "\n";
+        std::cout << b << "\n";
+
+    }

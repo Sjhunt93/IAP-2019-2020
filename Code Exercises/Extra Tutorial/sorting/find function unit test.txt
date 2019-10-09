@@ -1,0 +1,23 @@
+void IAP::run ()
+{
+    /* Test 1
+        Should return 1
+     */
+    
+    std::vector<int> test = {0, 5, 7, 9, 10};
+    const int a = findIndex(test, 5);
+    std::cout << a << "\n";
+
+    /* Test 2
+     Should return -1
+     */
+    const int b = findIndex(test, 11);
+    std::cout << b << "\n";
+    
+    /* Test 3
+     Should return 4
+     */
+    const int c = findIndex(test, 10);
+    std::cout << c << "\n";
+
+}

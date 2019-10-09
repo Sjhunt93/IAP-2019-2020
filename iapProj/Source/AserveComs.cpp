@@ -33,6 +33,16 @@ AserveComs::AserveComs ()
         addListener (this);
         timeAtStart = Time::getCurrentTime().getMillisecondCounter();
         sender.send(AserveOSC::reset);
+        
+        // Send the current executable file so aserve knows what to look for.
+        File f = File::getSpecialLocation(File::SpecialLocationType::currentExecutableFile);
+        f = f.getParentDirectory().
+            getParentDirectory().getParentDirectory().getParentDirectory().getParentDirectory();
+        f = f.getChildFile("Source");
+//        std::cout << "File path : " << f.getFullPathName() << "\n";
+        
+        sender.send(AserveOSC::fPath, f.getFullPathName());
+        
     }
     
     // tell the component to listen for OSC messages matching this address:
@@ -124,6 +134,10 @@ void AserveComs::aserveOscillator (int channel, float frequency, float amplitude
 {
     sender.send(AserveOSC::oscilator, channel, frequency, amplitude, wavetype) ;
 }
+void AserveComs::aserveClearOscillator (int channel)
+{
+    aserveOscillator(channel, 0, 0, 0);
+}
 void AserveComs::aserveLoadSample (int channel, std::string filePath)
 {
     sender.send(AserveOSC::loadsample, channel, String(filePath));
@@ -189,4 +203,8 @@ void AserveComs::aserveConfigureOscillatorMode (eOscillatorMode mode)
     sender.send(AserveOSC::reset);
     sender.send(AserveOSC::mode, m);
 
+}
+void AserveComs::aservePanOscillator (int channel, float left, float right)
+{
+    sender.send(AserveOSC::pan, channel, left, right);
 }

@@ -1,0 +1,27 @@
+    /*
+     Create a vector
+     */
+    
+    /*
+     add 25 elements to the vector using a for loop. You can use the following code 		snippet to add random values
+        vector.push_back(arc4random() % 100);
+     */
+    
+    /*
+     Print the contents of the vector
+     */
+    
+    /*
+     use std::sort to sort this vector
+     and print the contents again
+     */
+    
+    /*
+     use std::reverse to reverse this vector
+     and print the contents again
+     */
+    
+    /*
+     use std::random_shuffle to mix the vector up
+     and print the contents again
+     */
