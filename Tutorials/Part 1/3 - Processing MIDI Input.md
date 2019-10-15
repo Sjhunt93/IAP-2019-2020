@@ -30,7 +30,7 @@ Should now look like:
 ```cpp
 void callbackNoteReceived (int note, int velocity, int channel);
 ```
-Back inside the IAP.cpp file add the following block of code next to IAP::run().
+Back inside the IAP.cpp file add the following block of code **under** IAP::run().
 
 ```cpp
 void IAP::callbackNoteReceived (int note, int velocity, int channel)
@@ -114,6 +114,7 @@ The reason that the program does not work correctly is due to integers. Since no
 
 The last thing we need to do is to swap the 12 on statement 4, to be 12.0. The constant 12 is not the same as 12.0, to ensure we use floating point datatypes everywhere we have to specify 12.0. Try swapping these two values and witness the result.
 
+**As an optional challenge try writing the frequency conversion equation on one line of code**
 
 ## Exercise 4: Filter Control
 
