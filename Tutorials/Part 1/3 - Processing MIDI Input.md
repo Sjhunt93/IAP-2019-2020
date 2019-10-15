@@ -173,7 +173,7 @@ To improve the range of controls for the filter you may use the following formul
 <img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/cuttoff_b.png" height=60/>
 
 ```cpp
-cutoff = ( pow((value / [insert maximum value here].0), 3.0) * 19800) + 20;
+cutoff = ( pow((value / [insert maximum value here and remove square brackets].0), 3.0) * 19800) + 20;
 ```
 
 This will apply a logarithmic scale to the filter control to gives us a more natural sounding filter control. You may also wish to adjust the constants 19800 and 20 to observe what effect this might have over the program.
