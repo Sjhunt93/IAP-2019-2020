@@ -30,7 +30,7 @@ Should now look like:
 ```cpp
 void callbackNoteReceived (int note, int velocity, int channel);
 ```
-Back inside the IAP.cpp file add the following block of code **under** IAP::run().
+Back inside the IAP.cpp file add the following block of code **under** IAP::run(), **after the last }**
 
 ```cpp
 void IAP::callbackNoteReceived (int note, int velocity, int channel)
