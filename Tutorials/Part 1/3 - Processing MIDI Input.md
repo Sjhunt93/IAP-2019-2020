@@ -41,7 +41,7 @@ void IAP::callbackNoteReceived (int note, int velocity, int channel)
 ```
 **Make sure you type this code exactly.**
 
-Add the following loop to IAP::run().
+Add the following piece of code inside IAP::run(), between the opening ( { ) and closing braces ( } ).
 
 ```cpp
 while (true) 
@@ -100,7 +100,7 @@ Do not worry if you do not understand this fully yet. Complete this exercise by 
 ```cpp
 1.	int freq = 440 * power;
 2.	int power = pow(2, octave);
-3.	aserveOscilitor (0, freq, 1.0, 0);
+3.	aserveOscillator (0, freq, 1.0, 0);
 4.	int octave = (note – 69) / 12;
 ```
 
