@@ -41,7 +41,7 @@ void IAP::callbackNoteReceived (int note, int velocity, int channel)
 ```
 **Make sure you type this code exactly.**
 
-Add the following piece of code inside IAP::run(), between the opening ( { ) and closing braces ( } ).
+Add the following piece of code inside IAP::run(), between the opening **{** and closing braces **}**.
 
 ```cpp
 while (true) 
