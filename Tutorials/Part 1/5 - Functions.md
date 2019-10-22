@@ -23,7 +23,7 @@ It is possible to write your program **without** using custom functions, however
 
 ## First function
 
-To illustrate when we might to make a function, open up an empty project and copy the following code to the run() in IAP.h. Study the code inside the main run loop.
+To illustrate when we might to make a function, open up an empty project and copy the following code to the run() in IAP.cpp. Study the code inside the main run loop.
 
 ```cpp
   int numberA = 0;
