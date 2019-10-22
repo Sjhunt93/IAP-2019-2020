@@ -22,7 +22,8 @@ if (condition)
 
 If the condition is true then the statements enclosed by braces are executed, and if the condition is false the statements are skipped. 
 
-## Conditions?
+## Conditions 
+
 Comparison operators may be used to construct a *conditional* expression. For example, we may wish to display a warning if the temperature of a boiler exceeds 99 degrees centigrade. If the current temperature was stored in a variable called 'temp' the corresponding if statement would be as follows: 
 
 ```cpp
