@@ -125,7 +125,7 @@ To demonstrate using if/else if/else we will construct a basic drum pad sampler.
 
 <a href="../../Code%20Exercises/Tutorial%204/Exercise%203">Download both files</a>, and copy the contents into both `IAP.cpp` and `IAP.h` files.
 
-You will see one new line of code that we have not seen before inside the run loop.
+You will see one new line of code that we have not seen before inside our run() function.
 
 ```cpp
 aserveLoadDefaultSounds();
