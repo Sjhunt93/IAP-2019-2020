@@ -59,7 +59,7 @@ In the IAP.h file, place the following line of code under the FUNCTIONS label, a
 int readNumber ();
 ```
 
-Back in our IAP.cpp file we need to write the following code under our main run loop.
+Back in our IAP.cpp file we need to write the following code under our main run() function.
 
 ```cpp
 int IAP::readNumber ()
