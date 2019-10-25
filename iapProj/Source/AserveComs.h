@@ -369,7 +369,7 @@ private:
     void sendMIDI (Byte s, Byte d1, Byte d2);
     
     OSCSender sender;
-
+    Thread::ThreadID mainThreadId;
 };
 
 
