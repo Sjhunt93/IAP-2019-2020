@@ -110,7 +110,7 @@ Run and test your program before moving on.
 
 You should notice that there is an error when we run our program. That is no matter what note we play, we hear the note A, in different octaves.
 
-The reason that the program does not work correctly is due to integers. Since note frequencies have decimal parts, we will need to replace *int* datatypes with *float* datatypes.
+The reason that the program does not work correctly is due to using integers. Since note frequencies have decimal parts, we will need to replace some of the *int* datatypes with *float* datatypes. Think carefully about which ones to replace.
 
 The last thing we need to do is to swap the 12 on statement 4, to be 12.0. The constant 12 is not the same as 12.0, to ensure we use floating point datatypes everywhere we have to specify 12.0. Try swapping these two values and witness the result.
 

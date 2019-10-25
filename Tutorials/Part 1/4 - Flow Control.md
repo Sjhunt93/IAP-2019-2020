@@ -88,7 +88,7 @@ If the outcome of the condition is true (i.e. not zero) then code block 1 will b
 
 ## Exercise 2:  Monophonic synth on/off State
 
-Building on exercise 1. Use an if-else statement to switch the oscillator on if the velocity received is above 0, else switch the oscillator off.
+Building on exercise 1. Use an if-else statement to switch the oscillator on if the velocity received is above 0, else switch the oscillator off. You will no longer need the if statement from exercise 1.
 
  The flow chart for this is given bellow:
 
@@ -125,7 +125,7 @@ To demonstrate using if/else if/else we will construct a basic drum pad sampler.
 
 <a href="../../Code%20Exercises/Tutorial%204/Exercise%203">Download both files</a>, and copy the contents into both `IAP.cpp` and `IAP.h` files.
 
-You will see one new line of code that we have not seen before inside the run loop.
+You will see one new line of code that we have not seen before inside our run() function.
 
 ```cpp
 aserveLoadDefaultSounds();
