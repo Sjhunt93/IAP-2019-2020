@@ -157,9 +157,9 @@ The minor function is the same except oscillator two will be calculated based on
 The code for the note callback function is supplied bellow, **ensure that you have correctly added the two chord functions before trying to run the code**. The bottom 4 drum pads on the impulse control correspond to the 4 chords. 
 
 ```cpp
-void IAP::callbackNoteReceived  (int note, int velocity)
+void IAP::callbackNoteReceived  (int note, int velocity, int channel)
 {
-    if (note == 61)
+    if (note == 60)
     {
         majorChord(60); // C Major
     }
@@ -167,11 +167,11 @@ void IAP::callbackNoteReceived  (int note, int velocity)
     {
         majorChord(65); // F Major
     }
-    else if (note == 63)
+    else if (note == 64)
     {
         majorChord(67); // G Major
     }
-    else if (note == 64)
+    else if (note == 65)
     {
         minorChord(69); // A Minor
     }
