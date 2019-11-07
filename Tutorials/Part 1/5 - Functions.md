@@ -197,6 +197,8 @@ Add 2 or more chord functions, some suggestions for chords are given bellow. You
 
 Open debug exercise 5 and then fix the broken exercise. Make sure you save your solution to codeBook.
 
+https://github.com/Sjhunt93/IAP-2019-2020/tree/master/Code%20Exercises/Tutorial%205/Debug
+
 ## Challenge Exercise: 
 
 Add a nested if statement to the note callback function in exercise 4 so that chords are only switched on when the velocity value is greater than 0, otherwise turn off all the current oscillators. 
