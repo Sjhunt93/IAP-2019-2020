@@ -21,65 +21,9 @@ It is possible to write your program **without** using custom functions, however
 -	Potentially error prone (e.g. typos in repetitions)
 
 
-## First function
+## first function
 
-To illustrate when we might to make a function, open up an empty project and copy the following code to the run() in IAP.cpp. Study the code inside the main run loop.
-
-```cpp
-  int numberA = 0;
-  std::cout << "Please enter a number : \n";
-  std::cin >> numberA;
-
-  int numberB = 0;
-  std::cout << "Please enter a number : \n";
-  std::cin >> numberB;
-
-  int numberC = 0;
-  std::cout << "Please enter a number : \n";
-  std::cin >> numberC;
-
-  int numberD = 0;
-  std::cout << "Please enter a number : \n";
-  std::cin >> numberD;
-```
-
-Study the code above. 
-
-There are four groups of statements, each marginally different. If we look closely, the only difference is the variable we are storing our data in. 
-
-If you find yourself writing code like this, you should re-write it as a function. 
-Doing so avoids duplication of code, and makes your code easier to change.
-
-
-## Exercise 1: Our first function
-
-In the IAP.h file, place the following line of code under the FUNCTIONS label, after the run function that is already there.
-
-```cpp
-int readNumber ();
-```
-
-Back in our IAP.cpp file we need to write the following code under our main run() function.
-
-```cpp
-int IAP::readNumber ()
-{
-    int number = 0;
-    std::cout << "Please enter a number : \n";
-    std::cin >> number;
-	   return number;
-}
-```
-
-*The IAP:: part of our statements, means that this function is owned by the IAP class. Classes will be explored in later practical’s.*
-
-We can now remove repeated blocks of code in our IAP run function to use our new readNumber function.
-
-```cpp
-int numberA = readNumber();
-```
-
-Make sure the program operates as it did previously. You should now be able to see how much more clear the code is to read. We will now look at functions in more detail.
+## Exercise Calculator
 
 ## Declaring Functions
 
@@ -193,6 +137,37 @@ Add 2 or more chord functions, some suggestions for chords are given bellow. You
 | Sus4 | +5, +7 |
 | Sus2 | +2, +7 |
 
+
+## Exercise 5: Refactoring
+
+Having now hopefully understood the basics of functions, you should be able to refactor the following code snipped shown below. Before starting reset your project to its basic state, removing all callbacks (commenting out the ones in IAP.h) and any custom functions you have added. Then add the code below to run() in IAP.cpp. 
+
+```cpp
+  int numberA = 0;
+  std::cout << "Please enter a number : \n";
+  std::cin >> numberA;
+
+  int numberB = 0;
+  std::cout << "Please enter a number : \n";
+  std::cin >> numberB;
+
+  int numberC = 0;
+  std::cout << "Please enter a number : \n";
+  std::cin >> numberC;
+
+  int numberD = 0;
+  std::cout << "Please enter a number : \n";
+  std::cin >> numberD;
+  
+  float average = (numberA + numberB + numberC + numberD) / 4.0;
+  std::cout << "Average is: " << average << "\n";
+```
+
+Study the code above. There are four groups of statements, each marginally different. If we look closely, the only difference is the variable we are storing our data in. Think carefully about how you might refactor the code to use a function.
+
+
+Make sure the program operates as it did previously. You should now be able to see how much more clear the code is to read. We will now look at functions in more detail.
+
 ## Debug Exercise.
 
 Open debug exercise 5 and then fix the broken exercise. Make sure you save your solution to codeBook.
@@ -212,6 +187,7 @@ Understanding of the following will be assumed next week:
 1. How programs can be organized into functions.
 2. How to declare, define and call your own functions.
 3. How to pass values into functions. 
+
 
 
 
