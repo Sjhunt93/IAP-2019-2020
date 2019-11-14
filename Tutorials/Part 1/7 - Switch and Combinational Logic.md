@@ -277,8 +277,8 @@ As the variable day (in the example on the previous page) is compared with const
         case 4:
             std::cout << "Friday\n";
             break;
-            std::cout << "Invalid!\n";
         default:
+	    std::cout << "Invalid!\n";
             break;
     }
 ```
