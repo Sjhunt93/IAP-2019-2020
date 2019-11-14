@@ -23,7 +23,16 @@ It is possible to write your program **without** using custom functions, however
 
 ## first function
 
-## Exercise Calculator
+## Exercise 1 Calculator
+
+You will write a program that performs various calcualtions using functions.
+
+- a function called add() that takes two float arguments and returns one float argument
+- a function called sub() that takes two float arguments and returns one float argument
+- a function called multi() that takes two float arguments and returns one float argument
+- a function called div() that takes two float arguments and returns one float argument
+- a function called getInput() that returns a number
+
 
 ## Declaring Functions
 
