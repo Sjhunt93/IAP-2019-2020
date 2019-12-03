@@ -7,6 +7,8 @@ In this practical you will learn how to control program flow using three differe
 2. the **do-while** loop. 
 3. the **for** loop 
 
+# change this next year to use the stop CC button instead of the modwheel
+
 ## While
 In previous sessions the large majority of exercises have employed a ‘never-ending’ while(true) loop. Last week we learned that it was possible to control the number of times the loop cycled with a condition in place of the true keyword. 
 
