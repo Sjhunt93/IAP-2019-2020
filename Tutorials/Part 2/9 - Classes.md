@@ -9,7 +9,7 @@ In this practical you will learn how to make use of classes. On successful compl
 
 ## Class
 
-In the real world we are used to seeing, discussing, and using objects. For example, your mobile phone is one of many mobile phones in the world. However, it shares a number of characteristics and features with all other phones. We can think of a generic mobile phone as the **class or data type** and your specific phone as the **instance or variable name.** 
+In the real world we are used to seeing, discussing, and using objects. For example, your mobile phone is one of many mobile phones in the world. However, it shares a number of characteristics and features with all other phones, for example making calls. We can think of a generic mobile phone as the **class or data type** and your specific phone as the **instance or variable name.** 
 
 Using object oriented terminology, we can say that a very primitive mobile phone **class** has some **data**, for example contacts and some **methods** for acting on those contact, i.e. call a contact, add contact, delete contact.
 
@@ -33,14 +33,14 @@ To help conceptualize the topics we have discussed so far you will now create yo
 ```cpp
 //---------------------------------------------------------------------------------
 // USER CREATED CLASS
--> new class starts here
+// new class starts here
 
 class Person {
 public:
     
 };
 
--> new class ends here
+// new class ends here
 class IAP : public AserveComs  {
 public:
 
@@ -56,7 +56,7 @@ A **brace** should always follow the class name, and the class definition ends w
 
 ## Member variables
 
-Now that we have our class definition we want to add some **member variables** to it. Member variables are like normal variables except that they define some **property** about our **class**. For this exercise choose at least 3 of the features from the previous page and add them as member variables. A single example is given bellow.
+Now that we have our class definition we want to add some **member variables** to it. Member variables are like normal variables except that they define some **property** about our **class**. A single example is given bellow. **For this exercise choose at least 3 of the features from the previous page and add them as member variables.**
 
 
 ```cpp
@@ -73,14 +73,14 @@ To create an instance of our person add the following line of code to our shared
 ```cpp
   //---------------------------------------------------------------------------------
   // SHARED VARIABLES (IAP member variables)
-  Person student;
+  Person student; // we have added a person type
 ```
 
 Finally lets set some of the **student’s** member variables.
 
 ## The dot syntax 
 
-To set or access a class’s member variables we simply use the dot operator. For example, in the bellow example we are setting the member variable called **name** inside the **instance** student to be “sam”.
+To set or access a class’s member variables we simply use the dot operator. For example, in the below example we are setting the member variable called **name** inside the **instance** student to be “sam”.
 
 ```cpp
     student.name = "Sam";
@@ -91,7 +91,7 @@ To complete this exercise set all of the member variables in your student instan
 
 ## Exercise 2: Adding a second person.
 
-Repeating the steps from the previous exercise add another **instance** of the person class, this time called **lecturer.**
+Repeating the steps from the previous exercise add another **instance** of the person class, this time called **lecturer.** *You do not need to add another class definition or alter our existing Person class definition.*
 
 1.	Remember to set all of **lecturer’s** member variables
 2.	Print out all of **lecturer’s** member variables.
@@ -123,7 +123,7 @@ To add a class method simply define a function within the class’s definition, 
 
 ## What about the function declaration?
 
-You may be wondering where we put the function declaration for our person class, for the sake of simplicity we can combine them together. Note that we do not need to supply the Person:: namespace in front of someFunction when combining the **definition** and **declaration**.
+You may be wondering where we put the function declaration for our person class, for the sake of simplicity we can combine them together. Note that we do not need to supply the Person:: namespace in front of *someFunction* when combining the **definition** and **declaration**.
 
 ```cpp
 class Person {
