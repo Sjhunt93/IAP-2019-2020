@@ -1,5 +1,9 @@
 # Constants and Algorithms II
 
++ add more code for testing the print vector function
+  - plus steps
++ fix typos with vector[i] rather than vector.size()
+
 This tutorial is broken into two different parts. The first looks at sonstants, defines and enums. The second explores a few more algorithims that can be applied specifically to arrays and other data containers.
 
 # Part 1: Constants, defines and enums: 
