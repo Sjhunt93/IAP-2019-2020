@@ -73,6 +73,7 @@ void IAP::callbackCCValueChanged (int cc, int value)
     /* #
      - pick two rotary controls
      - set the attack & release time based on the following formula
-      Y = X / 1270.0 + 0.001
+
+      Y = 1.0 / ((X / 127.0) * 1000.0) + 0.00001;
      */
 }
