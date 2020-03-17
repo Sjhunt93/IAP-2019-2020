@@ -177,7 +177,7 @@ as before we can combine multiple statements with multiple << operators.
 Continuing on from the previous exercise, adapt your solution so that you first write the contents of the **"exercise1.txt"** file before trying to read it. Some suggested steps to achieve this are as follows. *Note your solution to exercise 2 should go after the code your write specifically for this exercise.*
 	
 1.	Open file for writing
-2.	Write a suitable number of note numbers to this file
+2.	Write at least 2 note numbers to this file
 3.	Close file
 4.	Solution to exercise 2.
 
