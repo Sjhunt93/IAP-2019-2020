@@ -21,11 +21,14 @@ AserveComs::AserveComs ()
         }
     }
     else {
+        mainThreadId = Thread::getCurrentThreadId(); // this is mostly guaranteed to be called from main, which then also calls run() in IAP.h
+        // This class is not designed to be 100% portable so I guess this ok!
+        
         if (! connect (9001)) {
             //alert
             std::cout << "Error Port 9001 in use!\n";
         }
-    
+        
         if (! sender.connect ("127.0.0.1", 9002)) {
         //error
             std::cout << "Error Port 9002 in use!\n";
@@ -130,8 +133,14 @@ void AserveComs::oscMessageReceived (const OSCMessage& message)
 
 void AserveComs::aserveSleep (int value)
 {
-	Thread::sleep(value);
-    //usleep(value * 1000);
+    
+    if (Thread::getCurrentThreadId() != mainThreadId) {
+//        jassertfalse; //wanring you cannot sleep in a callback thread!!
+        std::cout << "WARNING!: you cannot call aserveSleep() from a callback function!! - aserveSleep() ignored\n";
+    }
+    else {
+        usleep(value * 1000);
+    }
 }
 void AserveComs::aserveOscillator (int channel, float frequency, float amplitude, int wavetype)
 {

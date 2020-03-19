@@ -23,7 +23,7 @@ It is possible to write your program **without** using custom functions, however
 
 ## First function
 
-To illustrate when we might to make a function, open up an empty project and copy the following code to the run() in IAP.h. Study the code inside the main run loop.
+To illustrate when we might to make a function, open up an empty project and copy the following code to the run() in IAP.cpp. Study the code inside the main run loop.
 
 ```cpp
   int numberA = 0;
@@ -59,7 +59,7 @@ In the IAP.h file, place the following line of code under the FUNCTIONS label, a
 int readNumber ();
 ```
 
-Back in our IAP.cpp file we need to write the following code under our main run loop.
+Back in our IAP.cpp file we need to write the following code under our main run() function.
 
 ```cpp
 int IAP::readNumber ()
@@ -127,7 +127,7 @@ Function definitions should appear in IAP.cpp separated from the IAP::run() func
 
 ## Exercise 2: mtof function
 
-Back in practical 3 we used a formula for converting note numbers into frequencies. This formula will be used frequently throughout this module, so it would make sense to put this code inside a function. Download the practical 5.2 files from blackboard and copy in the code for both the .h and .cpp file.
+Back in practical 3 we used a formula for converting note numbers into frequencies. This formula will be used frequently throughout this module, so it would make sense to put this code inside a function. Download the practical 5.2 files from [here](https://github.com/Sjhunt93/IAP-2019-2020/tree/master/Code%20Exercises/Tutorial%205/Exercise%202) and copy in the code for both the .h and .cpp file.
 
 The prototype for the mtof function looks like this:
 
@@ -157,9 +157,9 @@ The minor function is the same except oscillator two will be calculated based on
 The code for the note callback function is supplied bellow, **ensure that you have correctly added the two chord functions before trying to run the code**. The bottom 4 drum pads on the impulse control correspond to the 4 chords. 
 
 ```cpp
-void IAP::callbackNoteReceived  (int note, int velocity)
+void IAP::callbackNoteReceived  (int note, int velocity, int channel)
 {
-    if (note == 61)
+    if (note == 60)
     {
         majorChord(60); // C Major
     }
@@ -167,11 +167,11 @@ void IAP::callbackNoteReceived  (int note, int velocity)
     {
         majorChord(65); // F Major
     }
-    else if (note == 63)
+    else if (note == 64)
     {
         majorChord(67); // G Major
     }
-    else if (note == 64)
+    else if (note == 65)
     {
         minorChord(69); // A Minor
     }
@@ -196,6 +196,8 @@ Add 2 or more chord functions, some suggestions for chords are given bellow. You
 ## Debug Exercise.
 
 Open debug exercise 5 and then fix the broken exercise. Make sure you save your solution to codeBook.
+
+https://github.com/Sjhunt93/IAP-2019-2020/tree/master/Code%20Exercises/Tutorial%205/Debug
 
 ## Challenge Exercise: 
 

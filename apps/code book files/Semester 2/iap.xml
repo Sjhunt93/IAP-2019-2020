@@ -53,11 +53,6 @@
         <cpp src=""/>
         <code src=""/>
     </item>
-    <item name="Homework Exercise: Constants" type="1" custom="0">
-        <h src=""/>
-        <cpp src=""/>
-        <code src=""/>
-    </item>
   </tutorial>
   <tutorial name="Vector">
     <item name="Exercise 1: Vector I" type="1" custom="0">
@@ -80,23 +75,8 @@
         <cpp src=""/>
         <code src=""/>
     </item>
-    <item name="Homework Exercise 1: Print Vector" type="1" custom="0">
-        <h src=""/>
-        <cpp src=""/>
-        <code src=""/>
-    </item>
-    <item name="Homework Exercise 2: Find Index" type="1" custom="0">
-        <h src=""/>
-        <cpp src=""/>
-        <code src=""/>
-    </item>
-    <item name="Homework Exercise 3: Sort, Reverse, Random" type="1" custom="0">
-        <h src=""/>
-        <cpp src=""/>
-        <code src=""/>
-    </item>
   </tutorial>
-  <tutorial name="Program Design">
+  <tutorial name="Algorithms and Program design">
     <item name="Exercise 1: AR Envelope start " type="1" custom="0">
         <h src=""/>
         <cpp src=""/>
@@ -138,13 +118,25 @@
       <code src=""/>
     </item>
   </tutorial>
-  <tutorial name="Hackathon">
-    <item name="Initial Idea" type="1">
+  <tutorial name="Constants and Algorithms II">
+
+    <item name="Exercise 1: Code refactoring" type="1" custom="0">
+      <h src=""/>
+      <cpp src=""/>
+      <code src=""/>
+    </item>
+
+    <item name="Exercise 2: Print Vector" type="1" custom="0">
         <h src=""/>
         <cpp src=""/>
         <code src=""/>
     </item>
-    <item name="Final Idea" type="1">
+    <item name="Exercise 3: Find Index" type="1" custom="0">
+        <h src=""/>
+        <cpp src=""/>
+        <code src=""/>
+    </item>
+    <item name="Exercise 4: Sort, Reverse, Random" type="1" custom="0">
         <h src=""/>
         <cpp src=""/>
         <code src=""/>
@@ -209,18 +201,18 @@
         <code src=""/>
     </item>
   </tutorial>
-  <tutorial name="C++ Magic">
-    <item name="Exercise 1: " type="1">
+  <tutorial name="Some more C++">
+    <item name="Exercise 1: 2D arrays " type="1">
         <h src=""/>
         <cpp src=""/>
         <code src=""/>
     </item>
-    <item name="Exercise 2: " type="1">
+    <item name="Exercise 2: Range based for loops" type="1">
         <h src=""/>
         <cpp src=""/>
         <code src=""/>
     </item>
-    <item name="Exercise 3: " type="1">
+    <item name="Exercise 3: Ternary Operator" type="1">
         <h src=""/>
         <cpp src=""/>
         <code src=""/>

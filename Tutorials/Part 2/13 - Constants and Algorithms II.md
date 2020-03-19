@@ -218,7 +218,7 @@ This code shown above is a common routine for searching through an array. Firstl
 
 Adapt the code supplied above to write a generalized find Index function. This function should take a **vector** as its argument and a **value** to look for. It should return an int which corresponds to the index of the value (if it contains it), or a -1 value if it does not. **Note you should not use shared variables for this exercise.**
 
-Add the following <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Code%20Exercises/Extra%20Tutorial/sorting/find%20function%20unit%20test.txt">unit test code</a> to your solution to test your findIndex function.
+Add the following <a href="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Code%20Exercises/Extra%20Tutorial/sorting/find%20function%20unit%20test.txt">test code</a> to your solution to test your findIndex function. This is a different test to the one required for unit test 10.
 
 ## Sorting
 

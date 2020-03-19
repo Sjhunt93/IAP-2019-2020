@@ -88,7 +88,7 @@ We will now create a simple program using an array to hold a sequence of notes, 
 
 ## Exercise 2: Second array
 
-Extended the previous exercise to include a second array for storing amplitude values. The static **1.0** value for amplitude inside the call to aserveOscillator should be replaced by the value from this new array. This new array should be called **amps** and be of type **float** and be the same size as the other array. 
+Extended the previous exercise to include a second array for storing amplitude values. The static **1.0** value for amplitude inside the call to aserveOscillator (argument 3) should be replaced by the a from this new array. This new array should be called **amps** and be of type **float** and be the same size as the other array. **You should not need to create another for loop**.
 
 ## Exercise 3: refactoring 
 

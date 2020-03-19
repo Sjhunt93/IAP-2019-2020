@@ -177,7 +177,7 @@ as before we can combine multiple statements with multiple << operators.
 Continuing on from the previous exercise, adapt your solution so that you first write the contents of the **"exercise1.txt"** file before trying to read it. Some suggested steps to achieve this are as follows. *Note your solution to exercise 2 should go after the code your write specifically for this exercise.*
 	
 1.	Open file for writing
-2.	Write a suitable number of note numbers to this file
+2.	Write at least 2 note numbers to this file
 3.	Close file
 4.	Solution to exercise 2.
 
@@ -209,10 +209,16 @@ Therefore, the contents of the fullName would now be:
   Dennis, Ritchie
 ```
 
-However, it is slightly more difficult to split the fullName string back into its parts. The ability to split strings of characters into smaller parts is however useful and necessary for many applications. We can use the **substr()** member function to return a sub-string from our original string. The substr takes 2 arguments, corresponding to the **index** of the letter you wish to start from and the **index** of the letter you wish to go up to (but no including). Doing the following would result in the string "Den" being returned.
+However, it is slightly more difficult to split the fullName string back into its parts. The ability to split strings of characters into smaller parts is however useful and necessary for many applications. We can use the **substr()** member function to return a sub-string from our original string. The substr takes 2 arguments, corresponding to the **index** of the letter you wish to start from and the **len** of the substring you wish to go up to (but not including). Doing the following would result in the string "Den" being returned.
 
 ```cpp
-  std::string subStr = fullName.substr( 0, 3);
+  std::string subStr = fullName.substr( 0, 3); //returns "den"
+```
+
+Computing the following code would output "nis,", as the substring would start at index 3 ('n') and take the next 3 chars ("is,").
+
+```cpp
+  std::string subStr = fullName.subStr(3, 4); //returns "nis,"
 ```
 
 If just 1 argument is supplied, then all the characters from the supplied index up to the end of the string will be returned. In the below example subStr will be equal to **", Ritchie"**.

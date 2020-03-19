@@ -30,7 +30,7 @@ Should now look like:
 ```cpp
 void callbackNoteReceived (int note, int velocity, int channel);
 ```
-Back inside the IAP.cpp file add the following block of code next to IAP::run().
+Back inside the IAP.cpp file add the following block of code **under** IAP::run(), **after the last }**
 
 ```cpp
 void IAP::callbackNoteReceived (int note, int velocity, int channel)
@@ -41,12 +41,12 @@ void IAP::callbackNoteReceived (int note, int velocity, int channel)
 ```
 **Make sure you type this code exactly.**
 
-Add the following loop to IAP::run().
+Add the following piece of code inside IAP::run(), between the opening **{** and closing braces **}**.
 
 ```cpp
 while (true) 
 {
-aserveSleep(1000);
+   	aserveSleep(1000);
 }
 ```
 
@@ -100,7 +100,7 @@ Do not worry if you do not understand this fully yet. Complete this exercise by 
 ```cpp
 1.	int freq = 440 * power;
 2.	int power = pow(2, octave);
-3.	aserveOscilitor (0, freq, 1.0, 0);
+3.	aserveOscillator (0, freq, 1.0, 0);
 4.	int octave = (note – 69) / 12;
 ```
 
@@ -110,10 +110,11 @@ Run and test your program before moving on.
 
 You should notice that there is an error when we run our program. That is no matter what note we play, we hear the note A, in different octaves.
 
-The reason that the program does not work correctly is due to integers. Since note frequencies have decimal parts, we will need to replace *int* datatypes with *float* datatypes.
+The reason that the program does not work correctly is due to using integers. Since note frequencies have decimal parts, we will need to replace some of the *int* datatypes with *float* datatypes. Think carefully about which ones to replace.
 
 The last thing we need to do is to swap the 12 on statement 4, to be 12.0. The constant 12 is not the same as 12.0, to ensure we use floating point datatypes everywhere we have to specify 12.0. Try swapping these two values and witness the result.
 
+**As an optional challenge try writing the frequency conversion equation on one line of code**
 
 ## Exercise 4: Filter Control
 
@@ -172,7 +173,7 @@ To improve the range of controls for the filter you may use the following formul
 <img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/cuttoff_b.png" height=60/>
 
 ```cpp
-cutoff = ( pow((value / [insert maximum value here].0), 3.0) * 19800) + 20;
+cutoff = ( pow((value / [insert maximum value here and remove square brackets].0), 3.0) * 19800) + 20;
 ```
 
 This will apply a logarithmic scale to the filter control to gives us a more natural sounding filter control. You may also wish to adjust the constants 19800 and 20 to observe what effect this might have over the program.
