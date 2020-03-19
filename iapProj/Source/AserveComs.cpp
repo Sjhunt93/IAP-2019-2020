@@ -139,7 +139,7 @@ void AserveComs::aserveSleep (int value)
         std::cout << "WARNING!: you cannot call aserveSleep() from a callback function!! - aserveSleep() ignored\n";
     }
     else {
-        usleep(value * 1000);
+		Thread::sleep(value);
     }
 }
 void AserveComs::aserveOscillator (int channel, float frequency, float amplitude, int wavetype)
