@@ -1,4 +1,4 @@
-# IAP-2019-2020
+# IAP Learning Materials
 
 IAP (Introductory Audio Programming) is a programming course designed to teach you the basics of computer programming, using the C++ language to build a range of musical applications.
 
