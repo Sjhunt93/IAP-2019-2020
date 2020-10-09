@@ -51,3 +51,26 @@ Codebook is a application for storing the solutions to each exercise.
 
 A pre-configured xcode project, which includes all the files needed. Inlcudes JUCE 5 also.
 
+# Compatability 
+
+
+The project has been tested on the following versions of Mac OS/Xcode, and Windows/Visual studio.
+
+## Mac OS
+
+10.13, 10.14, 10.15 (pending). Note that 10.16 is not supported officially
+
+## Xcode
+
+9+
+
+## Windows
+
+10 
+
+## Visual studio
+
+2017, 2019
+
+
+
