@@ -4,8 +4,7 @@ IAP (Introductory Audio Programming) is a programming course designed to teach y
 
 ## Getting started
 
-Read the following <a href="Tutorials/Getting%20Started.md">guide</a> to get started.
-
+Read the following <a href="Tutorials/Getting%20Started.md">guide</a> to get started. Video guides are also included.
 
 ## Tutorials
 
@@ -31,7 +30,7 @@ Read the following <a href="Tutorials/Getting%20Started.md">guide</a> to get sta
 
 ### Unit Test assessments
 
-Certain exercises in the tutorials are important milestones along your journey learning C++ and will be assessed. Aserve can automatically test your iapProj program in xcode to see if your solution responds in the expected way. Check the following link for more info.
+Certain exercises in the tutorials are important milestones along your journey learning C++ and will be assessed. Aserve can automatically test your iapProj programs for certain tutorial exercises to see if your solution responds in the expected way. Check the following link for more info.
 
 <a href="Solutions/Overview.md">Unit test assessments</a>
 
@@ -47,12 +46,11 @@ is a light weight audio client that contains a number of basic audio generating 
 ### Codebook
 Codebook is a application for storing the solutions to each exercise.
 
-### Xcode Project
+# iapProj code
 
-A pre-configured xcode project, which includes all the files needed. Inlcudes JUCE 5 also.
+Code that you write will as part of tutorials is inside pre-configured xcode/visual studio project called `iapProj`. This project includes all the files needed. Inlcudes JUCE 5 also.
 
 # Compatability 
-
 
 The project has been tested on the following versions of Mac OS/Xcode, and Windows/Visual studio.
 
