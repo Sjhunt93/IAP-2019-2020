@@ -48,11 +48,11 @@ Codebook is a application for storing the solutions to each exercise.
 
 # iapProj code
 
-Code that you write will as part of tutorials is inside pre-configured xcode/visual studio project called `iapProj`. This project includes all the files needed. Inlcudes JUCE 5 also.
+You will write all of your code for tutorials in a project called `iapProj`. This is a pre-configured xcode/visual studio project which includes all the files needed (including JUCE 5) to control and co-operate with Aserve. See the `iapProj/Builds` folder for MacOS Xcode and Windows Visual Studio compatible project files.
 
 # Compatability 
 
-The project has been tested on the following versions of Mac OS/Xcode, and Windows/Visual studio.
+The project has been tested on the following platforms.
 
 ## Mac OS
 
