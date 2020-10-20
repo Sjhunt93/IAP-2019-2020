@@ -24,11 +24,13 @@ Download the IAP folder (which contains all of the required materials and applic
 
 https://github.com/Sjhunt93/IAP-2019-2020
 
-You will also need to download the latest Xcode version and the Command Line Tools from here: (Note this is only if you are working on your own machine. The university machines already have xcode installed.
+You will also need to download Xcode from the appstore if you are working on your own machine. The university machines already have Xcode installed.
+
+Apple maintain an archive of XCode versions for various MacOS versions here:
 
 https://developer.apple.com/xcode/
 
-To do this you will have to join the developer network (at no cost) here: 
+Please join the Apple developer network (at no cost) here: 
 
 http://developer.apple.com/programs/register/
 
