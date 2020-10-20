@@ -18,7 +18,7 @@ Whilst you are free to move ahead at your own pace if you wish, it is very impor
 
 ### OSX Users
 
-A video guide for setting up XCode on MacOS is here: <a href="https://www.youtube.com/watch?v=DWJ6sW1TxU4">MacOS setup video</a>
+A video guide for setting up XCode on MacOS is here: <a href="https://www.youtube.com/watch?v=OQFYdAl54XE">MacOS setup video</a>
 
 Download the IAP folder (which contains all of the required materials and applications)
 
