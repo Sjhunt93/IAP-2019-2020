@@ -44,6 +44,7 @@ For windows users you will need to download Microsoft's Visual Studio:
 
 https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15
 
+The setup video above mentions Visual studio 2017 (for compatibility) but we recommend and support Visual Studio 2019.
 
 ## Opening the IAP Project
 
