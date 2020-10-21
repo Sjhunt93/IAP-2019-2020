@@ -121,7 +121,7 @@ void AserveComs::oscMessageReceived (const OSCMessage& message)
                 m.status = message[0].getInt32();
                 m.data1 = message[1].getInt32();
                 m.data2 = message[2].getInt32();
-                callbackMIDIRecived(m);
+                callbackMIDIReceived(m);
             }
         }
     }
@@ -214,4 +214,9 @@ void AserveComs::aserveConfigureOscillatorMode (eOscillatorMode mode)
 void AserveComs::aservePanOscillator (int channel, float left, float right)
 {
     sender.send(AserveOSC::pan, channel, left, right);
+}
+
+void AserveComs::aserveSetRegister (int reg, float value)
+{
+    sender.send(AserveOSC::reg, reg, value);
 }

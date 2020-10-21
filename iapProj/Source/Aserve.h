@@ -41,6 +41,7 @@ namespace AserveOSC
     static const String reset = aserve + "reset";
     static const String mode = aserve + "mode";
     static const String pan = aserve + "pan";
+    static const String reg = aserve + "register";
     
     static const String fPath = aserve + "path";
 

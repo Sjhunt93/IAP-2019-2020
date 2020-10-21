@@ -10,7 +10,7 @@
 #define __IAPProjectDevelopmentTest1__IAP__
 
 #include "AserveComs.h"
-
+#include "AserveTests.hpp"
 //---------------------------------------------------------------------------------
 // USER CREATED CLASS
 
@@ -20,7 +20,7 @@ public:
     
     //---------------------------------------------------------------------------------
     // SHARED VARIABLES (IAP member variables)
-
+    
 
     //---------------------------------------------------------------------------------
     // FUNCTIONS (IAP class methods)
@@ -29,12 +29,12 @@ public:
     //---------------------------------------------------------------------------------
     // CALLBACK FUNCTIONS
     
-    //void callbackNoteReceived  (int note, int velocity, int channel);
+    void callbackNoteReceived  (int note, int velocity, int channel);
     //void callbackModWheelMoved (int value);
     //void callbackPitchbendWheelMoved (int value);
-    //void callbackCCValueChanged (int cc, int value);
+    void callbackCCValueChanged (int cc, int value);
     
-    //void callbackMIDIRecived (MIDI message);
+    //void callbackMIDIReceived (MIDI message);
     //void callbackPixelGrid (int x, int y);
     
 private:

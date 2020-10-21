@@ -334,7 +334,7 @@ public:
      @param		message         MIDI message
      
      */
-    virtual void callbackMIDIRecived (MIDI message) {}
+    virtual void callbackMIDIReceived (MIDI message) {}
     
     
     enum eOscillatorMode
@@ -362,6 +362,43 @@ public:
     void aservePanOscillator (int channel, float left, float right);
     
     //------------------------------------------------------------------------------------------
+    
+    /**
+     This feature is used to set (or hack) some of the underlying features of aserve and simulates register writes/reads
+     
+     
+     //  --------
+     //  address             property                        value range
+     //
+     //  0x00 - 0x0F         resets and reserved messages    n/a
+     //  0x10 - 0x2F         oscillator frequency            0 - sample rate / 2.0
+     //  0x30 - 0x4F         oscillator amplitude            0 - 1.0
+     //  0x50 - 0x6F         oscillator waveforms            0 - 6
+     //  0x70 - 0x8F         oscillator pan                  -1.0 - 1.0 (full left = -1.0, full right = 1.0)
+     //  0x90 - 0xAF         oscillator attack               0 - 1.0
+     //  0xB0 - 0xCF         oscillator release              0 - 1.0
+     //  0x100               low pass filter cutoff          20 - sample rate / 2.0
+     //  0x101               high pass filter cutoff         20 - sample rate / 2.0
+     //  0x102               band pass filter cutoff         20 - sample rate / 2.0
+     //  0x103               band pass filter Q              > 0
+     //  0x103               band pass filter gain           > 0
+     
+     
+     //  There are 3 sets of registers for setting custom colours on the bit grid visualiser
+     //  these are stored in rows and then column
+     //  For example to set the red component of x-5, y-7 if would be register 0x275
+     //  generic format 0x(R/G/B) (Y) (X)
+     //  0x200 - 0x2FF       bit grid visualiser colours     red values
+     //  0x300 - 0x3FF       bit grid visualiser colours     green values
+     //  0x400 - 0x4FF       bit grid visualiser colours     blue values
+     
+     
+     THIS IS AN EXPERIMENTAL FEATURE
+
+     */
+    void aserveSetRegister (int reg, float value);
+    
+    
     AserveComs ();
     virtual ~AserveComs ();
 private:
