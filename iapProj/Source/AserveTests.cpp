@@ -76,7 +76,7 @@ void AserveTests::testOscRegisters (AserveComs & coms)
     
     ///------------------------- Attack --------------------------------------------------
     
-#if 0
+#if 1
     coms.aserveSetRegister(0x0, 0);
     for (int chan = startChan; chan < endChan; chan++) {
         
@@ -103,7 +103,7 @@ void AserveTests::testOscRegisters (AserveComs & coms)
     
     ///------------------------- Release --------------------------------------------------
     
-#if 0
+#if 1
     coms.aserveSetRegister(0x0, 0);
     for (int chan = startChan; chan < endChan; chan++) {
         
@@ -184,10 +184,12 @@ void AserveTests::testOscRegisters (AserveComs & coms)
         coms.aserveSetRegister(0x500+i, 0);
     }
     
-
+	Random r;
     for (int i = 0; i < 10000; i++) {
-        const int randomA = arc4random() % 0x300 + 0x300;
-        const int colour = arc4random() % 256;
+        const int randomA = (abs(r.nextInt()) % 0x300) + 0x300;
+        const int colour = abs(r.nextInt()) % 256;
+		jassert(randomA < 0x600);
+		jassert(randomA >= 0x300);
         coms.aserveSetRegister(randomA, colour);
         coms.aserveSleep(1);
     }
