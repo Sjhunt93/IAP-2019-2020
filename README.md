@@ -1,11 +1,10 @@
-# IAP-2019-2020
+# IAP Learning Materials
 
 IAP (Introductory Audio Programming) is a programming course designed to teach you the basics of computer programming, using the C++ language to build a range of musical applications.
 
 ## Getting started
 
-Read the following <a href="Tutorials/Getting%20Started.md">guide</a> to get started.
-
+Read the following <a href="Tutorials/Getting%20Started.md">guide</a> to get started. Video guides are also included.
 
 ## Tutorials
 
@@ -31,7 +30,7 @@ Read the following <a href="Tutorials/Getting%20Started.md">guide</a> to get sta
 
 ### Unit Test assessments
 
-Certain exercises in the tutorials are important milestones along your journey learning C++ and will be assessed. Aserve can automatically test your iapProj program in xcode to see if your solution responds in the expected way. Check the following link for more info.
+Certain exercises in the tutorials are important milestones along your journey learning C++ and will be assessed. Aserve can automatically test your iapProj programs for certain tutorial exercises to see if your solution responds in the expected way. Check the following link for more info.
 
 <a href="Solutions/Overview.md">Unit test assessments</a>
 
@@ -47,7 +46,29 @@ is a light weight audio client that contains a number of basic audio generating 
 ### Codebook
 Codebook is a application for storing the solutions to each exercise.
 
-### Xcode Project
+# iapProj code
 
-A pre-configured xcode project, which includes all the files needed. Inlcudes JUCE 5 also.
+You will write all of your code for tutorials in a project called `iapProj`. This is a pre-configured xcode/visual studio project which includes all the files needed (including JUCE 5) to control and co-operate with Aserve. See the `iapProj/Builds` folder for MacOS Xcode and Windows Visual Studio compatible project files.
+
+# Compatability 
+
+The project has been tested on the following platforms.
+
+## Mac OS
+
+10.13, 10.14, 10.15 (pending). Note that 10.16 is not supported officially
+
+## Xcode
+
+9+
+
+## Windows
+
+10 
+
+## Visual studio
+
+2017, 2019
+
+
 

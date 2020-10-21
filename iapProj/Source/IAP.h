@@ -20,7 +20,7 @@ public:
     
     //---------------------------------------------------------------------------------
     // SHARED VARIABLES (IAP member variables)
-
+    
 
     //---------------------------------------------------------------------------------
     // FUNCTIONS (IAP class methods)
@@ -34,7 +34,7 @@ public:
     //void callbackPitchbendWheelMoved (int value);
     //void callbackCCValueChanged (int cc, int value);
     
-    //void callbackMIDIRecived (MIDI message);
+    //void callbackMIDIReceived (MIDI message);
     //void callbackPixelGrid (int x, int y);
     
 
