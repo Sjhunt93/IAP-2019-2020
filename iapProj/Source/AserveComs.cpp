@@ -8,6 +8,8 @@
 
 #include "AserveComs.h"
 #include "Aserve.h"
+#include "AserveTests.hpp"
+
 
 static uint32 timeAtStart; //we only want one of these as our sudo timer.
 static int instanceCount;
@@ -219,4 +221,11 @@ void AserveComs::aservePanOscillator (int channel, float left, float right)
 void AserveComs::aserveSetRegister (int reg, float value)
 {
     sender.send(AserveOSC::reg, reg, value);
+}
+
+void AserveComs::aserveDoRegisterTest ()
+{
+    AserveTests aTests;
+    
+    aTests.testOscRegisters(*this);
 }

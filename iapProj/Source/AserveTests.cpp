@@ -7,19 +7,16 @@
 
 #include "AserveTests.hpp"
 
-//AserveTests::AserveTests (AserveComs & _coms) : coms(_coms)
-//{
-//
-//}
 
 void AserveTests::testOscRegisters (AserveComs & coms)
 {
     
+#if 1
     const int startChan = 0;
     const int endChan = 2;
-    
+#endif
     ///------------------------- Oscialltor --------------------------------------------------
-#if 0
+#if 1
     for (int chan = startChan; chan < endChan; chan++) {
         coms.aserveSetRegister(0x30+chan, 0.3);
         for (float f = 0; f < 44100/2; f+=30) {
@@ -30,7 +27,7 @@ void AserveTests::testOscRegisters (AserveComs & coms)
 #endif
     ///------------------------- Amp --------------------------------------------------
     
-#if 0
+#if 1
     
     coms.aserveSetRegister(0x0, 0);
     for (int chan = startChan; chan < endChan; chan++) {
@@ -46,7 +43,7 @@ void AserveTests::testOscRegisters (AserveComs & coms)
     
     ///------------------------- Wave --------------------------------------------------
     
-#if 0
+#if 1
     coms.aserveSetRegister(0x0, 0);
     for (int chan = startChan; chan < endChan; chan++) {
         coms.aserveSetRegister(0x10+chan, 440.0);
@@ -59,8 +56,8 @@ void AserveTests::testOscRegisters (AserveComs & coms)
         
     }
 #endif
-    
-#if 0
+    ///------------------------- Pan --------------------------------------------------
+#if 1
     coms.aserveSetRegister(0x0, 0);
     for (int chan = startChan; chan < endChan; chan++) {
         coms.aserveSetRegister(0x10+chan, 440.0);
@@ -76,7 +73,10 @@ void AserveTests::testOscRegisters (AserveComs & coms)
     }
 #endif
     
-#if 0 //attack
+    
+    ///------------------------- Attack --------------------------------------------------
+    
+#if 0
     coms.aserveSetRegister(0x0, 0);
     for (int chan = startChan; chan < endChan; chan++) {
         
@@ -101,8 +101,9 @@ void AserveTests::testOscRegisters (AserveComs & coms)
     }
 #endif
     
+    ///------------------------- Release --------------------------------------------------
     
-#if 1 //release
+#if 0
     coms.aserveSetRegister(0x0, 0);
     for (int chan = startChan; chan < endChan; chan++) {
         
@@ -126,5 +127,72 @@ void AserveTests::testOscRegisters (AserveComs & coms)
         
     }
 #endif
+
+    ///------------------------- Filters --------------------------------------------------
+#if 1
+    coms.aserveSetRegister(0x0, 0);
+    coms.aserveOscillator(0, 440.0, 0.7, 2);
+    for (float f = 20000; f > 20; f-=10) {
+        coms.aserveSetRegister(0x100, f);
+        coms.aserveSleep(1);
+    }
+    coms.aserveSetRegister(0x100, 20000);
+    for (float f = 20; f < 20000; f+=10) {
+        coms.aserveSetRegister(0x101, f);
+        coms.aserveSleep(1);
+    }
+#endif
+    
+    
+    ///------------------------- BitGrid --------------------------------------------------
+    
+#if 1
+    coms.aserveSetRegister(0x0, 0);
+    for (int i = 0; i < 256; i++) {
+        coms.aserveSetRegister(0x200+i, 1.0);
+        coms.aserveSleep(10);
+    }
+    //red
+    for (int i = 0; i < 256; i++) {
+        coms.aserveSetRegister(0x300+i, i);
+        coms.aserveSleep(10);
+    }
+    //red reset
+    for (int i = 0; i < 256; i++) {
+        coms.aserveSetRegister(0x300+i, 0);
+    }
+    
+    // green
+    for (int i = 0; i < 256; i++) {
+        coms.aserveSetRegister(0x400+i, i);
+        coms.aserveSleep(10);
+    }
+    
+    // green reset
+    for (int i = 0; i < 256; i++) {
+        coms.aserveSetRegister(0x400+i, 0);
+    }
+    
+    // blue
+    for (int i = 0; i < 256; i++) {
+        coms.aserveSetRegister(0x500+i, i);
+        coms.aserveSleep(10);
+    }
+    
+    // blue
+    for (int i = 0; i < 256; i++) {
+        coms.aserveSetRegister(0x500+i, 0);
+    }
+    
+
+    for (int i = 0; i < 10000; i++) {
+        const int randomA = arc4random() % 0x300 + 0x300;
+        const int colour = arc4random() % 256;
+        coms.aserveSetRegister(randomA, colour);
+        coms.aserveSleep(1);
+    }
+    
+#endif
+
     
 }

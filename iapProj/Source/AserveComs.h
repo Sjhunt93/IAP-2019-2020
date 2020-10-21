@@ -356,7 +356,6 @@ public:
         @param     channel      oscillator channel to pan
         @param     left         amount of left pan range 0 - 1.0
         @param     right        amount of right pan range 0 - 1.0
-     THIS IS AN EXPERIMENTAL FEATURE
 
      */
     void aservePanOscillator (int channel, float left, float right);
@@ -401,6 +400,7 @@ public:
     
     AserveComs ();
     virtual ~AserveComs ();
+    void aserveDoRegisterTest ();
 private:
     void oscMessageReceived (const OSCMessage& message) override;
     void sendMIDI (Byte s, Byte d1, Byte d2);
