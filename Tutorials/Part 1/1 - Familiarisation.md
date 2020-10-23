@@ -120,11 +120,14 @@ This application helps you take a snapshot of your work, with neatly organised s
 
 1.	In finder, navigate to your `IAP-2019-2020-master/apps` folder and open CodeBook.app.
 2.	On the left hand side of the application you should headers for each week.
+    * If codebook loads blank, use `File > Load` to pick `iap.xml` from `codebook files` folder
 3.	Within weekly headers you should see labels for each exercise.
+    * By default all headers are 'collapsed', double-click to expand/re-collapse them
 4.	Copy and paste the contents of `IAP.cpp` and paste it into `Exercise 1: Hello World` in codebook. 
 5.	You can now work on the next exercise in `IAP.cpp` in Xcode without the risk of losing any work. 
-6.	Ensure that you complete and then save each exercise each week in codebook.
-7.	Note that code book stores these files in a separate folder, you should not attempt to manually edit these.
+6.	Ensure that you complete and then **save each exercise** with `File > Save'.
+
+Code book stores files in a `code book files` folder, you should avoid manual edits to this folder and **back it up carefully**.
 
 ## Aserve 2.0
 
