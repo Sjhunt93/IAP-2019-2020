@@ -54,6 +54,10 @@ std::cout << "this line of code will never be executed \n"
 
 aserveSleep(1000 /* comment inside some code */);
 ```
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/eMmviPhu0Iw/0.jpg)](http://www.youtube.com/watch?v=eMmviPhu0Iw)
+
+
 # Variables <a name="variables"></a>
 
 ### Declaring and setting variables 
@@ -81,6 +85,10 @@ public:
     const std::string readOnlyString = "Read Only";
 ```
 <hr>
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/UNdOMshCIlk/0.jpg)](http://www.youtube.com/watch?v=UNdOMshCIlk)
+
+
 
 # Text Output <a name="tout"></a>
 
