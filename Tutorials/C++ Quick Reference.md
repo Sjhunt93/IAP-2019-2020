@@ -106,6 +106,9 @@ public:
 
 <hr>
 
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oAFGNsZ6MPc/0.jpg)](http://www.youtube.com/watch?v=oAFGNsZ6MPc)
+
+
 # Text Input <a name="tin"></a>
 
 ### Setting a variable
