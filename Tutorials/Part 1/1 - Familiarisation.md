@@ -11,8 +11,15 @@ This practical is designed to help familiarise you with the development tools th
 
 Please use the following videos for help during this session:
 
+### Printing text
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oAFGNsZ6MPc/0.jpg)](http://www.youtube.com/watch?v=oAFGNsZ6MPc)
+
+
 ### Programming Aserve
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Pfclu24116U/0.jpg)](http://www.youtube.com/watch?v=Pfclu24116U)
+
+
 
 ## Getting started
 
