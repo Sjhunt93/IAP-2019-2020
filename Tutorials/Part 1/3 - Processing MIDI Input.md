@@ -7,6 +7,21 @@ In this practical we will focus on processing MIDI input data, and building our 
 2.	Aserve filters.
 3.	MIDI note numbers and note frequencies.
 
+
+
+## Videos
+
+Please use the following videos for help during this session:
+
+### Aserve Programming 2 - callbacks
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/ZJXi2eIq--0/0.jpg)](http://www.youtube.com/watch?v=ZJXi2eIq--0)
+
+### Operators
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/yPNMVlxy1B0/0.jpg)](http://www.youtube.com/watch?v=yPNMVlxy1B0)
+
+
 ## Callbacks
 
 In computer program design we have two opposing principles for dealing with input. Either continuously check if something has changed (known as *polling*). Or we can set things up to alert us when something has changed (we call this second method a *callback*).  
