@@ -172,6 +172,13 @@ public:
     float number = pow(16, 0.5); // calculate square root of 16, i.e. raise to the power of 0.5
 ```
 
+
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/yPNMVlxy1B0/0.jpg)](http://www.youtube.com/watch?v=yPNMVlxy1B0)
+
+
+
 <hr>
 
 # Logical Comparisons  <a name="logic"></a>
