@@ -84,11 +84,11 @@ public:
     const int readOnlyNumber = 10;
     const std::string readOnlyString = "Read Only";
 ```
-<hr>
+
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/UNdOMshCIlk/0.jpg)](http://www.youtube.com/watch?v=UNdOMshCIlk)
 
-
+<hr>
 
 # Text Output <a name="tout"></a>
 
@@ -104,11 +104,11 @@ public:
   std::cout << "The value of a variable " << number << "\n";
 ```
 
-<hr>
+
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oAFGNsZ6MPc/0.jpg)](http://www.youtube.com/watch?v=oAFGNsZ6MPc)
 
-
+<hr>
 # Text Input <a name="tin"></a>
 
 ### Setting a variable
@@ -119,6 +119,8 @@ public:
   std::string name;
   std::cin >> name;
 ```
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/c0Wo8mMCpDQ/0.jpg)](http://www.youtube.com/watch?v=c0Wo8mMCpDQ)
 
 <hr>
 
