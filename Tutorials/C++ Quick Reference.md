@@ -54,7 +54,7 @@ std::cout << "this line of code will never be executed \n"
 
 aserveSleep(1000 /* comment inside some code */);
 ```
-
+### Video
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/eMmviPhu0Iw/0.jpg)](http://www.youtube.com/watch?v=eMmviPhu0Iw)
 
 
@@ -85,6 +85,7 @@ public:
     const std::string readOnlyString = "Read Only";
 ```
 
+### Video
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/UNdOMshCIlk/0.jpg)](http://www.youtube.com/watch?v=UNdOMshCIlk)
 
@@ -105,10 +106,12 @@ public:
 ```
 
 
+### Video
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oAFGNsZ6MPc/0.jpg)](http://www.youtube.com/watch?v=oAFGNsZ6MPc)
 
 <hr>
+
 # Text Input <a name="tin"></a>
 
 ### Setting a variable
@@ -119,6 +122,8 @@ public:
   std::string name;
   std::cin >> name;
 ```
+
+### Video
 
 [![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/c0Wo8mMCpDQ/0.jpg)](http://www.youtube.com/watch?v=c0Wo8mMCpDQ)
 
