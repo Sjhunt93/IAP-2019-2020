@@ -20,6 +20,8 @@ Whilst you are free to move ahead at your own pace if you wish, it is very impor
 
 A video guide for setting up XCode on MacOS is here: <a href="https://www.youtube.com/watch?v=OQFYdAl54XE">MacOS setup video</a>
 
+For those of you on OSX 10.15+ please watch this version instead: <a href="https://www.youtube.com/watch?v=OQFYdAl54XE">MacOS setup Catalina</a>
+
 Download the IAP folder (which contains all of the required materials and applications)
 
 https://github.com/Sjhunt93/IAP-2019-2020

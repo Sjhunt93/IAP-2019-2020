@@ -5,7 +5,21 @@ In this practical we will learn how to control program flow using 'if' statement
 1.	How to set up and use a simple if statement.
 2.	How to construct conditional expressions using comparison operators.
 3.	How to set up and use simple if..else statements.
-4.	How to set up and use nested if..else if statements. 
+4.	How to set up and use nested if..else if statements.
+
+
+## Videos
+
+Please use the following videos for help during this session:
+
+### Aserve Programming 3 - sample playback
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/3wzw3ZkkdVM/0.jpg)](http://www.youtube.com/watch?v=3wzw3ZkkdVM)
+
+### If statements
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/dvdHsb7Kndk/0.jpg)](http://www.youtube.com/watch?v=dvdHsb7Kndk)
+
 
 ## Flow Control
 

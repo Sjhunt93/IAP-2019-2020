@@ -54,6 +54,10 @@ std::cout << "this line of code will never be executed \n"
 
 aserveSleep(1000 /* comment inside some code */);
 ```
+### Video
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/eMmviPhu0Iw/0.jpg)](http://www.youtube.com/watch?v=eMmviPhu0Iw)
+
+
 # Variables <a name="variables"></a>
 
 ### Declaring and setting variables 
@@ -80,6 +84,11 @@ public:
     const int readOnlyNumber = 10;
     const std::string readOnlyString = "Read Only";
 ```
+
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/UNdOMshCIlk/0.jpg)](http://www.youtube.com/watch?v=UNdOMshCIlk)
+
 <hr>
 
 # Text Output <a name="tout"></a>
@@ -96,6 +105,11 @@ public:
   std::cout << "The value of a variable " << number << "\n";
 ```
 
+
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oAFGNsZ6MPc/0.jpg)](http://www.youtube.com/watch?v=oAFGNsZ6MPc)
+
 <hr>
 
 # Text Input <a name="tin"></a>
@@ -108,6 +122,10 @@ public:
   std::string name;
   std::cin >> name;
 ```
+
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/c0Wo8mMCpDQ/0.jpg)](http://www.youtube.com/watch?v=c0Wo8mMCpDQ)
 
 <hr>
 
@@ -153,6 +171,13 @@ public:
     
     float number = pow(16, 0.5); // calculate square root of 16, i.e. raise to the power of 0.5
 ```
+
+
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/yPNMVlxy1B0/0.jpg)](http://www.youtube.com/watch?v=yPNMVlxy1B0)
+
+
 
 <hr>
 
@@ -204,7 +229,16 @@ public:
     }
 ```
 
+
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/dvdHsb7Kndk/0.jpg)](http://www.youtube.com/watch?v=dvdHsb7Kndk)
+
+
 <hr>
+
+
+
 
 # Switch <a name="switch"></a>
 

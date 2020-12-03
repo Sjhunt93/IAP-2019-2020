@@ -7,6 +7,20 @@ This practical is designed to help familiarise you with the development tools th
 3.	The Aserve application.
 4.	The structure of a basic C++ program. 
 
+## Videos
+
+Please use the following videos for help during this session:
+
+### Printing text
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/oAFGNsZ6MPc/0.jpg)](http://www.youtube.com/watch?v=oAFGNsZ6MPc)
+
+
+### Programming Aserve
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Pfclu24116U/0.jpg)](http://www.youtube.com/watch?v=Pfclu24116U)
+
+
+
 ## Getting started
 
 If you have not already done so, please follow the <a href="../Getting%20Started.md">getting started notes</a> before attempting this practical.
@@ -120,11 +134,14 @@ This application helps you take a snapshot of your work, with neatly organised s
 
 1.	In finder, navigate to your `IAP-2019-2020-master/apps` folder and open CodeBook.app.
 2.	On the left hand side of the application you should headers for each week.
+    * If codebook loads blank, use `File > Load` to pick `iap.xml` from `codebook files` folder
 3.	Within weekly headers you should see labels for each exercise.
+    * By default all headers are 'collapsed', double-click to expand/re-collapse them
 4.	Copy and paste the contents of `IAP.cpp` and paste it into `Exercise 1: Hello World` in codebook. 
 5.	You can now work on the next exercise in `IAP.cpp` in Xcode without the risk of losing any work. 
-6.	Ensure that you complete and then save each exercise each week in codebook.
-7.	Note that code book stores these files in a separate folder, you should not attempt to manually edit these.
+6.	Ensure that you complete and then **save each exercise** with `File > Save'.
+
+Code book stores files in a `code book files` folder, you should avoid manual edits to this folder and **back it up carefully**.
 
 ## Aserve 2.0
 
