@@ -132,6 +132,7 @@ This unit test tests that you have correctly implemented a looping high frequenc
 | --- | --- | --- |
 | 1 | Modwheel moved | Start an oscillator at 20 hz and increment this frequency by 17 hz upto 17,300 hz. | 
 
+Note that a template for this exercise is supplied <a href="https://github.com/Sjhunt93/IAP-2019-2020/tree/master/Code%20Exercises/Tutorial%208/unit%20test">here</a>.
 
 # Test 7: Vector Sequencer
 *Tests: <a href="../Tutorials/Part%202/11%20-%20Vector.md">Exercise 11.3</a>*
