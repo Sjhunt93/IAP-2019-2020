@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="yuv0Ah" name="IAP_JUCE_6" projectType="consoleapp" useAppConfig="0"
+              addUsingNamespaceToJuceHeader="1" displaySplashScreen="1" jucerFormatVersion="1">
+  <MAINGROUP id="MgUOnT" name="IAP_JUCE_6">
+    <GROUP id="{A2C2FBED-7C76-9086-64F7-5BA94C21339B}" name="Source">
+      <FILE id="ohA0N9" name="Aserve.h" compile="0" resource="0" file="Source/Aserve.h"/>
+      <FILE id="AbfVyI" name="AserveComs.cpp" compile="1" resource="0" file="Source/AserveComs.cpp"/>
+      <FILE id="NK32NU" name="AserveComs.h" compile="0" resource="0" file="Source/AserveComs.h"/>
+      <FILE id="EF50qg" name="AserveTests.cpp" compile="1" resource="0" file="Source/AserveTests.cpp"/>
+      <FILE id="FTMqb7" name="AserveTests.hpp" compile="0" resource="0" file="Source/AserveTests.hpp"/>
+      <FILE id="swaMun" name="IAP.cpp" compile="1" resource="0" file="Source/IAP.cpp"/>
+      <FILE id="aPzuVF" name="IAP.h" compile="0" resource="0" file="Source/IAP.h"/>
+      <FILE id="EiMmaw" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="IAP_JUCE_6"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="IAP_JUCE_6"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../JUCE/modules"/>
+        <MODULEPATH id="juce_osc" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <OSX/>
+  </LIVE_SETTINGS>
+</JUCERPROJECT>
