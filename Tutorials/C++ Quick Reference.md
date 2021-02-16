@@ -270,6 +270,11 @@ public:
     }
 ```
 
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/LV7rgMeJ0N8/0.jpg)](http://www.youtube.com/watch?v=LV7rgMeJ0N8)
+
+
 <hr>
 
 # Loops <a name="loop"></a>
@@ -333,6 +338,11 @@ public:
         std::cout << i << ", ";
     }
 ```
+
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/QgtlLT3L-TQ/0.jpg)](http://www.youtube.com/watch?v=QgtlLT3L-TQ)
+
 
 <hr>
 
@@ -400,7 +410,20 @@ public:
 ```
 
 
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/Cbj72bZrxaE/0.jpg)](http://www.youtube.com/watch?v=Cbj72bZrxaE)
+
 <hr>
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/-04HOoFDZjA/0.jpg)](http://www.youtube.com/watch?v=-04HOoFDZjA)
+
+<hr>
+
+
+
+
+
 
 # && and || <a name="aor"></a>
 
@@ -421,8 +444,15 @@ public:
     }
 ```
 
+### Video
 
-<hr> 
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/CdXYE-4pzQA/0.jpg)](http://www.youtube.com/watch?v=CdXYE-4pzQA)
+
+<hr>
+
+
+
+ 
 
 # Class <a name="class"></a>
 
@@ -467,7 +497,13 @@ class Animal {
 };
 ```
 
+
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/KAf2tA7pXzY/0.jpg)](http://www.youtube.com/watch?v=KAf2tA7pXzY)
+
 <hr>
+
 
 # Array <a name="array"></a>
 
@@ -513,6 +549,10 @@ class Animal {
     int simpleArray[10]; //use std::array instead if possible
 ```
 
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/ofdW_sFv3mk/0.jpg)](http://www.youtube.com/watch?v=ofdW_sFv3mk)
+
 <hr>
 
 # Vector <a name="vector"></a>
@@ -531,6 +571,13 @@ class Animal {
 ```cpp
     myVector.push_back(10); // will increase size by 1 then set last element to be 10
 ```
+
+### Video
+
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/2zB0Mg0CtMA/0.jpg)](http://www.youtube.com/watch?v=2zB0Mg0CtMA)
+
+<hr>
+
 
 # File <a name="file"></a>
 
