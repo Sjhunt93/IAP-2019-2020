@@ -106,13 +106,13 @@ Building on exercise 1. Use an if-else statement to switch the oscillator on if 
 
  The flow chart for this is given bellow:
 
-<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/if_else.png" height=300/>
+<img src="../images/if_else.png" height=300/>
 
 ### If and else if
 
 Sometimes it is desirable to check for one of multiple possible conditions. For example, you may create a system that classifies university degree results from an overall percentage. A flow chart for this selection structure is provided below. Note that only one of these outputs is choosen.
 
-<img src="https://github.com/Sjhunt93/IAP-2018-2019/blob/master/Tutorials/images/if_else_else.png" height=300/>
+<img src="../images/if_else_else.png" height=300/>
 
 
 This is typically called an "if..else..if statement" or an "else if statement" because the general form of the code is as follows: 
